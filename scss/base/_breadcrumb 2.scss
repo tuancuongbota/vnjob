@@ -1,0 +1,36 @@
+.bota_breadcrumb {
+  position: relative;
+  border-bottom: 1px solid #E9E9E9;
+
+  ul li {
+    position: relative;
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 19px;
+      color: #333;
+      padding: 15px;
+    }
+
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    a {}
+    +li:before{
+      content: "";
+      background-image: url(../imgs/icon-ang-right.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 7px;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: -5px;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+  }
+}
+
