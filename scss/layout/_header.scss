@@ -1,0 +1,119 @@
+.bota_header {
+	position: relative;
+	z-index: 10;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	&_nav {
+		position: relative;
+
+		> ul {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			li {
+				position: relative;
+				> a {
+					font-style: normal;
+					font-weight: normal;
+					font-size: 15px;
+					color: #22343D;
+					padding: 14px 12px;
+					display: block;
+					line-height: 20px;
+					position: relative;
+					
+					> span {
+						position: relative;
+						display: inline-block;
+						&:after{
+							content:"";
+							width: 35px;
+							height: 1px;
+							background:#02897A;
+							position: absolute;
+							bottom: -2px;
+							left: 0;
+							opacity: 0;
+							visibility: hidden;
+						}
+					}
+				}
+				&.bota_header_employer > a {
+					> span{
+						border: 1px solid #18867A;
+						background: #18867A;
+						color: #fff;
+						border-radius: 4px;
+						display: block;
+						padding: 13px 12px;
+						line-height: 20px;
+
+						> svg {
+							margin-right: 5px;
+						}
+						&:after{
+							display: none;
+						}
+						&:hover{
+							background: #00AA97;
+							border-color: #00AA97;
+						}
+					}
+				}
+				&.bota_header_login > a > span {
+					border: 1px solid #BCD0E5;
+					border-radius: 4px;
+					display: block;
+					padding: 13px 10px;
+					line-height: 20px;
+					color: #22343D;
+					> svg {
+						margin-right: 5px;
+					}
+					&:after{
+						display: none;
+					}
+					&:hover{
+						border-color: #00AA97;
+						color: #00AA97;
+						> svg{
+							path{
+								&:nth-child(1){
+									fill: #00AA97;
+								}
+								&:nth-child(3){
+									fill: #00AA97;
+								}
+							}
+						}
+					}
+				}
+				&:hover > a{
+					color: #02897A;
+					span{
+						&:after{
+							opacity:1;
+							visibility: visible;
+						}
+					}
+				}
+				&.active > a{
+					color: #02897A;
+					span{
+						&:after{
+							opacity:1;
+							visibility: visible;
+						}
+					}
+				}
+				&.bota_header_login{
+					> a{
+						padding-left: 0;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+

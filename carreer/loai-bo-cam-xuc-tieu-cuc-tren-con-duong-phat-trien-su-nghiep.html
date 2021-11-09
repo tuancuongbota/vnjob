@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Góc nghề nghiệp</title>
+   </head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+   <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../js/js_custom.js"></script>
+   <body>
+      <header class="bota_header">
+         <div class="bota_header_top">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-xl-3 col-lg-3 col-sm-3">
+                     <div class="bota_header_logo">
+                        <a href="../index.html" title="logo">
+                        <img src="../imgs/logo.svg" alt="logo" class="img-fluid">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-sm-9">
+                     <nav class="bota_header_nav">
+                        <ul class="bota_header_nav_big">
+                           <li class="nav-item">				
+                              <a href="../job.html" title="Việc làm">
+                              <span>Việc làm</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">				
+                              <a href="../themes.html" title="Mẫu CV">
+                              <span>Mẫu CV</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">				
+                              <a href="../company.html" title="Công ty">
+                              <span>Công ty</span>
+                              </a>
+                           </li>
+                           <li class="nav-item active">				
+                              <a href="../carreer/career.html" title="Góc nghề nghiệp">
+                              <span>Góc nghề nghiệp</span>
+                              </a>
+                           </li>
+                           <li class="nav-item">				
+                              <a href="/" title="Tạo Profile">
+                              <span>Tạo Profile</span>
+                              </a>
+                           </li>
+                           <li class="bota_header_employer">
+                              <a href="#" title="Nhà tuyển dụng">
+                                 <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M17.718 16.3539L13.801 12.4369C14.8168 11.1306 15.4288 9.49448 15.4288 7.71439C15.4288 3.46055 11.9682 0 7.71439 0C3.46055 0 0 3.46055 0 7.71439C0 11.9682 3.46055 15.4288 7.71439 15.4288C9.49448 15.4288 11.1306 14.8168 12.4369 13.801L16.3539 17.718C16.7306 18.0947 17.3407 18.0947 17.7174 17.718C18.0941 17.3413 18.0941 16.7306 17.718 16.3539ZM1.28573 7.71439C1.28573 4.16963 4.16963 1.28573 7.71439 1.28573C11.2592 1.28573 14.143 4.16963 14.143 7.71439C14.143 11.2592 11.2592 14.143 7.71439 14.143C4.16963 14.143 1.28573 11.2592 1.28573 7.71439Z" fill="white"/>
+                                       <path d="M10.9287 10.9287H4.50006V9.9464C4.50006 8.68253 5.321 7.62051 6.45502 7.23544C6.04808 6.88186 5.78579 6.36693 5.78579 5.78577C5.78579 4.72055 6.64916 3.85718 7.71439 3.85718C8.77962 3.85718 9.64299 4.72055 9.64299 5.78577C9.64299 6.36693 9.3807 6.88186 8.97376 7.23544C10.1078 7.62051 10.9287 8.68253 10.9287 9.9464V10.9287Z" fill="white"/>
+                                    </svg>
+                                    Nhà tuyển dụng
+                                 </span>
+                              </a>
+                           </li>
+                           <li class="bota_header_login">
+                              <a href="../login.html" title="Đăng nhập">
+                                 <span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M16 8.00244C16 10.14 15.1662 12.1499 13.6534 13.6587C13.6315 13.6816 13.6079 13.7029 13.583 13.7225C12.0812 15.1901 10.0973 15.9985 7.99694 15.9995H7.9935C5.88879 15.9995 3.90202 15.1888 2.39803 13.7167L2.33952 13.658C1.59908 12.9222 1.01061 12.0427 0.608809 11.0713C0.207005 10.1 0 9.05638 0 8.00212C0 6.94787 0.207005 5.90428 0.608809 4.9329C1.01061 3.96152 1.59908 3.082 2.33952 2.34621C3.84883 0.833647 5.85813 0 7.99569 0C10.1333 0 12.1429 0.833647 13.6534 2.34685C15.164 3.86005 16 5.8652 16 8.00244Z" fill="#22343D"/>
+                                       <path d="M15.4055 8.00231C15.4055 9.98035 14.6336 11.8403 13.2326 13.238C13.2123 13.2593 13.1905 13.279 13.1675 13.2971C11.7767 14.6555 9.94079 15.4027 7.99627 15.405H7.99314C6.04486 15.405 4.20578 14.6546 2.81348 13.292L2.75935 13.2377C2.07392 12.5566 1.52917 11.7424 1.15721 10.8432C0.785255 9.94398 0.593628 8.97793 0.593628 8.00199C0.593628 7.02606 0.785255 6.06 1.15721 5.16078C1.52917 4.26156 2.07392 3.44738 2.75935 2.76625C4.15728 1.36567 6.01733 0.594238 7.99596 0.594238C9.97458 0.594238 11.8349 1.36567 13.2329 2.76657C14.6308 4.16747 15.4055 6.02363 15.4055 8.00231Z" fill="white"/>
+                                       <path d="M11.8191 5.87261C11.8191 6.77593 11.512 7.6513 10.95 8.34957C10.388 9.04784 9.60595 9.52581 8.73711 9.70203C7.86826 9.87826 6.96638 9.74183 6.18512 9.31601C5.40386 8.89018 4.79157 8.2013 4.45258 7.36674C4.11359 6.53218 4.06888 5.60359 4.32605 4.73918C4.58323 3.87477 5.12638 3.12803 5.86297 2.6262C6.59955 2.12438 7.48399 1.89851 8.36559 1.98708C9.24718 2.07566 10.0714 2.4732 10.6978 3.11197C11.0544 3.47367 11.3371 3.9039 11.5296 4.37776C11.7221 4.85162 11.8205 5.35971 11.8191 5.87261ZM13.5843 13.0341C12.0966 14.535 10.0883 15.377 7.99544 15.3771H7.99231C5.90149 15.3861 3.89144 14.5544 2.39809 13.0621C2.3567 13.0209 2.33175 12.9655 2.32805 12.9065C2.32436 12.8476 2.34217 12.7894 2.37807 12.7431C3.29322 11.5709 4.53766 10.7117 5.94485 10.2804C5.9334 10.3164 5.93051 10.3547 5.93644 10.392C5.94237 10.4293 5.95695 10.4647 5.97896 10.4952L7.75797 12.9655C7.77939 12.9953 7.80733 13.0197 7.83959 13.0367C7.87185 13.0536 7.90753 13.0627 7.94382 13.0631H7.94726C7.98297 13.0631 8.01822 13.0548 8.05031 13.0388C8.08241 13.0228 8.11051 12.9996 8.13248 12.9709L9.99972 10.5264C10.0233 10.4956 10.0391 10.4593 10.0458 10.4207C10.0524 10.3822 10.0497 10.3426 10.0379 10.3053C10.0341 10.2933 10.0293 10.2817 10.0235 10.2706C11.4335 10.6925 12.6828 11.5451 13.6028 12.7134C13.6393 12.7597 13.6576 12.8181 13.6542 12.8774C13.6508 12.9366 13.6259 12.9925 13.5843 13.0341Z" fill="#22343D"/>
+                                    </svg>
+                                    Đăng nhập
+                                 </span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="bota_main_body">
+         <div class="bota_carrer_details">
+            <div class="bota_career_box">
+               <div class="container">
+                  <div class="bota_career_toolbar">
+                     <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-sm-9">
+                           <div class="bota_carrer_category">
+                              <ul>
+                                 <li>
+                                    <a href="#" title="">
+                                    Kỹ năng công sở
+                                    </a>
+                                    <ul>
+                                       <li>
+                                          <a href="#" title="#">
+                                             Sếp và đồng nghiệp
+                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="18" height="18" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                                <path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z" fill="black"></path>
+                                             </svg>
+                                          </a>
+                                          <ul>
+                                             <li>
+                                                <a href="#" title="">
+                                                Drama công sở 2
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" title="">
+                                                Drama công sở 3
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" title="">
+                                                Drama công sở 4
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" title="">
+                                                Drama công sở 5
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="#" title="#">Phát triển bản thân</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" title="#">Quyền lợi nhân viên</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" title="#">Công ty tuyệt vời</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" title="#">Trước khi nhảy việc</a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="">
+                                    Kiến thức chuyên ngành
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="">
+                                    Định hướng nghề nghiệp
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="">
+                                    Nhân vật tiêu biểu
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-3">
+                           <div class="bota_career_search">
+                              <div class="bota_career_search_btn">
+                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.24993 16.4999C3.70122 16.4999 0 12.7986 0 8.24993C0 3.70122 3.70122 0 8.24993 0C12.7986 0 16.4999 3.70122 16.4999 8.24993C16.4999 12.7986 12.7986 16.4999 8.24993 16.4999ZM8.24993 1.49999C4.52846 1.49999 1.49999 4.52771 1.49999 8.24993C1.49999 11.9722 4.52846 14.9999 8.24993 14.9999C11.9714 14.9999 14.9999 11.9722 14.9999 8.24993C14.9999 4.52771 11.9714 1.49999 8.24993 1.49999Z" fill="white"></path>
+                                    <path d="M17.2501 18C17.0581 18 16.8661 17.9265 16.7199 17.7802L13.1237 14.184C12.8312 13.8907 12.8312 13.416 13.1237 13.1235C13.4169 12.8303 13.8917 12.8303 14.1849 13.1235L17.7804 16.7197C18.0736 17.013 18.0736 17.487 17.7804 17.7802C17.6341 17.9265 17.4421 18 17.2501 18Z" fill="white"></path>
+                                 </svg>
+                              </div>
+                              <input type="text" placeholder="Tìm kiếm...">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Breadcrumbs -->
+            <div class="bota_breadcrumb_main">
+               <div class="container">
+                  <ul class="breadcrumb">
+                     <li><a href="../index.html" title="Trang chủ">Trang chủ</a></li>
+                     <li><a href="../carreer/career.html" title="Góc nghề nghiệp">Góc nghề nghiệp</a></li>
+                     <li><a href="../carreer/career.html" title="Kỹ năng công sở">Kỹ năng công sở</a></li>
+                  </ul>
+               </div>
+            </div>
+            <!-- End Breadcrumbs -->
+            <div class="bota_career_page">
+               <div class="container">
+                  <div class="bota_career_page_title">
+                     <h1>LOẠI BỎ CẢM XÚC TIÊU CỰC TRÊN CON ĐƯỜNG PHÁT TRIỂN SỰ NGHIỆP</h1>
+                  </div>
+                  <div class="bota_career_page_tool">
+                     <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-sm-9">
+                           <div class="bota_career_page_time">
+                              <span>Tác giả: Anthony Hopkins</span>
+                              <span>
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 2.8C6.90807 2.79998 6.81703 2.81806 6.73209 2.85323C6.64716 2.8884 6.56998 2.93997 6.50497 3.00497C6.43997 3.06998 6.38841 3.14715 6.35324 3.23209C6.31807 3.31703 6.29998 3.40807 6.3 3.5V6.56865L4.59854 7.42485C4.51644 7.46614 4.44328 7.5232 4.38324 7.59277C4.3232 7.66234 4.27744 7.74305 4.24859 7.8303C4.21974 7.91755 4.20836 8.00963 4.21509 8.10128C4.22183 8.19293 4.24655 8.28235 4.28784 8.36445C4.32914 8.44654 4.38619 8.5197 4.45576 8.57975C4.52533 8.63979 4.60604 8.68554 4.69329 8.71439C4.78054 8.74325 4.87262 8.75463 4.96427 8.7479C5.05592 8.74116 5.14534 8.71644 5.22744 8.67515L7.31445 7.62515C7.43039 7.56697 7.52785 7.47768 7.59594 7.36728C7.66402 7.25688 7.70006 7.12971 7.7 7V3.5C7.70002 3.40807 7.68193 3.31703 7.64677 3.23209C7.6116 3.14715 7.56003 3.06998 7.49503 3.00497C7.43002 2.93997 7.35285 2.8884 7.26791 2.85323C7.18297 2.81806 7.09193 2.79998 7 2.8ZM7 0C5.61553 0 4.26215 0.410543 3.11101 1.17971C1.95987 1.94888 1.06266 3.04213 0.532846 4.32121C0.00303299 5.6003 -0.13559 7.00776 0.134506 8.36563C0.404603 9.7235 1.07129 10.9708 2.05026 11.9497C3.02922 12.9287 4.2765 13.5954 5.63437 13.8655C6.99224 14.1356 8.3997 13.997 9.67878 13.4672C10.9579 12.9373 12.0511 12.0401 12.8203 10.889C13.5895 9.73784 14 8.38447 14 7C13.9979 5.14413 13.2597 3.36489 11.9474 2.0526C10.6351 0.740302 8.85586 0.00212317 7 0ZM7 12.6C5.89243 12.6 4.80972 12.2716 3.88881 11.6562C2.96789 11.0409 2.25013 10.1663 1.82628 9.14302C1.40243 8.11976 1.29153 6.99379 1.50761 5.90749C1.72368 4.8212 2.25703 3.82337 3.0402 3.0402C3.82338 2.25703 4.8212 1.72368 5.9075 1.5076C6.99379 1.29153 8.11976 1.40242 9.14303 1.82627C10.1663 2.25012 11.0409 2.96789 11.6562 3.88881C12.2716 4.80972 12.6 5.89242 12.6 7C12.5983 8.48469 12.0078 9.90808 10.9579 10.9579C9.90808 12.0078 8.48469 12.5983 7 12.6Z" fill="#475E69"></path>
+                                 </svg>
+                                 08:30  20/10/2021
+                              </span>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-3">
+                           <div class="bota_career_page_view">
+                              <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M8 0C5.83614 0 3.87248 0.597573 2.41745 1.6049C0.962428 2.61223 5.70898e-05 4.06819 5.70898e-05 5.71425C-0.00101325 5.78997 0.0129763 5.86514 0.0412127 5.93541C0.0694492 6.00568 0.11137 6.06963 0.164537 6.12356C0.217705 6.17748 0.28106 6.2203 0.350921 6.24953C0.420781 6.27875 0.495754 6.2938 0.571482 6.2938C0.647209 6.2938 0.722182 6.27875 0.792042 6.24953C0.861903 6.2203 0.925258 6.17748 0.978426 6.12356C1.03159 6.06963 1.07351 6.00568 1.10175 5.93541C1.12999 5.86514 1.14398 5.78997 1.14291 5.71425C1.14291 4.51118 1.83773 3.39643 3.06812 2.54463C4.2985 1.69282 6.04846 1.14285 8 1.14285C9.95154 1.14285 11.7026 1.69282 12.933 2.54463C14.1634 3.39643 14.8571 4.51118 14.8571 5.71425C14.856 5.78997 14.87 5.86514 14.8982 5.93541C14.9265 6.00568 14.9684 6.06963 15.0216 6.12356C15.0747 6.17748 15.1381 6.2203 15.208 6.24953C15.2778 6.27875 15.3528 6.2938 15.4285 6.2938C15.5042 6.2938 15.5792 6.27875 15.6491 6.24953C15.7189 6.2203 15.7823 6.17748 15.8355 6.12356C15.8886 6.06963 15.9305 6.00568 15.9588 5.93541C15.987 5.86514 16.001 5.78997 15.9999 5.71425C15.9999 4.06819 15.0387 2.61223 13.5837 1.6049C12.1286 0.597573 10.1639 0 8 0Z" fill="#475E69"></path>
+                                 <path d="M7.9997 3.42859C6.42852 3.42859 5.14258 4.71453 5.14258 6.28571C5.14258 7.85689 6.42852 9.14283 7.9997 9.14283C9.57088 9.14283 10.8568 7.85689 10.8568 6.28571C10.8568 4.71453 9.57088 3.42859 7.9997 3.42859ZM7.9997 4.57144C8.95324 4.57144 9.71397 5.33218 9.71397 6.28571C9.71397 7.23925 8.95324 7.99999 7.9997 7.99999C7.04616 7.99999 6.28543 7.23925 6.28543 6.28571C6.28543 5.33218 7.04616 4.57144 7.9997 4.57144Z" fill="#475E69"></path>
+                              </svg>
+                              200 lượt xem
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="bota_career_page_des">
+                     <p>Đại dịch đã khiến nhiều chuyên gia phải suy nghĩ lại về sự nghiệp và cuộc sống của họ, dẫn đến sự gia tăng lớn số người thất nghiệp. Mọi người luôn mong muốn tự do tài chính, có thể tự sắp xếp thời gian làm việc linh hoạt, và ưu tiên muốn dành thời gian khác cho sức khỏe, gia đình.</p>
+                     <div class="bota_career_page_des_img">
+                        <img src="../imgs/career-img-details-1.png" alt="" />
+                     </div>
+                     <div class="bota_career_page_des_contai">
+                        <p>
+                           Bạn đang có một công việc tốt, với mức lương ổn định, sau một quá trình làm việc tại công ty, nhưng đôi lúc bạn sẽ tự hỏi “Đây có thực sự là công việc mà tôi nên ở lại.” hay “Tôi nên quay lại với niềm đam mê của mình”.
+                        </p>
+                        <p>Luôn có nỗi sợ vô hình và những cảm xúc tiêu cực khi phải rời một công việc ổn định để phát triển sự nghiệp riêng của bản thân. Có lẽ bạn sẽ mất nhiều thời gian cho điều này. Nó liên quan đến việc quản lý năm cảm xúc không thể tránh khỏi, khi bạn có quyết định lớn.</p>
+                        <h3>Chấm dứt nỗi buồn</h3>
+                        <p>Là một người làm việc nhiều năm và thay đổi nhiều nghề nghiệp trong những kỷ qua, John chia sẻ, anh nhận thấy những người tự nguyện bỏ vị trí thuộc về họ có trong ba trường hợp:                         </p>
+                        <ul>
+                           <li>Họ không còn thích công việc đó nữa;</li>
+                           <li>Họ muốn theo đuổi công việc mà họ muốn;</li>
+                           <li>Hoặc cả hai điều đó.</li>
+                        </ul>
+                        <p>Suy nghĩ đầu tiên mà bạn thường nghĩ đến đó là mong muốn thay đổi công việc, hoặc bạn muốn tự kinh doanh, nhưng bạn thực sự chưa có kế hoạch cụ thể và chi tiết. Nhưng ngay khi rời công việc mà bạn không yêu thích, đồng thời nó cũng gây cho bạn cảm giác buồn, vì bạn đang phải nói lời tạm biệt với nơi làm việc thân thuộc, với những người bạn đã gắn bó với bạn từ lâu. Jacinta Jiménez, Phó chủ tịch phụ trách huấn luyện viên tại BetterUp chia sẻ, thừa nhận và tôn trọng cảm xúc mà bạn có là điều quan trọng: </p>
+                        <div class="bota_career_page_des_border_left">
+                           Hãy tìm kiếm ý nghĩa và mục đích sống của bạn và giữ những bài học mà bạn đã thu được. Sau đó bạn có thể dựa trên những hiểu biết này và tiếp tục xây dựng những trang mới cho cuộc đời bạn.
+                        </div>
+                        <h3>Sự thất vọng                        </h3>
+                        <p>Rất nhiều sự chuẩn bị, kế hoạch liên quan đến bất kì công việc nào. Tìm vị trí tuyển dụng, thu hút sự chú ý của nhà tuyển dụng, học hỏi kinh nghiệm, gặp gỡ đồng nghiệp, xây dựng hình ảnh cá nhân để thích nghi với văn hoá công ty. Rồi sau đó bạn rời bỏ tất cả những sự cố gắng của bản thân.
+                        </p>
+                        <p>Nếu bạn thực sự luyến tiếc công việc hiện tại thì đó không phải là lúc bạn rời đi. Có rất nhiều lý do khiến cho bạn thất vọng, nhưng hầu hết đều do kết nối quá nhiều suy nghĩ và nó làm tổn hại đến tinh thần của bạn. Hãy chuẩn bị chu toàn hơn để quyết định rời đi, nó sẽ không khiến bạn thất vọng với bản thân và với công ty mà nó còn thúc đẩy bạn, vì bạn đang có một lý do cô cùng mạnh mẽ từ phía sau. Nhà tâm lý học Neil Morelli nói rằng chìa khóa để ngăn chặn sự thất vọng thái quá là tránh đặt ra những kỳ vọng không thực tế cho bản thân. Ông nói: 
+                        </p>
+                        <div class="bota_career_page_des_border_left">
+                           Hãy nhớ rằng sự thất vọng của chúng ta thường đến từ những tiêu chuẩn tương đối của chúng ta, chứ không phải những tiêu chuẩn khách quan.
+                        </div>
+                        <p>Bắt đầu đánh giá lại bản thân, nếu bạn đã sẵn sàng thì đây chính là cơ hội để bạn tiếp tục lại kỳ vọng trong tương lai và chủ động cho những tình huống ở phía trước. Đừng để nỗi thất vọng lấn át suy nghĩ của mình và biến nó thành cảm xúc tiêu cực.</p>
+                        <div class="bota_career_page_des_imgs">
+                           <img src="../imgs/career-img-details-2.png" alt="" />
+                           <p> Sự thất vọng của chúng ta thường đến từ những tiêu chuẩn tương đối của chúng ta</p>
+                        </div>
+                        <h3>Sự tự tin của chính bản thân</h3>
+                        <p>Nếu bạn đã từng rời bỏ một công việc tuyệt vời, nhiều lúc bạn sẽ cảm thấy thất vọng về bản thân, tại sao không cùng vị trí đó leo lên để trở thành người quản lý có trách nhiệm hơn, cùng với đó là kinh nghiệm dày dặn cho sau này.
+                        </p>
+                        <p>Tiến sĩ Gail Saltz, phó giáo sư khoa tâm lý học tại Đại học Y Weill-Cornell ở Thành phố New York cho biết, nhiều người rơi vào bẫy khi nghĩ rằng họ phải leo lên một nấc thang sự nghiệp trong công ty để thành công.
+                        </p>
+                        <p>Chỉ cần nhớ rằng tất cả chúng ta đều có thể cố gắng tạo ra các thước đo thành công của riêng mình được thúc đẩy bởi các giá trị và ưu tiên của chính bản thân, chứ không phải do Xã Hội áp đặt lên chúng ta. Chính vì vậy hãy tạo ra con đường cho riêng bạn, miễn rằng nó khiến bạn cảm thấy hạnh phúc và được là chính bạn.
+                        </p>
+                        <h3>Nỗi sợ hữu hình</h3>
+                        <p>Bỏ lại công việc của bạn để theo đuổi một công việc khác bao gồm một số yếu tố rủi ro, đặc biệt là khi bạn rời một công việc tốt với đời sống cá nhân bạn. Điều gì sẽ xảy ra nếu bạn hối hận khi nghỉ việc công ty cũ mà bắt đầu sự nghiệp của bạn?
+                        </p>
+                        <p>Tạo ra sự can đảm và lạc quan khi đối mặt với nỗi sợ hãi thường không dễ dàng, nhưng theo Dick Finnegan, Giám đốc điều hành của C-Suite Analytics, bạn có thể khai thác quá khứ để điều chỉnh lại suy nghĩ của mình. Lập danh sách những điểm trong quá khứ của bạn, nhìn lại và đẩy mình một lần nữa vò hoàn cảnh đó, kết luận phản ứng của bạn là gì? Dick Finnegan khuyên, tìm mọi cách để bạn chiến thắng tình huống đó, cách bạn giải quyết tình huống đó có thể sử dụng lại một lần nữa.
+                        </p>
+                        <h3>Sự lúng túng                        </h3>
+                        <p>
+                           Mặc dù hầu hết chúng ta có thể không muốn thừa nhận điều này, những danh tính và giá trị bản thân thường được gói gọn trong công việc của chúng ta. Khi bạn gặp ai đó lần đầu tiên, đặc biệt là trong bối cảnh chuyên nghiệp, một trong những câu hỏi đầu tiên bạn nhận được là, “Vậy bạn làm nghề gì?”
+                        </p>
+                        <p>Không có câu trả lời chắc chắn cho câu hỏi đó và nó khiến bạn lúng túng, đặc biệt là khi bạn đang ở giữa các công việc, không chắc chắn về những gì bạn định làm tiếp theo hoặc xung quá nhiều thứ lựa chọn.</p>
+                        <p>Joe Flanagan, cố vấn việc làm cấp cao tại VelvetJobs, nói rằng đối phó với sự bối rối có thể kết nối lại với những sở thích độc đáo của bạn. Nhắc bản thân về những mục tiêu, giá trị và lý tưởng, tại sao chúng lại quan trọng đối với bạn. Nếu bạn có thể thuyết phục bản thân rằng hành động này là quyết định đúng đắn, bạn sẽ không thể phải thuyết phục một ai khác.</p>
+                        <p>Quản lý cảm xúc tiêu cực và tích cực rất quan trọng như việc chúng ta quyết định một thay đổi cuộc đời. Dành thời gian để thừa nhận, đánh giá và vượt qua chúng, điều này sẽ hoàn toàn khác biệt giữa việc tiếp tục chịu đựng một công việc bạn không hài lòng và thực sự cố gắng theo đuổi công việc mà bạn thực sự mong muốn.</p>
+                     </div>
+                  </div>
+                  <div class="bota_details_career_share">
+                      <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-sm-6">
+                                <div class="bota_details_career_share_col">
+                                    <div class="bota_details_career_tags">Tags:</div>
+                                    <a href="#" title="">Kỹ năng công sở</a><a href="#" title="">Kỹ năng công sở</a>
+                                </div>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="bota_details_career_shares">
+                                <label>Chia sẻ bài viết</label>
+                                <ul>
+                                   <li>
+                                      <a href="#" title="">
+                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 33C25.6127 33 33 25.6127 33 16.5C33 7.38729 25.6127 0 16.5 0C7.38729 0 0 7.38729 0 16.5C0 25.6127 7.38729 33 16.5 33Z" fill="#3C5A9A"/>
+                                            <path d="M21.8644 5.06445H18.2092C16.0401 5.06445 13.6275 5.97674 13.6275 9.12092C13.6381 10.2165 13.6275 11.2657 13.6275 12.4465H11.1182V16.4396H13.7052V27.9351H18.4589V16.3638H21.5965L21.8804 12.4353H18.377C18.377 12.4353 18.3848 10.6878 18.377 10.1803C18.377 8.93777 19.6699 9.00893 19.7476 9.00893C20.3629 9.00893 21.5591 9.01072 21.8662 9.00893V5.06445H21.8644V5.06445Z" fill="white"/>
+                                         </svg>
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="#" title="">
+                                         <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.4404 33C26.5531 33 33.9404 25.6127 33.9404 16.5C33.9404 7.38729 26.5531 0 17.4404 0C8.32772 0 0.94043 7.38729 0.94043 16.5C0.94043 25.6127 8.32772 33 17.4404 33Z" fill="#55ACEE"/>
+                                            <path d="M27.5468 11.8578C26.8398 12.1713 26.0791 12.3834 25.2815 12.4781C26.0959 11.9901 26.7209 11.218 27.0159 10.2965C26.2539 10.7486 25.4094 11.0766 24.5114 11.2533C23.792 10.4871 22.767 10.0083 21.6319 10.0083C19.4542 10.0083 17.688 11.7745 17.688 13.9523C17.688 14.2614 17.723 14.5623 17.7906 14.8511C14.5129 14.6867 11.6066 13.1166 9.66123 10.7298C9.32181 11.3122 9.12709 11.9901 9.12709 12.7128C9.12709 14.0808 9.82388 15.2885 10.8816 15.9956C10.2354 15.9753 9.62682 15.7979 9.09533 15.5017C9.09503 15.5185 9.09503 15.5353 9.09503 15.5517C9.09503 17.4627 10.4551 19.0566 12.259 19.4186C11.9284 19.5092 11.5792 19.5572 11.2201 19.5572C10.9654 19.5572 10.7186 19.5327 10.478 19.4869C10.9798 21.0534 12.436 22.1937 14.1623 22.2258C12.8122 23.2838 11.1119 23.9141 9.26357 23.9141C8.94591 23.9141 8.63119 23.8955 8.32324 23.8588C10.0677 24.9782 12.1413 25.6309 14.3684 25.6309C21.6228 25.6309 25.59 19.6213 25.59 14.409C25.59 14.2382 25.5862 14.0679 25.5785 13.899C26.3497 13.3431 27.0183 12.6487 27.5468 11.8578Z" fill="#F1F2F2"/>
+                                         </svg>
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="#" title="">
+                                         <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3808 0C26.4939 0 33.8808 7.38696 33.8808 16.5C33.8808 25.613 26.4939 33 17.3808 33C8.26782 33 0.880859 25.613 0.880859 16.5C0.880859 7.38696 8.26782 0 17.3808 0Z" fill="#DD2A30"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9654 16.7398L15.9178 18.9602C15.7412 19.055 15.5833 18.928 15.5833 18.7282V14.1701C15.5833 13.9677 15.7463 13.8407 15.9223 13.9406L19.9983 16.2777C20.1788 16.3808 20.1478 16.6412 19.9654 16.7398ZM26.3701 14.1218C26.3701 11.96 24.6177 10.2075 22.4565 10.2075H12.3058C10.1441 10.2075 8.3916 11.96 8.3916 14.1218V18.8784C8.3916 21.0401 10.1441 22.7926 12.3058 22.7926H22.4565C24.6177 22.7926 26.3701 21.0401 26.3701 18.8784V14.1218Z" fill="white"/>
+                                         </svg>
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="#" title="">
+                                         <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.3213" cy="16.5" r="16.5" fill="url(#paint0_linear_204:170)"/>
+                                            <path d="M17.1724 8.0095C13.1783 8.0095 9.3855 7.65081 7.9368 11.4042C7.3384 12.9545 7.4253 14.9677 7.4253 17.8505C7.4253 20.3802 7.345 22.7577 7.9368 24.2957C9.3822 28.0514 13.2058 27.6916 17.1702 27.6916C20.9949 27.6916 24.9384 28.0936 26.4047 24.2957C27.0042 22.73 26.9162 20.7467 26.9162 17.8505C26.9162 14.0061 27.1263 11.5242 25.2794 9.66078C23.4094 7.77297 20.8805 8.0095 17.168 8.0095H17.1724ZM16.299 9.78293C21.0796 9.77516 24.8911 9.10887 25.1056 13.8728C25.1848 15.6374 25.1848 20.0593 25.1056 21.8238C24.8977 26.4179 21.4327 25.9137 17.1735 25.9137C13.4203 25.9137 11.5591 26.0481 10.3051 24.781C9.0324 23.4962 9.1842 21.6595 9.1842 17.8461C9.1842 13.3253 8.7607 10.0439 13.2355 9.83623C14.1342 9.79514 14.4829 9.78293 16.299 9.78071V9.78293ZM22.3754 11.4164C21.7297 11.4164 21.2061 11.945 21.2061 12.5969C21.2061 13.2487 21.7297 13.7773 22.3754 13.7773C23.0211 13.7773 23.5447 13.2487 23.5447 12.5969C23.5447 11.945 23.0211 11.4164 22.3754 11.4164ZM17.1724 12.7968C14.4081 12.7968 12.1674 15.0599 12.1674 17.8505C12.1674 20.6412 14.4081 22.9032 17.1724 22.9032C19.9367 22.9032 22.1763 20.6412 22.1763 17.8505C22.1763 15.0599 19.9367 12.7968 17.1724 12.7968ZM17.1724 14.5702C18.9665 14.5702 20.4207 16.0394 20.4207 17.8505C20.4207 19.6617 18.9665 21.1309 17.1724 21.1309C15.3783 21.1309 13.9241 19.6617 13.9241 17.8505C13.9241 16.0382 15.3783 14.5702 17.1724 14.5702Z" fill="white"/>
+                                            <defs>
+                                               <linearGradient id="paint0_linear_204:170" x1="28.8713" y1="4.39999" x2="7.97128" y2="30.25" gradientUnits="userSpaceOnUse">
+                                                  <stop stop-color="#CD3AA2"/>
+                                                  <stop offset="0.565217" stop-color="#FD5343"/>
+                                                  <stop offset="1" stop-color="#FFD153"/>
+                                               </linearGradient>
+                                            </defs>
+                                         </svg>
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+         <div class="bota_details_career_related">
+             <div class="container">
+                <div class="bota_details_career_related_title">
+                    <h2>Bài viết liên quan</h2>
+                </div>
+                <div class="bota_details_career_related_cont">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-sm-4 margin-bottom-20">
+                            <div class="bota_office_skills_small">
+                                <div class="bota_office_skills_small_img">
+                                    <a href="#" title="">
+                                        <img src="../imgs/office-skills-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="bota_office_skills_small_conx">
+                                    <div class="bota_office_skills_small_name">
+                                        <a href="#" title="">
+                                            Cải thiện kỹ năng giao tiếp cho người hướng nội...
+                                        </a>
+                                    </div>
+                                    <div class="bota_office_skills_small_tool">
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C5.83614 0 3.87248 0.597573 2.41745 1.6049C0.962428 2.61223 5.70898e-05 4.06819 5.70898e-05 5.71425C-0.00101325 5.78997 0.0129763 5.86514 0.0412127 5.93541C0.0694492 6.00568 0.11137 6.06963 0.164537 6.12356C0.217705 6.17748 0.28106 6.2203 0.350921 6.24953C0.420781 6.27875 0.495754 6.2938 0.571482 6.2938C0.647209 6.2938 0.722182 6.27875 0.792042 6.24953C0.861903 6.2203 0.925258 6.17748 0.978426 6.12356C1.03159 6.06963 1.07351 6.00568 1.10175 5.93541C1.12999 5.86514 1.14398 5.78997 1.14291 5.71425C1.14291 4.51118 1.83773 3.39643 3.06812 2.54463C4.2985 1.69282 6.04846 1.14285 8 1.14285C9.95154 1.14285 11.7026 1.69282 12.933 2.54463C14.1634 3.39643 14.8571 4.51118 14.8571 5.71425C14.856 5.78997 14.87 5.86514 14.8982 5.93541C14.9265 6.00568 14.9684 6.06963 15.0216 6.12356C15.0747 6.17748 15.1381 6.2203 15.208 6.24953C15.2778 6.27875 15.3528 6.2938 15.4285 6.2938C15.5042 6.2938 15.5792 6.27875 15.6491 6.24953C15.7189 6.2203 15.7823 6.17748 15.8355 6.12356C15.8886 6.06963 15.9305 6.00568 15.9588 5.93541C15.987 5.86514 16.001 5.78997 15.9999 5.71425C15.9999 4.06819 15.0387 2.61223 13.5837 1.6049C12.1286 0.597573 10.1639 0 8 0Z" fill="#475E69"></path>
+                                                <path d="M7.9997 3.42859C6.42852 3.42859 5.14258 4.71453 5.14258 6.28571C5.14258 7.85689 6.42852 9.14283 7.9997 9.14283C9.57088 9.14283 10.8568 7.85689 10.8568 6.28571C10.8568 4.71453 9.57088 3.42859 7.9997 3.42859ZM7.9997 4.57144C8.95324 4.57144 9.71397 5.33218 9.71397 6.28571C9.71397 7.23925 8.95324 7.99999 7.9997 7.99999C7.04616 7.99999 6.28543 7.23925 6.28543 6.28571C6.28543 5.33218 7.04616 4.57144 7.9997 4.57144Z" fill="#475E69"></path>
+                                            </svg>
+                                            200 lượt xem
+                                        </div>
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 2.8C6.90807 2.79998 6.81703 2.81806 6.73209 2.85323C6.64716 2.8884 6.56998 2.93997 6.50497 3.00497C6.43997 3.06998 6.38841 3.14715 6.35324 3.23209C6.31807 3.31703 6.29998 3.40807 6.3 3.5V6.56865L4.59854 7.42485C4.51644 7.46614 4.44328 7.5232 4.38324 7.59277C4.3232 7.66234 4.27744 7.74305 4.24859 7.8303C4.21974 7.91755 4.20836 8.00963 4.21509 8.10128C4.22183 8.19293 4.24655 8.28235 4.28784 8.36445C4.32914 8.44654 4.38619 8.5197 4.45576 8.57975C4.52533 8.63979 4.60604 8.68554 4.69329 8.71439C4.78054 8.74325 4.87262 8.75463 4.96427 8.7479C5.05592 8.74116 5.14534 8.71644 5.22744 8.67515L7.31445 7.62515C7.43039 7.56697 7.52785 7.47768 7.59594 7.36728C7.66402 7.25688 7.70006 7.12971 7.7 7V3.5C7.70002 3.40807 7.68193 3.31703 7.64677 3.23209C7.6116 3.14715 7.56003 3.06998 7.49503 3.00497C7.43002 2.93997 7.35285 2.8884 7.26791 2.85323C7.18297 2.81806 7.09193 2.79998 7 2.8ZM7 0C5.61553 0 4.26215 0.410543 3.11101 1.17971C1.95987 1.94888 1.06266 3.04213 0.532846 4.32121C0.00303299 5.6003 -0.13559 7.00776 0.134506 8.36563C0.404603 9.7235 1.07129 10.9708 2.05026 11.9497C3.02922 12.9287 4.2765 13.5954 5.63437 13.8655C6.99224 14.1356 8.3997 13.997 9.67878 13.4672C10.9579 12.9373 12.0511 12.0401 12.8203 10.889C13.5895 9.73784 14 8.38447 14 7C13.9979 5.14413 13.2597 3.36489 11.9474 2.0526C10.6351 0.740302 8.85586 0.00212317 7 0ZM7 12.6C5.89243 12.6 4.80972 12.2716 3.88881 11.6562C2.96789 11.0409 2.25013 10.1663 1.82628 9.14302C1.40243 8.11976 1.29153 6.99379 1.50761 5.90749C1.72368 4.8212 2.25703 3.82337 3.0402 3.0402C3.82338 2.25703 4.8212 1.72368 5.9075 1.5076C6.99379 1.29153 8.11976 1.40242 9.14303 1.82627C10.1663 2.25012 11.0409 2.96789 11.6562 3.88881C12.2716 4.80972 12.6 5.89242 12.6 7C12.5983 8.48469 12.0078 9.90808 10.9579 10.9579C9.90808 12.0078 8.48469 12.5983 7 12.6Z" fill="#475E69"></path>
+                                            </svg>
+                                            20/10/2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-4 margin-bottom-20">
+                            <div class="bota_office_skills_small">
+                                <div class="bota_office_skills_small_img">
+                                    <a href="#" title="">
+                                        <img src="../imgs/office-skills-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="bota_office_skills_small_conx">
+                                    <div class="bota_office_skills_small_name">
+                                        <a href="#" title="">
+                                            Cải thiện kỹ năng giao tiếp cho người hướng nội...
+                                        </a>
+                                    </div>
+                                    <div class="bota_office_skills_small_tool">
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C5.83614 0 3.87248 0.597573 2.41745 1.6049C0.962428 2.61223 5.70898e-05 4.06819 5.70898e-05 5.71425C-0.00101325 5.78997 0.0129763 5.86514 0.0412127 5.93541C0.0694492 6.00568 0.11137 6.06963 0.164537 6.12356C0.217705 6.17748 0.28106 6.2203 0.350921 6.24953C0.420781 6.27875 0.495754 6.2938 0.571482 6.2938C0.647209 6.2938 0.722182 6.27875 0.792042 6.24953C0.861903 6.2203 0.925258 6.17748 0.978426 6.12356C1.03159 6.06963 1.07351 6.00568 1.10175 5.93541C1.12999 5.86514 1.14398 5.78997 1.14291 5.71425C1.14291 4.51118 1.83773 3.39643 3.06812 2.54463C4.2985 1.69282 6.04846 1.14285 8 1.14285C9.95154 1.14285 11.7026 1.69282 12.933 2.54463C14.1634 3.39643 14.8571 4.51118 14.8571 5.71425C14.856 5.78997 14.87 5.86514 14.8982 5.93541C14.9265 6.00568 14.9684 6.06963 15.0216 6.12356C15.0747 6.17748 15.1381 6.2203 15.208 6.24953C15.2778 6.27875 15.3528 6.2938 15.4285 6.2938C15.5042 6.2938 15.5792 6.27875 15.6491 6.24953C15.7189 6.2203 15.7823 6.17748 15.8355 6.12356C15.8886 6.06963 15.9305 6.00568 15.9588 5.93541C15.987 5.86514 16.001 5.78997 15.9999 5.71425C15.9999 4.06819 15.0387 2.61223 13.5837 1.6049C12.1286 0.597573 10.1639 0 8 0Z" fill="#475E69"></path>
+                                                <path d="M7.9997 3.42859C6.42852 3.42859 5.14258 4.71453 5.14258 6.28571C5.14258 7.85689 6.42852 9.14283 7.9997 9.14283C9.57088 9.14283 10.8568 7.85689 10.8568 6.28571C10.8568 4.71453 9.57088 3.42859 7.9997 3.42859ZM7.9997 4.57144C8.95324 4.57144 9.71397 5.33218 9.71397 6.28571C9.71397 7.23925 8.95324 7.99999 7.9997 7.99999C7.04616 7.99999 6.28543 7.23925 6.28543 6.28571C6.28543 5.33218 7.04616 4.57144 7.9997 4.57144Z" fill="#475E69"></path>
+                                            </svg>
+                                            200 lượt xem
+                                        </div>
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 2.8C6.90807 2.79998 6.81703 2.81806 6.73209 2.85323C6.64716 2.8884 6.56998 2.93997 6.50497 3.00497C6.43997 3.06998 6.38841 3.14715 6.35324 3.23209C6.31807 3.31703 6.29998 3.40807 6.3 3.5V6.56865L4.59854 7.42485C4.51644 7.46614 4.44328 7.5232 4.38324 7.59277C4.3232 7.66234 4.27744 7.74305 4.24859 7.8303C4.21974 7.91755 4.20836 8.00963 4.21509 8.10128C4.22183 8.19293 4.24655 8.28235 4.28784 8.36445C4.32914 8.44654 4.38619 8.5197 4.45576 8.57975C4.52533 8.63979 4.60604 8.68554 4.69329 8.71439C4.78054 8.74325 4.87262 8.75463 4.96427 8.7479C5.05592 8.74116 5.14534 8.71644 5.22744 8.67515L7.31445 7.62515C7.43039 7.56697 7.52785 7.47768 7.59594 7.36728C7.66402 7.25688 7.70006 7.12971 7.7 7V3.5C7.70002 3.40807 7.68193 3.31703 7.64677 3.23209C7.6116 3.14715 7.56003 3.06998 7.49503 3.00497C7.43002 2.93997 7.35285 2.8884 7.26791 2.85323C7.18297 2.81806 7.09193 2.79998 7 2.8ZM7 0C5.61553 0 4.26215 0.410543 3.11101 1.17971C1.95987 1.94888 1.06266 3.04213 0.532846 4.32121C0.00303299 5.6003 -0.13559 7.00776 0.134506 8.36563C0.404603 9.7235 1.07129 10.9708 2.05026 11.9497C3.02922 12.9287 4.2765 13.5954 5.63437 13.8655C6.99224 14.1356 8.3997 13.997 9.67878 13.4672C10.9579 12.9373 12.0511 12.0401 12.8203 10.889C13.5895 9.73784 14 8.38447 14 7C13.9979 5.14413 13.2597 3.36489 11.9474 2.0526C10.6351 0.740302 8.85586 0.00212317 7 0ZM7 12.6C5.89243 12.6 4.80972 12.2716 3.88881 11.6562C2.96789 11.0409 2.25013 10.1663 1.82628 9.14302C1.40243 8.11976 1.29153 6.99379 1.50761 5.90749C1.72368 4.8212 2.25703 3.82337 3.0402 3.0402C3.82338 2.25703 4.8212 1.72368 5.9075 1.5076C6.99379 1.29153 8.11976 1.40242 9.14303 1.82627C10.1663 2.25012 11.0409 2.96789 11.6562 3.88881C12.2716 4.80972 12.6 5.89242 12.6 7C12.5983 8.48469 12.0078 9.90808 10.9579 10.9579C9.90808 12.0078 8.48469 12.5983 7 12.6Z" fill="#475E69"></path>
+                                            </svg>
+                                            20/10/2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-4 margin-bottom-20">
+                            <div class="bota_office_skills_small">
+                                <div class="bota_office_skills_small_img">
+                                    <a href="#" title="">
+                                        <img src="../imgs/office-skills-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="bota_office_skills_small_conx">
+                                    <div class="bota_office_skills_small_name">
+                                        <a href="#" title="">
+                                            Cải thiện kỹ năng giao tiếp cho người hướng nội...
+                                        </a>
+                                    </div>
+                                    <div class="bota_office_skills_small_tool">
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C5.83614 0 3.87248 0.597573 2.41745 1.6049C0.962428 2.61223 5.70898e-05 4.06819 5.70898e-05 5.71425C-0.00101325 5.78997 0.0129763 5.86514 0.0412127 5.93541C0.0694492 6.00568 0.11137 6.06963 0.164537 6.12356C0.217705 6.17748 0.28106 6.2203 0.350921 6.24953C0.420781 6.27875 0.495754 6.2938 0.571482 6.2938C0.647209 6.2938 0.722182 6.27875 0.792042 6.24953C0.861903 6.2203 0.925258 6.17748 0.978426 6.12356C1.03159 6.06963 1.07351 6.00568 1.10175 5.93541C1.12999 5.86514 1.14398 5.78997 1.14291 5.71425C1.14291 4.51118 1.83773 3.39643 3.06812 2.54463C4.2985 1.69282 6.04846 1.14285 8 1.14285C9.95154 1.14285 11.7026 1.69282 12.933 2.54463C14.1634 3.39643 14.8571 4.51118 14.8571 5.71425C14.856 5.78997 14.87 5.86514 14.8982 5.93541C14.9265 6.00568 14.9684 6.06963 15.0216 6.12356C15.0747 6.17748 15.1381 6.2203 15.208 6.24953C15.2778 6.27875 15.3528 6.2938 15.4285 6.2938C15.5042 6.2938 15.5792 6.27875 15.6491 6.24953C15.7189 6.2203 15.7823 6.17748 15.8355 6.12356C15.8886 6.06963 15.9305 6.00568 15.9588 5.93541C15.987 5.86514 16.001 5.78997 15.9999 5.71425C15.9999 4.06819 15.0387 2.61223 13.5837 1.6049C12.1286 0.597573 10.1639 0 8 0Z" fill="#475E69"></path>
+                                                <path d="M7.9997 3.42859C6.42852 3.42859 5.14258 4.71453 5.14258 6.28571C5.14258 7.85689 6.42852 9.14283 7.9997 9.14283C9.57088 9.14283 10.8568 7.85689 10.8568 6.28571C10.8568 4.71453 9.57088 3.42859 7.9997 3.42859ZM7.9997 4.57144C8.95324 4.57144 9.71397 5.33218 9.71397 6.28571C9.71397 7.23925 8.95324 7.99999 7.9997 7.99999C7.04616 7.99999 6.28543 7.23925 6.28543 6.28571C6.28543 5.33218 7.04616 4.57144 7.9997 4.57144Z" fill="#475E69"></path>
+                                            </svg>
+                                            200 lượt xem
+                                        </div>
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 2.8C6.90807 2.79998 6.81703 2.81806 6.73209 2.85323C6.64716 2.8884 6.56998 2.93997 6.50497 3.00497C6.43997 3.06998 6.38841 3.14715 6.35324 3.23209C6.31807 3.31703 6.29998 3.40807 6.3 3.5V6.56865L4.59854 7.42485C4.51644 7.46614 4.44328 7.5232 4.38324 7.59277C4.3232 7.66234 4.27744 7.74305 4.24859 7.8303C4.21974 7.91755 4.20836 8.00963 4.21509 8.10128C4.22183 8.19293 4.24655 8.28235 4.28784 8.36445C4.32914 8.44654 4.38619 8.5197 4.45576 8.57975C4.52533 8.63979 4.60604 8.68554 4.69329 8.71439C4.78054 8.74325 4.87262 8.75463 4.96427 8.7479C5.05592 8.74116 5.14534 8.71644 5.22744 8.67515L7.31445 7.62515C7.43039 7.56697 7.52785 7.47768 7.59594 7.36728C7.66402 7.25688 7.70006 7.12971 7.7 7V3.5C7.70002 3.40807 7.68193 3.31703 7.64677 3.23209C7.6116 3.14715 7.56003 3.06998 7.49503 3.00497C7.43002 2.93997 7.35285 2.8884 7.26791 2.85323C7.18297 2.81806 7.09193 2.79998 7 2.8ZM7 0C5.61553 0 4.26215 0.410543 3.11101 1.17971C1.95987 1.94888 1.06266 3.04213 0.532846 4.32121C0.00303299 5.6003 -0.13559 7.00776 0.134506 8.36563C0.404603 9.7235 1.07129 10.9708 2.05026 11.9497C3.02922 12.9287 4.2765 13.5954 5.63437 13.8655C6.99224 14.1356 8.3997 13.997 9.67878 13.4672C10.9579 12.9373 12.0511 12.0401 12.8203 10.889C13.5895 9.73784 14 8.38447 14 7C13.9979 5.14413 13.2597 3.36489 11.9474 2.0526C10.6351 0.740302 8.85586 0.00212317 7 0ZM7 12.6C5.89243 12.6 4.80972 12.2716 3.88881 11.6562C2.96789 11.0409 2.25013 10.1663 1.82628 9.14302C1.40243 8.11976 1.29153 6.99379 1.50761 5.90749C1.72368 4.8212 2.25703 3.82337 3.0402 3.0402C3.82338 2.25703 4.8212 1.72368 5.9075 1.5076C6.99379 1.29153 8.11976 1.40242 9.14303 1.82627C10.1663 2.25012 11.0409 2.96789 11.6562 3.88881C12.2716 4.80972 12.6 5.89242 12.6 7C12.5983 8.48469 12.0078 9.90808 10.9579 10.9579C9.90808 12.0078 8.48469 12.5983 7 12.6Z" fill="#475E69"></path>
+                                            </svg>
+                                            20/10/2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-sm-4 margin-bottom-20">
+                            <div class="bota_office_skills_small">
+                                <div class="bota_office_skills_small_img">
+                                    <a href="#" title="">
+                                        <img src="../imgs/office-skills-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="bota_office_skills_small_conx">
+                                    <div class="bota_office_skills_small_name">
+                                        <a href="#" title="">
+                                            Cải thiện kỹ năng giao tiếp cho người hướng nội...
+                                        </a>
+                                    </div>
+                                    <div class="bota_office_skills_small_tool">
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C5.83614 0 3.87248 0.597573 2.41745 1.6049C0.962428 2.61223 5.70898e-05 4.06819 5.70898e-05 5.71425C-0.00101325 5.78997 0.0129763 5.86514 0.0412127 5.93541C0.0694492 6.00568 0.11137 6.06963 0.164537 6.12356C0.217705 6.17748 0.28106 6.2203 0.350921 6.24953C0.420781 6.27875 0.495754 6.2938 0.571482 6.2938C0.647209 6.2938 0.722182 6.27875 0.792042 6.24953C0.861903 6.2203 0.925258 6.17748 0.978426 6.12356C1.03159 6.06963 1.07351 6.00568 1.10175 5.93541C1.12999 5.86514 1.14398 5.78997 1.14291 5.71425C1.14291 4.51118 1.83773 3.39643 3.06812 2.54463C4.2985 1.69282 6.04846 1.14285 8 1.14285C9.95154 1.14285 11.7026 1.69282 12.933 2.54463C14.1634 3.39643 14.8571 4.51118 14.8571 5.71425C14.856 5.78997 14.87 5.86514 14.8982 5.93541C14.9265 6.00568 14.9684 6.06963 15.0216 6.12356C15.0747 6.17748 15.1381 6.2203 15.208 6.24953C15.2778 6.27875 15.3528 6.2938 15.4285 6.2938C15.5042 6.2938 15.5792 6.27875 15.6491 6.24953C15.7189 6.2203 15.7823 6.17748 15.8355 6.12356C15.8886 6.06963 15.9305 6.00568 15.9588 5.93541C15.987 5.86514 16.001 5.78997 15.9999 5.71425C15.9999 4.06819 15.0387 2.61223 13.5837 1.6049C12.1286 0.597573 10.1639 0 8 0Z" fill="#475E69"></path>
+                                                <path d="M7.9997 3.42859C6.42852 3.42859 5.14258 4.71453 5.14258 6.28571C5.14258 7.85689 6.42852 9.14283 7.9997 9.14283C9.57088 9.14283 10.8568 7.85689 10.8568 6.28571C10.8568 4.71453 9.57088 3.42859 7.9997 3.42859ZM7.9997 4.57144C8.95324 4.57144 9.71397 5.33218 9.71397 6.28571C9.71397 7.23925 8.95324 7.99999 7.9997 7.99999C7.04616 7.99999 6.28543 7.23925 6.28543 6.28571C6.28543 5.33218 7.04616 4.57144 7.9997 4.57144Z" fill="#475E69"></path>
+                                            </svg>
+                                            200 lượt xem
+                                        </div>
+                                        <div class="bota_office_skills_small_col">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 2.8C6.90807 2.79998 6.81703 2.81806 6.73209 2.85323C6.64716 2.8884 6.56998 2.93997 6.50497 3.00497C6.43997 3.06998 6.38841 3.14715 6.35324 3.23209C6.31807 3.31703 6.29998 3.40807 6.3 3.5V6.56865L4.59854 7.42485C4.51644 7.46614 4.44328 7.5232 4.38324 7.59277C4.3232 7.66234 4.27744 7.74305 4.24859 7.8303C4.21974 7.91755 4.20836 8.00963 4.21509 8.10128C4.22183 8.19293 4.24655 8.28235 4.28784 8.36445C4.32914 8.44654 4.38619 8.5197 4.45576 8.57975C4.52533 8.63979 4.60604 8.68554 4.69329 8.71439C4.78054 8.74325 4.87262 8.75463 4.96427 8.7479C5.05592 8.74116 5.14534 8.71644 5.22744 8.67515L7.31445 7.62515C7.43039 7.56697 7.52785 7.47768 7.59594 7.36728C7.66402 7.25688 7.70006 7.12971 7.7 7V3.5C7.70002 3.40807 7.68193 3.31703 7.64677 3.23209C7.6116 3.14715 7.56003 3.06998 7.49503 3.00497C7.43002 2.93997 7.35285 2.8884 7.26791 2.85323C7.18297 2.81806 7.09193 2.79998 7 2.8ZM7 0C5.61553 0 4.26215 0.410543 3.11101 1.17971C1.95987 1.94888 1.06266 3.04213 0.532846 4.32121C0.00303299 5.6003 -0.13559 7.00776 0.134506 8.36563C0.404603 9.7235 1.07129 10.9708 2.05026 11.9497C3.02922 12.9287 4.2765 13.5954 5.63437 13.8655C6.99224 14.1356 8.3997 13.997 9.67878 13.4672C10.9579 12.9373 12.0511 12.0401 12.8203 10.889C13.5895 9.73784 14 8.38447 14 7C13.9979 5.14413 13.2597 3.36489 11.9474 2.0526C10.6351 0.740302 8.85586 0.00212317 7 0ZM7 12.6C5.89243 12.6 4.80972 12.2716 3.88881 11.6562C2.96789 11.0409 2.25013 10.1663 1.82628 9.14302C1.40243 8.11976 1.29153 6.99379 1.50761 5.90749C1.72368 4.8212 2.25703 3.82337 3.0402 3.0402C3.82338 2.25703 4.8212 1.72368 5.9075 1.5076C6.99379 1.29153 8.11976 1.40242 9.14303 1.82627C10.1663 2.25012 11.0409 2.96789 11.6562 3.88881C12.2716 4.80972 12.6 5.89242 12.6 7C12.5983 8.48469 12.0078 9.90808 10.9579 10.9579C9.90808 12.0078 8.48469 12.5983 7 12.6Z" fill="#475E69"></path>
+                                            </svg>
+                                            20/10/2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <footer class="bota_footer">
+         <div class="bota_footer_top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-sm-6">
+                     <div class="bota_footer_content">
+                        <div class="bota_footer_logo">
+                           <img src="../imgs/logo-footer.png" width="147" height="53" class="img-fluid" alt="logo" />
+                        </div>
+                        <h3>CÔNG TY CỔ PHẦN CÔNG NGHỆ BOTA</h3>
+                        <ul>
+                           <li>
+                              <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.2764 0.930496C5.30336 -0.212052 7.79483 -0.192078 9.80277 0.982803C11.791 2.18162 12.9994 4.32117 12.9881 6.6227C12.9418 8.90915 11.6461 11.0584 10.0264 12.7199C9.09162 13.6832 8.04586 14.5349 6.91053 15.2578C6.7936 15.3234 6.66552 15.3673 6.53261 15.3874C6.40469 15.3821 6.28011 15.3454 6.17012 15.2807C4.43681 14.1945 2.91617 12.808 1.68136 11.188C0.648103 9.83563 0.0610779 8.20181 1.07778e-06 6.50838C-0.00134027 4.20242 1.24944 2.07304 3.2764 0.930496ZM4.45155 7.46287C4.79251 8.27832 5.59732 8.81023 6.49019 8.81023C7.07512 8.8143 7.6374 8.58701 8.05175 8.179C8.4661 7.77098 8.69808 7.21614 8.696 6.63811C8.69912 5.7558 8.16368 4.95865 7.33967 4.61887C6.51567 4.27908 5.56565 4.46368 4.93319 5.08649C4.30073 5.70927 4.11059 6.64741 4.45155 7.46287Z" fill="white"/>
+                                 <ellipse opacity="0.4" cx="6.49096" cy="17.1876" rx="4.63866" ry="0.9" fill="white"/>
+                              </svg>
+                              <span>Tầng 8 TTTM Vân Hồ, Số 51 Lê Đại Hành, Hai Bà Trưng, Hà Nội</span>
+                           </li>
+                           <li>
+                              <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path opacity="0.4" d="M21.5129 13.028C21.5129 15.818 19.1116 18.078 16.1206 18.088H16.1098H5.48585C2.50557 18.088 0.0720215 15.838 0.0720215 13.048V13.038C0.0720215 13.038 0.0784538 8.61201 0.0870301 6.38601C0.0881022 5.96801 0.602684 5.73401 0.953243 5.99401C3.50042 7.87901 8.05555 11.316 8.11237 11.361C8.87352 11.93 9.83836 12.251 10.8246 12.251C11.8109 12.251 12.7758 11.93 13.5369 11.35C13.5937 11.315 18.047 7.98101 20.6328 6.06501C20.9844 5.80401 21.5012 6.03801 21.5022 6.45501C21.5129 8.66401 21.5129 13.028 21.5129 13.028Z" fill="white"/>
+                                 <path d="M20.9479 2.7614C20.0195 1.1294 18.1928 0.0874023 16.1816 0.0874023H5.48258C3.47142 0.0874023 1.64465 1.1294 0.716259 2.7614C0.508283 3.1264 0.606911 3.5814 0.953182 3.8394L8.91312 9.7784C9.47059 10.1984 10.146 10.4074 10.8214 10.4074C10.8257 10.4074 10.8289 10.4074 10.8321 10.4074C10.8353 10.4074 10.8396 10.4074 10.8428 10.4074C11.5182 10.4074 12.1936 10.1984 12.751 9.7784L20.711 3.8394C21.0573 3.5814 21.1559 3.1264 20.9479 2.7614Z" fill="white"/>
+                              </svg>
+                              <span>Email: contact@bota.com.vn</span>
+                           </li>
+                           <li>
+                              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path opacity="0.4" d="M11.9817 3.22823C11.5223 3.14909 11.1005 3.4225 11.0131 3.84071C10.9256 4.25893 11.2197 4.66725 11.6665 4.74909C13.0117 4.99372 14.0504 5.96506 14.3137 7.22419V7.22509C14.3887 7.58754 14.7307 7.85106 15.1247 7.85106C15.1776 7.85106 15.2304 7.84656 15.2842 7.83757C15.731 7.75393 16.0251 7.34651 15.9376 6.92739C15.5446 5.04679 13.9928 3.59428 11.9817 3.22823Z" fill="white"/>
+                                 <path opacity="0.4" d="M11.9252 0.0945391C11.71 0.0657589 11.4938 0.125118 11.3218 0.25283C11.145 0.382341 11.0345 0.569413 11.0105 0.778969C10.9595 1.20258 11.2872 1.58572 11.7407 1.63338C14.8684 1.95896 17.2995 4.2317 17.6512 7.15829C17.6982 7.55042 18.0509 7.84632 18.4718 7.84632C18.5035 7.84632 18.5342 7.84452 18.5659 7.84092C18.786 7.81843 18.982 7.7168 19.1204 7.55492C19.2578 7.39303 19.3202 7.19157 19.2952 6.98561C18.8571 3.33411 15.8274 0.500161 11.9252 0.0945391Z" fill="white"/>
+                                 <path d="M15.056 11.4937C14.4305 11.3696 13.9356 11.6394 13.4975 11.875C13.0487 12.1178 12.1945 12.7609 11.7064 12.5954C9.20231 11.6385 6.84718 9.60137 5.82768 7.26657C5.64799 6.80159 6.33695 6.00384 6.59543 5.58293C6.84814 5.17461 7.13256 4.70963 7.00284 4.12503C6.88562 3.59889 5.36934 1.80642 4.83316 1.31626C4.47859 0.992479 4.1173 0.814401 3.74544 0.784721C2.34735 0.729859 0.785904 2.46297 0.512051 2.87758C-0.174983 3.76168 -0.170179 4.93807 0.523582 6.36449C2.19553 10.1959 8.51912 15.978 12.6586 17.5897C13.4216 17.9216 14.1211 18.0879 14.7486 18.0879C15.3626 18.0879 15.9093 17.9287 16.3792 17.6131C16.7328 17.4233 18.6757 15.9006 18.6238 14.5669C18.594 14.2269 18.4028 13.8869 18.0588 13.5577C17.5342 13.055 15.6182 11.6043 15.056 11.4937Z" fill="white"/>
+                              </svg>
+                              <span>
+                                 <p>
+                                    Hỗ trợ: 1900 2008
+                                 </p>
+                                 <p>
+                                    Hotline: 0988 512 772
+                                 </p>
+                              </span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-sm-12">
+                     <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-sm-6">
+                           <h4 class="bota_footer_title">
+                              Nhà tuyển dụng
+                           </h4>
+                           <div class="bota_footer_link">
+                              <ul>
+                                 <li>
+                                    <a href="#" title="Đăng tin tuyển dụng">Đăng tin tuyển dụng</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Tìm kiếm ứng viên">Tìm kiếm ứng viên</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Quản lý tuyển dụng">Quản lý tuyển dụng</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Quản lý ứng viên">Quản lý ứng viên</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-sm-6">
+                           <h4 class="bota_footer_title">
+                              Ứng viên
+                           </h4>
+                           <div class="bota_footer_link">
+                              <ul>
+                                 <li>
+                                    <a href="#" title="Mẫu CV">Mẫu CV</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Việc làm hấp dẫn">Việc làm hấp dẫn</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Việc làm theo ngành nghề">Việc làm theo ngành nghề</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Review công ty">Review công ty</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Góc nghề nghiệp">Góc nghề nghiệp</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-sm-6">
+                           <h4 class="bota_footer_title">
+                              Liên hệ
+                           </h4>
+                           <div class="bota_footer_link">
+                              <ul>
+                                 <li>
+                                    <a href="#" title="Về chúng tôi">Về chúng tôi</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="Kết nối với chúng tôi">Kết nối với chúng tôi</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="bota_corner_socails">
+                              <ul>
+                                 <li>
+                                    <a href="https://www.facebook.com/" title="facebook">
+                                       <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M12.5 0.0874023C5.60753 0.0874023 0 5.69493 0 12.5874C0 19.4794 5.60753 25.0874 12.5 25.0874C19.392 25.0874 25 19.4794 25 12.5874C25 5.69493 19.393 0.0874023 12.5 0.0874023ZM15.6086 13.0275H13.575V20.2759H10.5615C10.5615 20.2759 10.5615 16.3153 10.5615 13.0275H9.12904V10.4656H10.5615V8.8086C10.5615 7.62184 11.1254 5.76743 13.6027 5.76743L15.8357 5.77599V8.2628C15.8357 8.2628 14.4788 8.2628 14.2149 8.2628C13.9511 8.2628 13.576 8.39472 13.576 8.96066V10.4661H15.872L15.6086 13.0275Z" fill="white"/>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="skype">
+                                       <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M13.8885 11.6969L12.1696 11.3154C11.5158 11.1664 10.7631 10.9696 10.7631 10.3531C10.7631 9.73534 11.2911 9.3037 12.2442 9.3037C14.1651 9.3037 13.9896 10.6238 14.9433 10.6238C15.4451 10.6238 15.8844 10.3287 15.8844 9.82136C15.8844 8.63747 13.9896 7.74902 12.3823 7.74902C10.6375 7.74902 8.77931 8.49003 8.77931 10.4636C8.77931 11.414 9.11882 12.4251 10.9892 12.8941L13.3116 13.4739C14.0144 13.6471 14.1903 14.0425 14.1903 14.3992C14.1903 14.9924 13.6011 15.5718 12.5337 15.5718C10.4488 15.5718 10.7382 13.9674 9.62083 13.9674C9.11882 13.9674 8.75452 14.3132 8.75452 14.8066C8.75452 15.7687 9.92258 17.0525 12.5337 17.0525C15.0181 17.0525 16.2491 15.8551 16.2491 14.2514C16.2491 13.2159 15.7717 12.1165 13.8885 11.6969Z" fill="white"/>
+                                          <path d="M12.5 0.0874023C5.5975 0.0874023 0 5.6849 0 12.5874C0 19.4899 5.5975 25.0874 12.5 25.0874C19.4025 25.0874 25 19.4899 25 12.5874C25 5.6849 19.4025 0.0874023 12.5 0.0874023ZM19.0081 19.077C18.1862 19.8992 17.094 20.3511 15.9321 20.3511C15.1794 20.3511 14.4424 20.1554 13.7915 19.7871C13.369 19.862 12.9362 19.9015 12.5044 19.9015C11.5122 19.9015 10.5494 19.707 9.64355 19.323C8.7677 18.9538 7.98206 18.4233 7.30667 17.7483C6.63204 17.0735 6.10218 16.2878 5.73235 15.4124C5.34859 14.506 5.15442 13.5437 5.15442 12.5514C5.15442 12.1264 5.19257 11.7009 5.26505 11.2845C4.9078 10.6419 4.71764 9.91483 4.71764 9.17496C4.71764 8.01282 5.17044 6.9201 5.99194 6.09841C6.81381 5.27634 7.90653 4.82373 9.06868 4.82373C9.7805 4.82373 10.4839 5.0013 11.1092 5.33376C11.1103 5.33356 11.1116 5.33356 11.1126 5.33318C11.5685 5.24583 12.0367 5.20177 12.5044 5.20177C13.4964 5.20177 14.459 5.39613 15.3648 5.77931C16.2397 6.14953 17.0263 6.67939 17.7008 7.35421C18.3762 8.02922 18.9058 8.81524 19.276 9.69052C19.6598 10.5967 19.854 11.5592 19.854 12.5514C19.854 12.9986 19.8118 13.4463 19.7315 13.8836C20.0912 14.5287 20.2826 15.2583 20.2826 16.0006C20.2824 17.1628 19.8301 18.2557 19.0081 19.077Z" fill="white"/>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://twitter.com/" title="twitter">
+                                       <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M12.5 0.0874023C5.60753 0.0874023 0 5.69493 0 12.5874C0 19.4794 5.60753 25.0874 12.5 25.0874C19.392 25.0874 25 19.4794 25 12.5874C25 5.69493 19.393 0.0874023 12.5 0.0874023ZM18.0763 9.72649C18.0818 9.85035 18.0849 9.97522 18.0849 10.1001C18.0849 13.9021 15.1917 18.2846 9.89839 18.2846C8.27358 18.2846 6.76106 17.8097 5.4882 16.9931C5.71326 17.0198 5.94236 17.0333 6.17447 17.0333C7.52286 17.0333 8.76299 16.5731 9.74784 15.8018C8.48908 15.7786 7.42619 14.9468 7.06014 13.8034C7.23536 13.8366 7.41612 13.8552 7.6009 13.8552C7.86323 13.8552 8.118 13.821 8.35918 13.755C7.04302 13.4912 6.05162 12.3286 6.05162 10.9339C6.05162 10.9218 6.05162 10.9092 6.05212 10.8976C6.43982 11.1126 6.88341 11.2425 7.35469 11.2571C6.58332 10.7421 6.07528 9.86093 6.07528 8.86298C6.07528 8.33531 6.21677 7.84087 6.46449 7.41591C7.88286 9.15703 10.0036 10.302 12.3943 10.4228C12.3449 10.2119 12.3202 9.99284 12.3202 9.76677C12.3202 8.17821 13.6082 6.88975 15.1968 6.88975C16.0245 6.88975 16.7712 7.23918 17.2969 7.79807C17.953 7.66917 18.5672 7.43051 19.1246 7.09971C18.9081 7.77189 18.4534 8.33531 17.8578 8.69179C18.4403 8.6223 18.9962 8.46823 19.5103 8.23914C19.1266 8.81515 18.6387 9.32218 18.0763 9.72649Z" fill="white"/>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="https://www.youtube.com/" title="youtube">
+                                       <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M10.9414 14.9293L15.0075 12.5874L10.9414 10.2456V14.9293Z" fill="white"/>
+                                          <path d="M12.5 0.0874023C5.5975 0.0874023 0 5.6849 0 12.5874C0 19.4899 5.5975 25.0874 12.5 25.0874C19.4025 25.0874 25 19.4899 25 12.5874C25 5.6849 19.4025 0.0874023 12.5 0.0874023ZM20.3106 12.6002C20.3106 12.6002 20.3106 15.1352 19.989 16.3577C19.8088 17.0268 19.2812 17.5543 18.6121 17.7344C17.3897 18.0562 12.5 18.0562 12.5 18.0562C12.5 18.0562 7.6231 18.0562 6.3879 17.7216C5.7188 17.5415 5.19123 17.0138 5.01099 16.3447C4.68922 15.1352 4.68922 12.5874 4.68922 12.5874C4.68922 12.5874 4.68922 10.0525 5.01099 8.83012C5.19104 8.16102 5.73158 7.62048 6.3879 7.44042C7.61032 7.11865 12.5 7.11865 12.5 7.11865C12.5 7.11865 17.3897 7.11865 18.6121 7.4532C19.2812 7.63326 19.8088 8.16102 19.989 8.83012C20.3236 10.0525 20.3106 12.6002 20.3106 12.6002Z" fill="white"/>
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright text-center">Thiết kế bởi <a rel="nofollow" href="https://bota.vn" target="_blank" title="Bota">Bota</a></div>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+      <script>
+         $(document).ready(function() {AOS.init();});
+      </script> 
+   </body>
+</html>

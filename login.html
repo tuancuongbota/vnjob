@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng nhập</title>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/js_custom.js"></script>
+
+<body>
+    <div class="bota_login_background"></div>
+        <div class="bota_login_body">
+            <div class="bota_login_logo">
+                <a href="index.html" title="logo">
+                    <img src="imgs/logo-footer.png" alt="logo" class="img-fluid" width="147" height="53" />
+                </a>
+            </div>
+            <div class="bota_login_body_box">
+                <div id="login">
+                    <div class="bota_login_bg">
+                    <h1>ĐĂNG NHẬP</h1>
+                    <div class="bota_login_des">
+                        Chưa có tài khoản? <a href="#" onclick="showRegisterForm();return false;" title="Đăng ký tại đây">Đăng ký tại đây</a>
+                    </div>
+                    <form accept-charset="utf-8" action="login.html" id="customer_login" method="post">
+                        <div class="form-signup clearfix">
+                            <fieldset class="form-group">
+                                <label>Email <span class="required">*</span></label>
+                                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" class="form-control " value="" name="email" id="customer_email" placeholder="example@gmail.com" Required>
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label>Mật khẩu <span class="required">*</span> <div class="bota_forgot"><a href="#" onclick="showRecoverPasswordForm();return false;" title="Quên mật khẩu?">Quên mật khẩu?</a></div></label>
+                                <div class="bota_form_group_password">
+                                    <input type="password" class="form-control " value="" name="password" id="customer_password" placeholder="********" Required>
+                                    <i class="btn-showpassword icon-eye-slash" id="togglePassword"></i>
+                                </div>
+                            </fieldset>
+                            <div class="bota_login_btn">
+                                <button class="btn-login"  type="submit" value="Đăng nhập">Đăng nhập</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="bota_login_secondary"><span></span></div>
+                    <div class="bota_social_login">
+                        <a href="#" title="Đăng nhập với Google">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109" fill="#4285F4"/>
+                            <path d="M16.2863 30C20.1434 30 23.3814 28.7555 25.7466 26.6089L21.2386 23.1865C20.0323 24.011 18.4132 24.5866 16.2863 24.5866C12.5086 24.5866 9.30225 22.1444 8.15929 18.7688L7.99176 18.7827L3.58208 22.1272L3.52441 22.2843C5.87359 26.8577 10.699 30 16.2863 30Z" fill="#34A853"/>
+                            <path d="M8.16013 18.769C7.85855 17.8979 7.68401 16.9645 7.68401 16.0001C7.68401 15.0356 7.85855 14.1023 8.14426 13.2312L8.13627 13.0456L3.67132 9.64746L3.52524 9.71556C2.55703 11.6134 2.00146 13.7445 2.00146 16.0001C2.00146 18.2556 2.55703 20.3867 3.52524 22.2845L8.16013 18.769" fill="#FBBC05"/>
+                            <path d="M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133" fill="#EB4335"/>
+                        </svg>
+                            Đăng nhập với Google
+                        </a>
+                        <a href="#" title="Đăng nhập với Facebook">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18" r="15.75" fill="url(#paint0_linear_226:348)"/>
+                            <path d="M23.8654 22.8167L24.565 18.3714H20.1884V15.4879C20.1884 14.2714 20.7986 13.085 22.7589 13.085H24.75V9.30036C24.75 9.30036 22.9438 9 21.2178 9C17.6117 9 15.2569 11.1296 15.2569 14.9833V18.3714H11.25V22.8167H15.2569V33.5638C16.0613 33.6869 16.8843 33.75 17.7226 33.75C18.561 33.75 19.3839 33.6869 20.1884 33.5638V22.8167H23.8654Z" fill="white"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_226:348" x1="18" y1="2.25" x2="18" y2="33.6566" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#18ACFE"/>
+                            <stop offset="1" stop-color="#0163E0"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                            Đăng nhập với Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="recover-password" style="display:none;" class="bota_forgot_bg">
+                <div class="bota_login_bg">
+                    <h1>QUÊN MẬT KHẨU</h1>
+                    <div class="bota_login_des">
+                        Đừng lo lắng! Hãy nhập email dùng để đăng ký tài khoản, chúng tôi sẽ giúp bạn lấy lại mật khẩu.
+                    </div>
+                    <form accept-charset="utf-8" action="" id="recover_customer_password" method="post">
+                        <div class="form-signup clearfix">
+                            <fieldset class="form-group">
+                                <label>Email đăng ký <span class="required">*</span></label>
+                                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" class="form-control " value="" name="email" id="customer_email" placeholder="example@gmail.com" Required>
+                            </fieldset>
+                            <div class="bota_login_btn">
+                                <button class="btn-login" type="submit" value="Gửi mã xác nhận">Gửi mã xác nhận</button>
+                            </div>
+                            <div class="bota_login_forgot_des">
+                                Chưa có tài khoản? <a href="#" onclick="showRegisterForm();return false;" title="Đăng ký tại đây">Đăng ký tại đây</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+             </div>
+            <div id="register" style="display:none;" class="bota_register_bg">
+                <div class="bota_login_bg">
+                    <h1>ĐĂNG KÝ</h1>
+                <div class="bota_login_des">
+                    Đã có tài khoản? <a href="#" onclick="hideRegisterForm();return false;" title="Đăng nhập ngay">Đăng nhập ngay</a>
+                </div>
+                <form accept-charset="utf-8" action="login.html" id="customer_register" method="post">
+                    <div class="form-signup clearfix">
+                        <fieldset class="form-group">
+                            <label>Họ tên <span class="required">*</span></label>
+                            <input type="text" class="form-control form-control-lg" value="" name="fullname" id="fullname"  placeholder="Nguyễn Văn A" required >
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" class="form-control form-control-lg" value="" name="email" id="email"  placeholder="example@gmail.com" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label>Mật khẩu <span class="required">*</span></label>
+                            <div class="bota_form_group_password">
+                                <input type="password" class="form-control " value="" name="password" id="password" placeholder="********" Required>
+                                <i class="btn-showpassword icon-eye-slash" id="togglePasswords"></i>
+                            </div>
+                        </fieldset>
+                        <div class="bota_rules_type">
+                            <label class="custom-checkbox" for="rules_type">
+                                <input type="checkbox" id="rules_type">
+                                <i class="icon-rules"></i>
+                                Tôi đồng ý với <a href="#" title="Điều khoản hoạt động">Điều khoản hoạt động</a> và <a href="#" title="Chính sách bảo mật">Chính sách bảo mật thông tin</a> của Vnjob
+                            </label>
+                        </div>
+                        <div class="bota_login_btn">
+                            <button class="btn-login"  type="submit" value="Đăng ký">Đăng ký</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="bota_social_login">
+                    <a href="#" title="Đăng nhập với Google">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109" fill="#4285F4"/>
+                        <path d="M16.2863 30C20.1434 30 23.3814 28.7555 25.7466 26.6089L21.2386 23.1865C20.0323 24.011 18.4132 24.5866 16.2863 24.5866C12.5086 24.5866 9.30225 22.1444 8.15929 18.7688L7.99176 18.7827L3.58208 22.1272L3.52441 22.2843C5.87359 26.8577 10.699 30 16.2863 30Z" fill="#34A853"/>
+                        <path d="M8.16013 18.769C7.85855 17.8979 7.68401 16.9645 7.68401 16.0001C7.68401 15.0356 7.85855 14.1023 8.14426 13.2312L8.13627 13.0456L3.67132 9.64746L3.52524 9.71556C2.55703 11.6134 2.00146 13.7445 2.00146 16.0001C2.00146 18.2556 2.55703 20.3867 3.52524 22.2845L8.16013 18.769" fill="#FBBC05"/>
+                        <path d="M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133" fill="#EB4335"/>
+                    </svg>
+                        Đăng nhập với Google
+                    </a>
+                    <a href="#" title="Đăng nhập với Facebook">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="15.75" fill="url(#paint0_linear_225:348)"/>
+                        <path d="M23.8654 22.8167L24.565 18.3714H20.1884V15.4879C20.1884 14.2714 20.7986 13.085 22.7589 13.085H24.75V9.30036C24.75 9.30036 22.9438 9 21.2178 9C17.6117 9 15.2569 11.1296 15.2569 14.9833V18.3714H11.25V22.8167H15.2569V33.5638C16.0613 33.6869 16.8843 33.75 17.7226 33.75C18.561 33.75 19.3839 33.6869 20.1884 33.5638V22.8167H23.8654Z" fill="white"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_225:348" x1="18" y1="2.25" x2="18" y2="33.6566" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#18ACFE"/>
+                        <stop offset="1" stop-color="#0163E0"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                        Đăng nhập với Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+        <script type="text/javascript">
+            function showRecoverPasswordForm() {
+                document.getElementById('recover-password').style.display = 'block';
+                document.getElementById('login').style.display='none';
+            }
+        
+            function hideRecoverPasswordForm() {
+                document.getElementById('recover-password').style.display = 'none';
+                document.getElementById('login').style.display = 'block';
+            }
+            function showRegisterForm() {
+                document.getElementById('register').style.display = 'block';
+                document.getElementById('login').style.display='none';
+                document.getElementById('recover-password').style.display='none';
+            }
+        
+            function hideRegisterForm() {
+                document.getElementById('register').style.display = 'none';
+                document.getElementById('login').style.display = 'block';
+            }
+        
+            if (window.location.hash == '#recover') { showRecoverPasswordForm() }
+            // form đăng nhập
+            const togglePassword = document.querySelector('#togglePassword');
+            const password = document.querySelector('#customer_password');
+            togglePassword.addEventListener('click', function (e) {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.classList.toggle('icon-eye');
+            });
+            // form đăng ky
+            const togglePasswords = document.querySelector('#togglePasswords');
+            const passwords = document.querySelector('#password');
+            togglePasswords.addEventListener('click', function (e) {
+                const type = passwords.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwords.setAttribute('type', type);
+                this.classList.toggle('icon-eye');
+            });
+            
+        </script>
+</body>
+</html>
