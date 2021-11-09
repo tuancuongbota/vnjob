@@ -22,7 +22,7 @@
         position: relative;
         > a {
           font-style: normal;
-          font-weight: normal;
+          font-weight: 300;
           font-size: 14px;
           line-height: 19px;
           color: #fff;
@@ -47,7 +47,7 @@
           margin-left: 32px;
         }
   
-        &:hover > a:before {
+        &:hover > a:before,&.active > a:before {
           opacity: 1;
           visibility: visible;
         }
@@ -183,7 +183,7 @@
       color: #fff;
       font-size: 14px;
       font-style: normal;
-        font-weight: normal;
+        font-weight: 300;
       &::-webkit-input-placeholder {
         color: #fff;
     }
@@ -237,7 +237,7 @@
   
     .bota_career_dess {
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
       color: #fff;
@@ -254,11 +254,20 @@
       border-radius: 3px;
       display: inline-block;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 14px;
       line-height: 16px;
       color: #22343D;
       padding: 4px 9px;
+      &:hover{
+        background-color: #02897A;
+        color: #fff;
+        svg{
+          path{
+            fill: #fff;;
+          }
+        }
+      }
     }
   }
   .bota_career_contents .custom_paging {
@@ -267,7 +276,7 @@
     left: 10.5%;
     display: flex;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
     color: #fff;
   
@@ -283,7 +292,7 @@
     }
       span {
         font-style: normal;
-        font-weight: normal;
+        font-weight: 300;
         font-size: 12px;
         color: rgba(255, 255, 255, 0.5);
       }
@@ -402,9 +411,12 @@
       color: #fff;
       .bota_career_bottom_col {
           font-style: normal;
-          font-weight: normal;
+          font-weight: 300;
           font-size: 12px;
           line-height: 20px;
+          svg{
+            margin-right: 7px;
+          }
       }
     }
   }
@@ -478,7 +490,7 @@
   
   .bota_office_skills_it_des {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
     color: #fff;
     margin-top: 40px;
@@ -507,7 +519,7 @@
   }
   .bota_office_skills_it_anthor {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 13px;
     color: #fff;
     margin-bottom: 26px;
@@ -560,9 +572,12 @@
       align-items: center;
       justify-content: space-between;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 300;
       font-size: 13px;
       color: #475E69;
+      svg{
+        margin-right: 7px;
+      }
     }
 
     .bota_office_skills_small_name {
@@ -597,7 +612,7 @@
     li {
       a {
         font-style: normal;
-        font-weight: normal;
+        font-weight: 300;
         font-size: 15px;
         line-height: 19px;
         color: #22343D;
@@ -678,7 +693,7 @@
   .bota_career_page_view {
     text-align: right;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 13px;
     line-height: 21px;
     color: #22343D;
@@ -746,7 +761,7 @@
 
   p {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
     line-height: 24px;
     color: #22343D;
@@ -811,7 +826,7 @@
   label {
     margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
     line-height: 24px;
     color: #475E69;
@@ -837,4 +852,275 @@
 
 .bota_details_career_related_title {
   margin-bottom: 30px;
+}
+.bota_career_category_page {
+  position: relative;
+
+  .bota_career_conts {
+    .bota_career_names, .bota_career_dess {
+      max-width: 485px;
+      -webkit-line-clamp: 3;
+      
+    }
+    .bota_career_dess {
+      line-height: 27px;
+    }
+    .bota_career_bottom_toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      left: 0;
+      right: 0;
+      color: #fff;
+      max-width: 485px;
+      .bota_career_bottom_col {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 20px;
+          svg{
+            margin-right: 7px;
+          }
+      }
+    }
+  }
+}
+.bota_block_career_right {
+  background: rgba(0, 0, 0, 0.15);
+  width: 316px;
+  height: 434px;
+  padding: 14px 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 11%;
+  max-height: 431px;
+  overflow-y: auto;
+
+  .bota_block_career_right_title h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  .bota_block_career_right_cont .bota_block_career_right_it {
+    + .bota_block_career_right_it {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      padding-top: 40px;
+      margin-top: 10px;
+    }
+
+    .bota_block_career_right_name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 17px;
+    }
+
+    .bota_block_career_right_time {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      color: #fff;
+      svg{
+        margin-right: 7px;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+
+    .bota_block_career_right_name:hover a {
+      color: #02897A;
+    }
+  }
+  
+}
+.bota_block_career_right {
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #00544B;
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: #fff;
+    width: 3px;
+  }
+}
+.bota_career_category_pages {
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+
+.bota_career_cate_page_it {
+  position: relative;
+
+  + .bota_career_cate_page_it {
+    margin-top: 30px;
+  }
+}
+
+.bota_career_cate_page_img {
+  width: 246px;
+  height: 188px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.bota_career_cate_page_it .bota_career_cate_page_cont {
+  float: left;
+  width: calc(100% - 262px);
+  position: relative;
+  margin-left: 16px;
+  height: 100%;
+}
+
+.bota_career_cate_page_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bota_career_cate_page_it {
+  .bota_career_cate_page_cont {
+    .bota_career_cate_page_name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      min-height: 60px;
+
+      a {
+        color: #22343D;
+      }
+    }
+
+    .bota_career_cate_page_des {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      color: #959595;
+      line-height: 25px;
+      margin-bottom: 22px;
+      text-align: justify;
+      min-height: 63px;
+    }
+
+    .bota_career_cate_page_tool {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      color: #475E69;
+      line-height: 21px;
+
+      .bota_career_cate_tool_it {
+        margin-right: 16px;
+        display: inline;
+        svg{
+          margin-right: 7px;
+        }
+
+        &:last-child {
+          float: right;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .bota_career_cate_page_cont .bota_career_cate_page_name a:hover {
+    color: #02897A;
+  }
+}
+.bota_block_news_viewed {
+  position: relative;
+}
+
+.bota_block_news_stitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: #333333;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 9px;
+  margin-bottom: 20px;
+}
+
+.bota_block_news_sit {
+  position: relative;
+  border-bottom:  1px solid #E0E0E0;
+  margin-bottom: 31px;
+  padding-bottom: 20px;
+  .bota_block_news_simg {
+    position: relative;
+    height: 174px;
+    overflow: hidden;
+    margin-bottom: 18px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .bota_block_news_sconts {
+    .bota_block_news_sname {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #22343D;
+      line-height: 26px;
+      margin-bottom: 15px;
+
+      a {
+        color: #22343D;
+      }
+
+      &:hover a {
+        color: #02897A;
+      }
+    }
+
+    .bota_block_news_stool {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      color: #475E69;
+
+      svg {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+.bota_block_advs_right {
+  position: relative;
+
+  .bota_blokc_ads_right_it + .bota_blokc_ads_right_it {
+    margin-top: 71px;
+  }
 }

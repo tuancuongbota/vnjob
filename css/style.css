@@ -3242,14 +3242,14 @@ form { margin: 0; }
 .bota_footer .bota_footer_content ul li span p { margin: 0; }
 .bota_footer .bota_footer_title { font-style: normal; font-weight: bold; font-size: 17px; line-height: 30px; color: #fff; position: relative; padding-bottom: 4px; margin-bottom: 13px; }
 .bota_footer .bota_footer_title:after { content: ""; background: #fff; width: 67px; height: 1px; position: absolute; bottom: 0; left: 0; }
-.bota_footer .bota_footer_link ul li a { font-style: normal; font-weight: normal; font-size: 15px; line-height: 35px; color: #fff; }
+.bota_footer .bota_footer_link ul li a { font-style: normal; font-weight: 300; font-size: 15px; line-height: 35px; color: #fff; }
 .bota_footer .bota_footer_link ul li a:hover { opacity: .7; }
 .bota_footer .bota_corner_socails { margin-top: 10px; }
 .bota_footer .bota_corner_socails ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .bota_footer .bota_corner_socails ul li + li { margin-left: 15px; }
 .bota_footer .bota_corner_socails ul li svg { -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; }
 .bota_footer .bota_corner_socails ul li:hover svg { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
-.bota_footer .copyright { background: #00453E; color: #fff; font-style: normal; font-weight: normal; font-size: 14px; line-height: 20px; padding: 13px 0; }
+.bota_footer .copyright { background: #00453E; color: #fff; font-style: normal; font-weight: 300; font-size: 14px; line-height: 20px; padding: 13px 0; }
 .bota_footer .copyright a { color: #fff; text-transform: uppercase; font-weight: bold; }
 
 html { margin: 0px; height: 100%; width: 100%; }
@@ -3283,20 +3283,20 @@ ul { padding: 0; margin: 0; }
 .bota_main_search .container { background: rgba(0, 0, 0, 0.6); border-radius: 5px; padding: 14px; max-width: 847px; }
 .bota_main_search .bota_search { position: relative; }
 .bota_main_search .bota_search .bota_search_input { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.bota_main_search .bota_search .bota_search_input input { background: #FFFFFF; border-top-left-radius: 5px; width: 100%; font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; padding: 0 24px; border: none; -webkit-box-shadow: unset !important; box-shadow: unset !important; outline: none; height: 50px; border-bottom-left-radius: 5px; }
+.bota_main_search .bota_search .bota_search_input input { background: #FFFFFF; border-top-left-radius: 5px; width: 100%; font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; padding: 0 24px; border: none; -webkit-box-shadow: unset !important; box-shadow: unset !important; outline: none; height: 50px; border-bottom-left-radius: 5px; }
 .bota_main_search .bota_search .bota_search_input .bota_search_btn { background: #02897A; border-radius: 0px 5px 5px 0px; text-align: center; line-height: 45px; cursor: pointer; padding: 0 20px; }
 .bota_main_search .bota_search_toolbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .bota_main_search .bota_search_toolbar .bota_search_toolbar_it { -ms-flex: 0 0 24%; -webkit-box-flex: 0; flex: 0 0 24%; max-width: 24%; position: relative; width: 100%; }
 .bota_main_search .bota_search_toolbar .bota_search_toolbar_it .icon-address { position: absolute; left: 25px; top: 7px; z-index: 10; }
 .bota_main_search .bota_search_toolbar .bota_search_toolbar_it:nth-child(1) .icon-address { left: 10px; }
-.bota_main_search .bota_search_toolbar .bota_search_toolbar_it select { background: rgba(0, 0, 0, 0.6); border-radius: 5px; color: #fff; font-style: normal; font-weight: normal; font-size: 14px; width: 100%; height: 35px; padding: 0 9px; outline: none; padding-left: 36px; background-image: url(../imgs/down.svg); -webkit-appearance: none; -moz-appearance: none; appearance: none; background-repeat: no-repeat; background-size: 10px; background-position: 97% !important; }
+.bota_main_search .bota_search_toolbar .bota_search_toolbar_it select { background: rgba(0, 0, 0, 0.6); border-radius: 5px; color: #fff; font-style: normal; font-weight: 300; font-size: 14px; width: 100%; height: 35px; padding: 0 9px; outline: none; padding-left: 36px; background-image: url(../imgs/down.svg); -webkit-appearance: none; -moz-appearance: none; appearance: none; background-repeat: no-repeat; background-size: 10px; background-position: 97% !important; }
 .bota_main_search .bota_search_toolbar .bota_search_toolbar_it + .bota_search_toolbar_it, .bota_main_search .bota_search_toolbar .bota_search_toolbar_it + .bota_search_toolbar_btn { padding-left: 15px; }
 .bota_main_search .bota_search_toolbar .bota_search_toolbar_btn { cursor: pointer; }
 
 .bota_recruit_home { position: relative; margin-top: 49px; text-align: center; background-image: url(../imgs/bg_recruit.png); background-repeat: no-repeat; background-position: center bottom; background-size: 100%; padding-bottom: 0; min-height: 728px; margin-bottom: 0; }
 .bota_recruit_home .bota_recruit_title { position: relative; }
 .bota_recruit_home .bota_recruit_title h2 { font-style: normal; font-weight: bold; font-size: 30px; line-height: 60px; color: #22343D; margin: 0; margin-bottom: 2px; }
-.bota_recruit_home .bota_recruit_title .bota_recruit_home_des { font-style: normal; font-weight: normal; font-size: 16px; line-height: 27px; color: #475E69; }
+.bota_recruit_home .bota_recruit_title .bota_recruit_home_des { font-style: normal; font-weight: 300; font-size: 16px; line-height: 27px; color: #475E69; }
 .bota_recruit_home .bota_recruit_it { background: #FFFFFF; border: 1px solid #E0E0E0; border-radius: 8px; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; margin-top: 40px; }
 .bota_recruit_home .bota_recruit_it:hover { background: #FFFFFF; border: 1px solid #02897A; -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); border-radius: 8px; cursor: pointer; -webkit-transform: translateY(-15px); transform: translateY(-15px); }
 .bota_recruit_home .bota_recruit_it .bota_recruit_it_img { height: 185px; overflow: hidden; position: relative; border-bottom: 1px solid #E0E0E0; margin: 0 20px; }
@@ -3304,7 +3304,7 @@ ul { padding: 0; margin: 0; }
 .bota_recruit_home .bota_recruit_it .bota_recruit_it_cont { padding: 21px 20px 26px; position: relative; text-align: left; }
 .bota_recruit_home .bota_recruit_it .bota_recruit_it_cont .bota_recruit_it_name { font-style: normal; font-weight: 500; font-size: 18px; color: #22343D; margin: 0; margin-bottom: 17px; line-height: 30px; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; }
 .bota_recruit_home .bota_recruit_it .bota_recruit_it_cont .bota_recruit_it_name a { color: #22343D; }
-.bota_recruit_home .bota_recruit_it .bota_recruit_it_des { font-style: normal; font-weight: normal; font-size: 14px; line-height: 24px; color: #475E69; margin-bottom: 33px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
+.bota_recruit_home .bota_recruit_it .bota_recruit_it_des { font-style: normal; font-weight: 300; font-size: 14px; line-height: 24px; color: #475E69; margin-bottom: 33px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
 .bota_recruit_home .bota_recruit_it .bota_recruit_it_btn { text-align: center; }
 .bota_recruit_home .bota_recruit_it .bota_recruit_it_btn a { background: #FFFFFF; border: 1px solid #02897A; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; display: inline-block; color: #02897A; font-style: normal; font-weight: 500; font-size: 16px; line-height: 18px; padding: 8px 18px; }
 .bota_recruit_home .bota_recruit_content { position: relative; padding-bottom: 33px; }
@@ -3332,15 +3332,15 @@ ul { padding: 0; margin: 0; }
 .bota_attractive_job .bota_attractive_job_it .bota_attractive_job_img { width: 80px; height: 80px; float: left; display: inline-block; }
 .bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont { width: calc(100% - 97px); float: left; margin-left: 17px; }
 .bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_name { font-style: normal; font-weight: 500; font-size: 16px; line-height: 27px; color: #22343D; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; padding-right: 45px; }
-.bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_des { -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; font-style: normal; font-weight: normal; font-size: 14px; line-height: 24px; color: #475E69; margin-bottom: 5px; }
+.bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_des { -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; font-style: normal; font-weight: 300; font-size: 14px; line-height: 24px; color: #475E69; margin-bottom: 5px; }
 .bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_col { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_col span { font-style: normal; font-weight: normal; font-size: 14px; line-height: 24px; color: #475E69; }
+.bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_col span { font-style: normal; font-weight: 300; font-size: 14px; line-height: 24px; color: #475E69; }
 .bota_attractive_job .bota_attractive_job_it .bota_attractive_job_cont .bota_attractive_job_col span svg { margin-right: 5px; }
 .bota_attractive_job .bota_attractive_job_it:hover { background: #FFFFFF; border: 1px solid #02897A; -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); border-radius: 8px; cursor: pointer; }
 
 .bota_attractive_main_title { text-align: center; margin-bottom: 10px; }
 .bota_attractive_main_title h2 { font-style: normal; font-weight: bold; font-size: 30px; line-height: 60px; color: #22343D; margin: 0; margin-bottom: 2px; }
-.bota_attractive_main_title .bota_attractive_main_des { font-style: normal; font-weight: normal; font-size: 16px; line-height: 27px; color: #475E69; }
+.bota_attractive_main_title .bota_attractive_main_des { font-style: normal; font-weight: 300; font-size: 16px; line-height: 27px; color: #475E69; }
 
 .bota_attractive_main_link { text-align: right; margin-bottom: 19px; }
 .bota_attractive_main_link a { font-style: normal; font-weight: 400; font-size: 16px; line-height: 27px; color: #02897A; }
@@ -3376,7 +3376,7 @@ ul { padding: 0; margin: 0; }
 .bota_corner_it .bota_corner_cont { padding: 15px 20px; }
 .bota_corner_it .bota_corner_cont .bota_corner_anthor { margin-bottom: 10px; }
 .bota_corner_it .bota_corner_cont .bota_corner_anthor ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.bota_corner_it .bota_corner_cont .bota_corner_anthor ul li { font-style: normal; font-weight: normal; font-size: 14px; line-height: 28px; color: #22343D; position: relative; }
+.bota_corner_it .bota_corner_cont .bota_corner_anthor ul li { font-style: normal; font-weight: 300; font-size: 14px; line-height: 28px; color: #22343D; position: relative; }
 .bota_corner_it .bota_corner_cont .bota_corner_anthor ul li span { font-weight: bold; }
 .bota_corner_it .bota_corner_cont .bota_corner_anthor ul li + li { margin-left: 15px; }
 .bota_corner_it .bota_corner_cont .bota_corner_anthor ul li + li:before { content: ""; background: #000; height: 12px; position: absolute; width: 1px; left: -8px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
@@ -3407,23 +3407,23 @@ ul { padding: 0; margin: 0; }
 
 .bota_feedback_title { text-align: center; padding-bottom: 32px; }
 .bota_feedback_title h2 { font-style: normal; font-weight: bold; font-size: 30px; line-height: 32px; text-align: center; letter-spacing: 0.2px; color: #22343D; margin-bottom: 32px; }
-.bota_feedback_title .bota_feedback_des { font-style: normal; font-weight: normal; font-size: 14px; line-height: 26px; color: #475E69; max-width: 542px; margin: auto; }
+.bota_feedback_title .bota_feedback_des { font-style: normal; font-weight: 300; font-size: 14px; line-height: 26px; color: #475E69; max-width: 542px; margin: auto; }
 
 .bota_job_bg { position: relative; background-image: url(../imgs/bg_job.png); background-repeat: no-repeat; background-size: 100%; }
 .bota_job_bg .bota_job_category { background: rgba(0, 0, 0, 0.28); }
 .bota_job_bg .bota_job_category ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .bota_job_bg .bota_job_category ul li { position: relative; }
-.bota_job_bg .bota_job_category ul li a { font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; color: #fff; padding: 22px 0; display: block; position: relative; }
+.bota_job_bg .bota_job_category ul li a { font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; color: #fff; padding: 22px 0; display: block; position: relative; }
 .bota_job_bg .bota_job_category ul li a span { position: relative; display: inline-block; }
 .bota_job_bg .bota_job_category ul li a span:after { content: ""; width: 35px; height: 1px; background: #fff; position: absolute; bottom: -2px; left: 0; opacity: 0; visibility: hidden; }
 .bota_job_bg .bota_job_category ul li a span:hover::after { opacity: 1; visibility: visible; }
 .bota_job_bg .bota_job_category ul li + li { margin-left: 32px; }
 .bota_job_bg .bota_job_bg_title { text-align: center; padding: 46px 0 75px; }
 .bota_job_bg .bota_job_bg_title h1 { font-style: normal; font-weight: bold; font-size: 36px; color: #fff; margin: 0; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; }
-.bota_job_bg .bota_job_bg_title .bota_job_bg_des { font-style: normal; font-weight: normal; font-size: 15px; line-height: 32px; color: #fff; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; }
+.bota_job_bg .bota_job_bg_title .bota_job_bg_des { font-style: normal; font-weight: 300; font-size: 15px; line-height: 32px; color: #fff; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; }
 .bota_job_bg .bota_search_job { position: absolute; width: 100%; bottom: -25px; }
 .bota_job_bg .bota_search_input { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.bota_job_bg .bota_search_input input { background: #FFFFFF; border-top-left-radius: 5px; width: 100%; font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; padding: 0 24px; border: none; -webkit-box-shadow: unset !important; box-shadow: unset !important; outline: none; height: 50px; border-bottom-left-radius: 5px; -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.15)); filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.15)); }
+.bota_job_bg .bota_search_input input { background: #FFFFFF; border-top-left-radius: 5px; width: 100%; font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; padding: 0 24px; border: none; -webkit-box-shadow: unset !important; box-shadow: unset !important; outline: none; height: 50px; border-bottom-left-radius: 5px; -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.15)); filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.15)); }
 .bota_job_bg .bota_search_input .bota_search_btn { background: #02897A; border-radius: 0px 5px 5px 0px; text-align: center; line-height: 45px; cursor: pointer; padding: 0 20px; }
 
 .bota_jobs_hot { padding-top: 48px; }
@@ -3435,12 +3435,12 @@ ul { padding: 0; margin: 0; }
 .bota_jobs_hot .bota_jobs_hot_it .bota_jobs_hot_it_img { height: 164px; overflow: hidden; position: relative; border-bottom: 1px solid #E0E0E0; margin: 0 20px; margin-bottom: 10px; }
 .bota_jobs_hot .bota_jobs_hot_it .bota_jobs_hot_it_img img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; max-width: 100%; max-height: 100%; padding: 20px 0; }
 .bota_jobs_hot .bota_jobs_hot_it_cont { position: relative; padding: 0 20px; }
-.bota_jobs_hot .bota_jobs_hot_it_company { font-style: normal; font-weight: normal; font-size: 15px; color: #475E69; line-height: 24px; text-align: center; margin-bottom: 7px; }
+.bota_jobs_hot .bota_jobs_hot_it_company { font-style: normal; font-weight: 300; font-size: 15px; color: #475E69; line-height: 24px; text-align: center; margin-bottom: 7px; }
 .bota_jobs_hot .bota_jobs_hot_it_name { font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; text-align: center; margin-bottom: 23px; }
 .bota_jobs_hot .bota_jobs_hot_it_name a { color: #475E69; }
-.bota_jobs_hot .bota_jobs_hot_it_des { font-style: normal; font-weight: normal; font-size: 13px; line-height: 21px; color: #475E69; margin-bottom: 23px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
+.bota_jobs_hot .bota_jobs_hot_it_des { font-style: normal; font-weight: 300; font-size: 13px; line-height: 21px; color: #475E69; margin-bottom: 23px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
 .bota_jobs_hot .bota_jobs_hot_it_col { padding-bottom: 32px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.bota_jobs_hot .bota_jobs_hot_it_col span { font-style: normal; font-weight: normal; font-size: 14px; line-height: 27px; color: #475E69; }
+.bota_jobs_hot .bota_jobs_hot_it_col span { font-style: normal; font-weight: 300; font-size: 14px; line-height: 27px; color: #475E69; }
 .bota_jobs_hot .bota_jobs_hot_it_col span svg { margin-right: 5px; }
 .bota_jobs_hot .slick-arrow { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 10; -webkit-transition: all ease .9s; transition: all ease .9s; font-size: 0; border: none; background: no-repeat; padding: 0; width: 50px; height: 50px; outline: none; -webkit-box-shadow: unset; box-shadow: unset; border: none; }
 .bota_jobs_hot .slick-prev { left: -15px; }
@@ -3483,8 +3483,8 @@ ul { padding: 0; margin: 0; }
 .bota_jobs_main_it .bota_job_main_it_cont .bota_job_main_it_name { font-style: normal; font-weight: 500; font-size: 20px; margin-bottom: 8px; color: #22343D; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; line-height: 36px; }
 .bota_jobs_main_it .bota_job_main_it_cont .bota_job_main_it_name a { color: #475E69; }
 .bota_jobs_main_it .bota_job_main_it_cont .bota_job_main_it_name:hover > a { color: #02897A; }
-.bota_jobs_main_it .bota_job_main_it_cont .bota_job_main_it_company { font-style: normal; font-weight: normal; font-size: 16px; color: #475E69; margin-bottom: 15px; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; }
-.bota_jobs_main_it .bota_job_main_it_cont .bota_jobs_hot_it_col { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-style: normal; font-weight: normal; font-size: 14px; color: #475E69; }
+.bota_jobs_main_it .bota_job_main_it_cont .bota_job_main_it_company { font-style: normal; font-weight: 300; font-size: 16px; color: #475E69; margin-bottom: 15px; -webkit-box-orient: vertical; -webkit-line-clamp: 1; display: -webkit-box; overflow: hidden; }
+.bota_jobs_main_it .bota_job_main_it_cont .bota_jobs_hot_it_col { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-style: normal; font-weight: 300; font-size: 14px; color: #475E69; }
 .bota_jobs_main_it .bota_job_main_it_cont .bota_job_main_it_company svg, .bota_jobs_main_it .bota_job_main_it_cont .bota_jobs_hot_it_col svg { margin-right: 5px; }
 .bota_jobs_main_it .bota_jobs_fulltime span { background: #E1EBFB; border-radius: 20px; display: inline-block; font-style: normal; font-weight: 500; font-size: 15px; line-height: 32px; letter-spacing: 0.2px; padding: 0 24px; color: #4D8DFF; cursor: pointer; }
 .bota_jobs_main_it .bota_jobs_parttime span { background: #E1FBE4; border-radius: 20px; display: inline-block; font-style: normal; font-weight: 500; font-size: 15px; line-height: 32px; letter-spacing: 0.2px; padding: 0 24px; color: #20C08B; cursor: pointer; }
@@ -3493,7 +3493,7 @@ ul { padding: 0; margin: 0; }
 .bota_top_employers { position: relative; margin-bottom: 35px; }
 .bota_top_employers .bota_top_employers_title { text-align: center; margin-bottom: 15px; }
 .bota_top_employers .bota_top_employers_title h2 { font-style: normal; font-weight: bold; font-size: 30px; line-height: 37px; color: #22343D; margin-bottom: 8px; }
-.bota_top_employers .bota_top_employers_title .bota_top_employers_des { color: #475E69; font-style: normal; font-weight: normal; font-size: 16px; line-height: 27px; }
+.bota_top_employers .bota_top_employers_title .bota_top_employers_des { color: #475E69; font-style: normal; font-weight: 300; font-size: 16px; line-height: 27px; }
 .bota_top_employers .bota_top_employers_img { position: relative; height: 108px; overflow: hidden; }
 .bota_top_employers .bota_top_employers_img img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; max-width: 100%; max-height: 100%; padding: 20px; }
 
@@ -3509,10 +3509,10 @@ ul { padding: 0; margin: 0; }
 .bota_login_body .bota_login_bg .bota_forgot_bg .bota_login_des { font-size: 16px; line-height: 24px; }
 .bota_login_body .bota_login_bg .bota_forgot_bg #customer_login .form-group { margin-bottom: 30px; }
 .bota_login_body .bota_login_bg h1 { font-style: normal; font-weight: bold; font-size: 20px; line-height: 28px; color: #22343D; margin: 0; margin-bottom: 5px; }
-.bota_login_body .bota_login_des { font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; color: #979797; margin-bottom: 30px; }
+.bota_login_body .bota_login_des { font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; color: #979797; margin-bottom: 30px; }
 .bota_login_body .bota_login_des a { color: #02897A; }
 .bota_login_body .bota_login_des a:hover { text-decoration: underline !important; }
-.bota_login_body .bota_login_bg label { margin-bottom: 5px; font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; color: #979797; display: block; }
+.bota_login_body .bota_login_bg label { margin-bottom: 5px; font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; color: #979797; display: block; }
 .bota_login_body .bota_login_bg label span { color: #ff0000; }
 .bota_login_body .bota_login_bg .bota_rules_type { margin-bottom: 20px; position: relative; }
 .bota_login_body .bota_login_bg .bota_rules_type .custom-checkbox { position: relative; display: block; padding-left: 27px; margin: 0; line-height: 24px; cursor: pointer; }
@@ -3524,7 +3524,7 @@ ul { padding: 0; margin: 0; }
 .bota_login_body .bota_login_bg .bota_rules_type .custom-checkbox input:checked ~ .icon-rules:before { z-index: 2; background: no-repeat 50%/50% 50%; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E"); }
 .bota_login_body .bota_login_bg .bota_rules_type .custom-checkbox:not(.color) input:checked ~ .icon-rules:after { background-color: #02897A; border-color: #02897A; }
 .bota_login_body .bota_forgot { float: right; }
-.bota_login_body .bota_forgot a { font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; color: #02897A; }
+.bota_login_body .bota_forgot a { font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; color: #02897A; }
 .bota_login_body .bota_forgot a:hover { text-decoration: underline !important; }
 
 .bota_login_forgot_des { margin-top: 20px; text-align: center; color: #979797; font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; }
@@ -3538,7 +3538,7 @@ ul { padding: 0; margin: 0; }
 .bota_login_secondary span:after { background: #fff; content: "Hoặc"; position: absolute; width: 71px; height: 35px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 0; right: 0; margin: auto; z-index: 2; line-height: 35px; }
 
 .bota_social_login { position: relative; }
-.bota_social_login a { background: #FFFFFF; border: 1px solid #BFBFBF; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; padding: 15px 16px; display: block; font-style: normal; font-weight: normal; font-size: 15px; line-height: 18px; color: #02897A; text-align: center; position: relative; }
+.bota_social_login a { background: #FFFFFF; border: 1px solid #BFBFBF; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; padding: 15px 16px; display: block; font-style: normal; font-weight: 300; font-size: 15px; line-height: 18px; color: #02897A; text-align: center; position: relative; }
 .bota_social_login a + a { margin-top: 20px; }
 .bota_social_login a svg { position: absolute; left: 16px; -webkit-transform: translateY(-50%); transform: translateY(-50%); top: 50%; }
 
@@ -3565,7 +3565,7 @@ ul { padding: 0; margin: 0; }
 .bota_themes_cv_title { position: relative; margin-bottom: 30px; }
 .bota_themes_cv_title h1 { font-style: normal; font-weight: bold; font-size: 38px; color: #22343D; max-width: 380px; margin-bottom: 20px; }
 
-.bota_themes_cv_des { font-style: normal; font-weight: normal; font-size: 15px; line-height: 30px; color: #22343D; }
+.bota_themes_cv_des { font-style: normal; font-weight: 300; font-size: 15px; line-height: 30px; color: #22343D; }
 
 .bota_themes_cv_follow { position: relative; }
 .bota_themes_cv_follow input { background: #FFFFFF; border: 1px solid #EAEAEA; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 100px; height: 66px; width: 100%; padding: 0 19px !important; outline: none; padding-right: 125px !important; }
@@ -3593,7 +3593,7 @@ ul { padding: 0; margin: 0; }
 .bota_themes_cv_hot_it .bota_preview_action a:hover { background-color: #02897A; color: #fff; }
 .bota_themes_cv_hot_it .bota_preview_action a:hover i::before { background-image: url(../imgs/icon-use-hover.svg); }
 .bota_themes_cv_hot_it .bota_preview_action i { margin-right: 5px; }
-.bota_themes_cv_hot_it .bota_themes_new { background: #4D8DFF; border-radius: 50px; display: inline-block; color: #fff; font-style: normal; font-weight: normal; font-size: 13px; padding: 0px 15px; line-height: 23px; position: absolute; top: 11px; left: 11px; z-index: 1; }
+.bota_themes_cv_hot_it .bota_themes_new { background: #4D8DFF; border-radius: 50px; display: inline-block; color: #fff; font-style: normal; font-weight: 300; font-size: 13px; padding: 0px 15px; line-height: 23px; position: absolute; top: 11px; left: 11px; z-index: 1; }
 .bota_themes_cv_hot_it .bota_themes_cv_hot_img { background: #FFFFFF; height: 289px; overflow: hidden; position: relative; }
 .bota_themes_cv_hot_it .bota_themes_cv_hot_img img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 .bota_themes_cv_hot_it .bota_themes_cv_hot_img .bota_theme_action { overflow: hidden; position: absolute; top: 0; width: 100%; height: 0; text-align: center; -webkit-transition: all .3s ease .15s; transition: all .3s ease .15s; }
@@ -3609,7 +3609,7 @@ ul { padding: 0; margin: 0; }
 .bota_themes_cv_impressive .bota_themes_impressive_title h2 { font-style: normal; font-weight: bold; font-size: 30px; line-height: 37px; text-align: center; }
 .bota_themes_cv_impressive .bota_themes_impressive_it { position: relative; margin-bottom: 30px; }
 .bota_themes_cv_impressive .bota_themes_impressive_it h3 { font-style: normal; font-weight: bold; font-size: 16px; line-height: 28px; color: #475E69; margin: 0; }
-.bota_themes_cv_impressive .bota_themes_impressive_it .bota_themes_impressive_des { font-style: normal; font-weight: normal; font-size: 15px; line-height: 28px; color: #475E69; }
+.bota_themes_cv_impressive .bota_themes_impressive_it .bota_themes_impressive_des { font-style: normal; font-weight: 300; font-size: 15px; line-height: 28px; color: #475E69; }
 .bota_themes_cv_impressive .bota_themes_impressive_cont .row { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .bota_themes_cv_impressive .bota_themes_impressive_cont img { margin: auto; display: block; -o-object-fit: scale-down; object-fit: scale-down; }
 
@@ -3621,7 +3621,7 @@ ul { padding: 0; margin: 0; }
 .bota_theme_professional .slick-dots li.slick-active button { background: #02897A; width: 15px; height: 15px; }
 .bota_theme_professional .bota_professional_title { text-align: center; margin-bottom: 31px; }
 .bota_theme_professional .bota_professional_title h2 { font-style: normal; font-weight: bold; font-size: 30px; line-height: 37px; color: #22343D; margin-bottom: 16px; }
-.bota_theme_professional .bota_professional_des { font-style: normal; font-weight: normal; font-size: 14px; line-height: 27px; color: #475E69; }
+.bota_theme_professional .bota_professional_des { font-style: normal; font-weight: 300; font-size: 14px; line-height: 27px; color: #475E69; }
 
 .bota_career_bg { position: relative; }
 
@@ -3630,10 +3630,10 @@ ul { padding: 0; margin: 0; }
 .bota_career_box .bota_career_toolbar .row { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .bota_career_box .bota_carrer_category > ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .bota_career_box .bota_carrer_category > ul > li { position: relative; }
-.bota_career_box .bota_carrer_category > ul > li > a { font-style: normal; font-weight: normal; font-size: 14px; line-height: 19px; color: #fff; padding: 22px 0; display: block; position: relative; }
+.bota_career_box .bota_carrer_category > ul > li > a { font-style: normal; font-weight: 300; font-size: 14px; line-height: 19px; color: #fff; padding: 22px 0; display: block; position: relative; }
 .bota_career_box .bota_carrer_category > ul > li > a:before { content: ""; background: #FFFFFF; border-radius: 5px 5px 0px 0px; height: 3px; width: 100%; position: absolute; bottom: 0; opacity: 0; visibility: hidden; }
 .bota_career_box .bota_carrer_category > ul > li + li { margin-left: 32px; }
-.bota_career_box .bota_carrer_category > ul > li:hover > a:before { opacity: 1; visibility: visible; }
+.bota_career_box .bota_carrer_category > ul > li:hover > a:before, .bota_career_box .bota_carrer_category > ul > li.active > a:before { opacity: 1; visibility: visible; }
 .bota_career_box .bota_carrer_category > ul > li > ul { overflow: hidden; display: block; max-height: 0px; max-width: 0px; opacity: 0; -webkit-transform: perspective(600px) rotateX(-90deg); transform: perspective(600px) rotateX(-90deg); -webkit-transition: -webkit-transform 0.5s ease, opacity 0.6s ease, max-height 0.6s step-end, max-width 0.6s step-end, padding 0.6s step-end; -webkit-transition: opacity 0.6s ease, max-height 0.6s step-end, max-width 0.6s step-end, padding 0.6s step-end, -webkit-transform 0.5s ease; transition: opacity 0.6s ease, max-height 0.6s step-end, max-width 0.6s step-end, padding 0.6s step-end, -webkit-transform 0.5s ease; transition: transform 0.5s ease, opacity 0.6s ease, max-height 0.6s step-end, max-width 0.6s step-end, padding 0.6s step-end; transition: transform 0.5s ease, opacity 0.6s ease, max-height 0.6s step-end, max-width 0.6s step-end, padding 0.6s step-end, -webkit-transform 0.5s ease; position: absolute; top: 99%; left: 0px; width: 220px; padding: 0; background-color: #fff; -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15); box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15); -webkit-transform-origin: 0% 0%; transform-origin: 0% 0%; z-index: 99; }
 .bota_career_box .bota_carrer_category > ul > li > ul > li { position: relative; margin: 0 7px; }
 .bota_career_box .bota_carrer_category > ul > li > ul > li > a { font-weight: 400; font-size: 14px; line-height: 20px; display: block; padding: 15px 3px; color: #323c42; position: relative; border-bottom: 0.5px solid #D9D9D9; text-align: left; padding-right: 15px; }
@@ -3648,7 +3648,7 @@ ul { padding: 0; margin: 0; }
 
 .bota_career_search { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 .bota_career_search .bota_career_search_btn { position: relative; padding-right: 10px; cursor: pointer; }
-.bota_career_search input { background: transparent !important; border: none; border-bottom: 1px solid #fff !important; outline: none; color: #fff; font-size: 14px; font-style: normal; font-weight: normal; }
+.bota_career_search input { background: transparent !important; border: none; border-bottom: 1px solid #fff !important; outline: none; color: #fff; font-size: 14px; font-style: normal; font-weight: 300; }
 .bota_career_search input::-webkit-input-placeholder { color: #fff; }
 
 .slick_career { position: relative; }
@@ -3661,13 +3661,15 @@ ul { padding: 0; margin: 0; }
 
 .bota_career_conts { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); margin: auto; left: 0; right: 0; }
 .bota_career_conts .bota_career_names { font-style: normal; font-weight: bold; font-size: 35px; color: #fff; margin-bottom: 24px; line-height: 47px; max-width: 715px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; overflow: hidden; }
-.bota_career_conts .bota_career_dess { font-style: normal; font-weight: normal; font-size: 16px; line-height: 24px; color: #fff; margin-bottom: 20px; max-width: 521px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; overflow: hidden; }
-.bota_career_conts .bota_career_links { background: #FFFFFF; border-radius: 3px; display: inline-block; font-style: normal; font-weight: normal; font-size: 14px; line-height: 16px; color: #22343D; padding: 4px 9px; }
+.bota_career_conts .bota_career_dess { font-style: normal; font-weight: 300; font-size: 16px; line-height: 24px; color: #fff; margin-bottom: 20px; max-width: 521px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; overflow: hidden; }
+.bota_career_conts .bota_career_links { background: #FFFFFF; border-radius: 3px; display: inline-block; font-style: normal; font-weight: 300; font-size: 14px; line-height: 16px; color: #22343D; padding: 4px 9px; }
+.bota_career_conts .bota_career_links:hover { background-color: #02897A; color: #fff; }
+.bota_career_conts .bota_career_links:hover svg path { fill: #fff; }
 
-.bota_career_contents .custom_paging { position: absolute; bottom: 150px; left: 10.5%; display: -webkit-box; display: -ms-flexbox; display: flex; font-style: normal; font-weight: normal; font-size: 15px; color: #fff; }
+.bota_career_contents .custom_paging { position: absolute; bottom: 150px; left: 10.5%; display: -webkit-box; display: -ms-flexbox; display: flex; font-style: normal; font-weight: 300; font-size: 15px; color: #fff; }
 .bota_career_contents .custom_paging li { width: 100px; left: 30px; cursor: pointer; }
 .bota_career_contents .custom_paging li .count_number { position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-.bota_career_contents .custom_paging li span { font-style: normal; font-weight: normal; font-size: 12px; color: rgba(255, 255, 255, 0.5); }
+.bota_career_contents .custom_paging li span { font-style: normal; font-weight: 300; font-size: 12px; color: rgba(255, 255, 255, 0.5); }
 .bota_career_contents .custom_paging li:before { content: ""; width: 100px; height: 2px; background: #FFFFFF; position: absolute; left: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .bota_career_contents .custom_paging li.slick-active:before { background: #02897A; }
 .bota_career_contents .custom_paging li.slick-active .count_number { display: block; }
@@ -3691,7 +3693,8 @@ ul { padding: 0; margin: 0; }
 .bota_career_bottom_it .bota_career_bottom_cont { position: absolute; top: 0; width: 100%; height: 100%; }
 .bota_career_bottom_it .bota_career_bottom_cont .bota_career_bottom_name { padding: 50px 11px; font-style: normal; font-weight: bold; font-size: 22px; color: #fff; line-height: 28.8px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; overflow: hidden; }
 .bota_career_bottom_it .bota_career_bottom_cont .bota_career_bottom_toolbar { position: absolute; bottom: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; left: 0; right: 0; padding: 0 10px; color: #fff; }
-.bota_career_bottom_it .bota_career_bottom_cont .bota_career_bottom_toolbar .bota_career_bottom_col { font-style: normal; font-weight: normal; font-size: 12px; line-height: 20px; }
+.bota_career_bottom_it .bota_career_bottom_cont .bota_career_bottom_toolbar .bota_career_bottom_col { font-style: normal; font-weight: 300; font-size: 12px; line-height: 20px; }
+.bota_career_bottom_it .bota_career_bottom_cont .bota_career_bottom_toolbar .bota_career_bottom_col svg { margin-right: 7px; }
 
 .bota_career_bottom { margin-top: -190px; }
 
@@ -3706,10 +3709,10 @@ ul { padding: 0; margin: 0; }
 .bota_office_skills_it .bota_office_skills_it_img img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; }
 .bota_office_skills_it .bota_office_skills_it_cont { position: absolute; top: 0; width: 100%; height: 100%; padding: 30px 48px 35px; }
 .bota_office_skills_it .bota_office_skills_it_cont .bota_office_skills_it_name { font-style: normal; font-weight: bold; font-size: 32px; color: #fff; line-height: 44.2px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
-.bota_office_skills_it .bota_office_skills_it_des { font-style: normal; font-weight: normal; font-size: 15px; color: #fff; margin-top: 40px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
+.bota_office_skills_it .bota_office_skills_it_des { font-style: normal; font-weight: 300; font-size: 15px; color: #fff; margin-top: 40px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
 .bota_office_skills_it .bota_office_skills_it_cont .bota_office_skills_it_tool { position: absolute; bottom: 35px; width: 100%; left: 0; right: 0; padding: 0 48px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; color: #fff; font-size: 13px; }
 .bota_office_skills_it .bota_office_skills_it_cont .bota_office_skills_it_tool svg { margin-right: 5px; }
-.bota_office_skills_it .bota_office_skills_it_anthor { font-style: normal; font-weight: normal; font-size: 13px; color: #fff; margin-bottom: 26px; }
+.bota_office_skills_it .bota_office_skills_it_anthor { font-style: normal; font-weight: 300; font-size: 13px; color: #fff; margin-bottom: 26px; }
 
 .bota_office_skills_small { position: relative; background: #FFFFFF; border: 1px solid #E0E0E0; }
 .bota_office_skills_small .bota_office_skills_small_img { position: relative; height: 159px; overflow: hidden; }
@@ -3717,7 +3720,8 @@ ul { padding: 0; margin: 0; }
 .bota_office_skills_small:hover img { -webkit-transform: scale(1); transform: scale(1.1); }
 .bota_office_skills_small .bota_office_skills_small_conx { position: relative; padding: 15px; }
 .bota_office_skills_small .bota_office_skills_small_conx .bota_office_skills_small_name { font-style: normal; font-weight: 500; font-size: 16px; line-height: 25px; margin-bottom: 10px; -webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box; overflow: hidden; }
-.bota_office_skills_small .bota_office_skills_small_conx .bota_office_skills_small_tool { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-style: normal; font-weight: normal; font-size: 13px; color: #475E69; }
+.bota_office_skills_small .bota_office_skills_small_conx .bota_office_skills_small_tool { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-style: normal; font-weight: 300; font-size: 13px; color: #475E69; }
+.bota_office_skills_small .bota_office_skills_small_conx .bota_office_skills_small_tool svg { margin-right: 7px; }
 .bota_office_skills_small .bota_office_skills_small_conx .bota_office_skills_small_name a { color: #22343D; }
 .bota_office_skills_small .bota_office_skills_small_conx .bota_office_skills_small_name:hover a { color: #02897A; }
 
@@ -3729,7 +3733,7 @@ ul { padding: 0; margin: 0; }
 .bota_breadcrumb_main { position: relative; margin-top: 8px; margin-bottom: 30px; }
 .bota_breadcrumb_main .breadcrumb { background: transparent; padding: 0; margin: 0; border-bottom: 1px solid #E0E0E0; border-radius: unset; }
 .bota_breadcrumb_main .breadcrumb li { position: relative; }
-.bota_breadcrumb_main .breadcrumb li a { font-style: normal; font-weight: normal; font-size: 15px; line-height: 19px; color: #22343D; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 22px 11px  22px 22px; display: block; }
+.bota_breadcrumb_main .breadcrumb li a { font-style: normal; font-weight: 300; font-size: 15px; line-height: 19px; color: #22343D; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 22px 11px  22px 22px; display: block; }
 .bota_breadcrumb_main .breadcrumb li:first-child a { padding-left: 0; }
 .bota_breadcrumb_main .breadcrumb li + li:before { content: ""; background-repeat: no-repeat; background-position: center center; border-radius: 50%; background-size: 10px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' version='1.1' width='512' height='512' x='0' y='0' viewBox='0 0 792.033 792.033' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='_x38_'%3E%3Cg%3E%3Cpath d='M617.858,370.896L221.513,9.705c-13.006-12.94-34.099-12.94-47.105,0c-13.006,12.939-13.006,33.934,0,46.874 l372.447,339.438L174.441,735.454c-13.006,12.94-13.006,33.935,0,46.874s34.099,12.939,47.104,0l396.346-361.191 c6.932-6.898,9.904-16.043,9.441-25.087C627.763,386.972,624.792,377.828,617.858,370.896z' fill='%2322343D' data-original='%23000000' style='' class=''/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); left: 0; -webkit-transition: all .25s ease; transition: all .25s ease; position: absolute; width: 15px; height: 14.69px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
@@ -3745,7 +3749,7 @@ ul { padding: 0; margin: 0; }
 .bota_career_page_tool .bota_career_page_time { font-size: 13px; line-height: 21px; color: #22343D; }
 .bota_career_page_tool .bota_career_page_time span + span { margin-left: 25px; }
 .bota_career_page_tool .bota_career_page_time span + span svg { margin-right: 5px; }
-.bota_career_page_tool .bota_career_page_view { text-align: right; font-style: normal; font-weight: normal; font-size: 13px; line-height: 21px; color: #22343D; }
+.bota_career_page_tool .bota_career_page_view { text-align: right; font-style: normal; font-weight: 300; font-size: 13px; line-height: 21px; color: #22343D; }
 
 .bota_career_page_des { position: relative; }
 .bota_career_page_des .bota_career_page_des_img { margin: 47px auto; }
@@ -3762,7 +3766,7 @@ ul { padding: 0; margin: 0; }
 .bota_career_page_des_border_left:before { content: ""; height: 100%; width: 3px; background: #02897A; position: absolute; left: 0; }
 
 .bota_career_page_des_imgs { -webkit-filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2)); filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.2)); text-align: center; background: #FAFAFA; border-radius: 0px 0px 10px 10px; margin-bottom: 30px; }
-.bota_career_page_des_imgs p { font-style: normal; font-weight: normal; font-size: 15px; line-height: 24px; color: #22343D; padding: 8px 0; }
+.bota_career_page_des_imgs p { font-style: normal; font-weight: 300; font-size: 15px; line-height: 24px; color: #22343D; padding: 8px 0; }
 
 .bota_details_career_share { border-top: 1px solid #E9E9E9; border-bottom: 1px solid #E9E9E9; margin: 40px auto 50px; padding: 20px 0; }
 
@@ -3774,7 +3778,7 @@ ul { padding: 0; margin: 0; }
 
 .bota_details_career_shares { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 .bota_details_career_shares ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.bota_details_career_shares label { margin: 0; font-style: normal; font-weight: normal; font-size: 15px; line-height: 24px; color: #475E69; margin-right: 17px; }
+.bota_details_career_shares label { margin: 0; font-style: normal; font-weight: 300; font-size: 15px; line-height: 24px; color: #475E69; margin-right: 17px; }
 .bota_details_career_shares ul li + li { margin-left: 12px; }
 
 .bota_details_career_related_title h2 { font-style: normal; font-weight: 500; font-size: 30px; line-height: 26px; margin: 0; }
@@ -3782,6 +3786,63 @@ ul { padding: 0; margin: 0; }
 .bota_details_career_related { position: relative; margin-bottom: 72px; }
 
 .bota_details_career_related_title { margin-bottom: 30px; }
+
+.bota_career_category_page { position: relative; }
+.bota_career_category_page .bota_career_conts .bota_career_names, .bota_career_category_page .bota_career_conts .bota_career_dess { max-width: 485px; -webkit-line-clamp: 3; }
+.bota_career_category_page .bota_career_conts .bota_career_dess { line-height: 27px; }
+.bota_career_category_page .bota_career_conts .bota_career_bottom_toolbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; left: 0; right: 0; color: #fff; max-width: 485px; }
+.bota_career_category_page .bota_career_conts .bota_career_bottom_toolbar .bota_career_bottom_col { font-style: normal; font-weight: 300; font-size: 12px; line-height: 20px; }
+.bota_career_category_page .bota_career_conts .bota_career_bottom_toolbar .bota_career_bottom_col svg { margin-right: 7px; }
+
+.bota_block_career_right { background: rgba(0, 0, 0, 0.15); width: 316px; height: 434px; padding: 14px 28px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 11%; max-height: 431px; overflow-y: auto; }
+.bota_block_career_right .bota_block_career_right_title h3 { font-style: normal; font-weight: 300; font-size: 14px; line-height: 21px; color: #FFFFFF; }
+.bota_block_career_right .bota_block_career_right_cont .bota_block_career_right_it + .bota_block_career_right_it { border-top: 1px solid rgba(255, 255, 255, 0.5); padding-top: 40px; margin-top: 10px; }
+.bota_block_career_right .bota_block_career_right_cont .bota_block_career_right_it .bota_block_career_right_name { font-style: normal; font-weight: 500; font-size: 16px; color: #fff; margin-bottom: 17px; }
+.bota_block_career_right .bota_block_career_right_cont .bota_block_career_right_it .bota_block_career_right_time { font-style: normal; font-weight: 300; font-size: 13px; color: #fff; }
+.bota_block_career_right .bota_block_career_right_cont .bota_block_career_right_it .bota_block_career_right_time svg { margin-right: 7px; }
+.bota_block_career_right .bota_block_career_right_cont .bota_block_career_right_it a { color: #fff; }
+.bota_block_career_right .bota_block_career_right_cont .bota_block_career_right_it .bota_block_career_right_name:hover a { color: #02897A; }
+
+.bota_block_career_right::-webkit-scrollbar { width: 3px; background-color: #fff; }
+.bota_block_career_right::-webkit-scrollbar-thumb { border-radius: 2px; background-color: #00544B; width: 3px; }
+.bota_block_career_right::-webkit-scrollbar-track { border-radius: 2px; background-color: #fff; width: 3px; }
+
+.bota_career_category_pages { margin-top: 65px; margin-bottom: 50px; }
+
+.bota_career_cate_page_it { position: relative; }
+.bota_career_cate_page_it + .bota_career_cate_page_it { margin-top: 30px; }
+
+.bota_career_cate_page_img { width: 246px; height: 188px; position: relative; overflow: hidden; float: left; }
+
+.bota_career_cate_page_it .bota_career_cate_page_cont { float: left; width: calc(100% - 262px); position: relative; margin-left: 16px; height: 100%; }
+
+.bota_career_cate_page_img img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_name { font-style: normal; font-weight: 500; font-size: 20px; line-height: 30px; margin-bottom: 10px; min-height: 60px; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_name a { color: #22343D; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_des { font-style: normal; font-weight: 300; font-size: 16px; color: #959595; line-height: 25px; margin-bottom: 22px; text-align: justify; min-height: 63px; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_tool { font-style: normal; font-weight: 300; font-size: 14px; color: #475E69; line-height: 21px; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_tool .bota_career_cate_tool_it { margin-right: 16px; display: inline; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_tool .bota_career_cate_tool_it svg { margin-right: 7px; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_tool .bota_career_cate_tool_it:last-child { float: right; margin: 0; }
+.bota_career_cate_page_it:after { content: ""; display: block; clear: both; }
+.bota_career_cate_page_it .bota_career_cate_page_cont .bota_career_cate_page_name a:hover { color: #02897A; }
+
+.bota_block_news_viewed { position: relative; }
+
+.bota_block_news_stitle { font-style: normal; font-weight: 500; font-size: 19px; line-height: 23px; color: #333333; border-bottom: 1px solid #E0E0E0; padding-bottom: 9px; margin-bottom: 20px; }
+
+.bota_block_news_sit { position: relative; border-bottom: 1px solid #E0E0E0; margin-bottom: 31px; padding-bottom: 20px; }
+.bota_block_news_sit .bota_block_news_simg { position: relative; height: 174px; overflow: hidden; margin-bottom: 18px; }
+.bota_block_news_sit .bota_block_news_simg img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+.bota_block_news_sit .bota_block_news_sconts .bota_block_news_sname { font-style: normal; font-weight: 500; font-size: 18px; color: #22343D; line-height: 26px; margin-bottom: 15px; }
+.bota_block_news_sit .bota_block_news_sconts .bota_block_news_sname a { color: #22343D; }
+.bota_block_news_sit .bota_block_news_sconts .bota_block_news_sname:hover a { color: #02897A; }
+.bota_block_news_sit .bota_block_news_sconts .bota_block_news_stool { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-style: normal; font-weight: 300; font-size: 13px; color: #475E69; }
+.bota_block_news_sit .bota_block_news_sconts .bota_block_news_stool svg { margin-right: 7px; }
+
+.bota_block_advs_right { position: relative; }
+.bota_block_advs_right .bota_blokc_ads_right_it + .bota_blokc_ads_right_it { margin-top: 71px; }
 
 .bota_field { position: relative; margin-top: 30px; }
 .bota_field .bota_field_content { margin-bottom: 10px; }
@@ -3805,8 +3866,8 @@ ul { padding: 0; margin: 0; }
 .bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_toolbar .bota_hiring_col .fa-star { color: #FFDF38; }
 .bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_toolbar .bota_hiring_col i { font-size: 14px; cursor: pointer; }
 .bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_toolbar .bota_hiring_col .fa-star-o { color: #E0E0E0; }
-.bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_toolbar .bota_hiring_fil { font-style: normal; font-weight: normal; font-size: 15px; color: #999; }
-.bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_des { font-style: normal; font-weight: normal; font-size: 14px; line-height: 24px; color: #475E69; margin-bottom: 20px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
+.bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_toolbar .bota_hiring_fil { font-style: normal; font-weight: 300; font-size: 15px; color: #999; }
+.bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_des { font-style: normal; font-weight: 300; font-size: 14px; line-height: 24px; color: #475E69; margin-bottom: 20px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; display: -webkit-box; overflow: hidden; }
 .bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_tool { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_tool .bota_hiring_tool_it { color: #02897A; font-size: 14px; font-weight: 500; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .bota_hiring .bota_hiring_it .bota_hiring_content .bota_hiring_tool .bota_hiring_tool_it a { color: #02897A; }
