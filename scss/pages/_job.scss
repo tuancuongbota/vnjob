@@ -392,13 +392,15 @@
     }
   }
   
-  .bota_jobs_main_title h3 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    color: #22343D;
-    margin: 0;
-    margin-bottom: 25px;
+  .bota_jobs_main_title {
+    h3, h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      color: #22343D;
+      margin: 0;
+      margin-bottom: 25px;
+    }
   }
   
   .bota_jobs_right_main .bota_jobs_main_content {
@@ -573,4 +575,353 @@
       }
   }
   
+  .bota_job_page_top_is {
+    position: relative;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+    margin-bottom: 28px;
   
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  
+    .bota_job_page_top_left {
+      width: 116px;
+      height: 116px;
+      overflow: hidden;
+      position: relative;
+      float: left;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+      }
+    }
+  
+    .bota_job_page_top_center {
+      width: calc(100% - 143px - 285px);
+      margin-left: 27px;
+      margin-right: 105px;
+      float: left;
+    }
+  
+    .bota_job_page_top_right {
+      width: 180px;
+      float: left;
+    }
+  
+    .bota_job_page_top_center {
+      h2 ,h1{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        color: #02897A;
+        margin-bottom: 15px;
+      }
+  
+      .bota_job_page_top_company {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        color: #22343D;
+        margin-bottom: 15px;
+      }
+      .bota_job_page_top_address{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #22343D;
+      }
+    }
+  }
+  .bota_job_page_top_btn {
+    background: #02897A;
+    border-radius: 5px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #02897A;
+    cursor: pointer;
+  
+    + .bota_job_page_top_btn {
+      color: #22343D;
+      font-weight: normal;
+      background: #fff;
+      border-color: #BCD0E5;
+      height: 43px;
+      line-height: 43px;
+  
+      svg {
+        margin-right: 5px;
+      }
+  
+      &:hover {
+        background: #00AA97;
+        color: #fff;
+        border-color: #00AA97;
+        svg{
+          path{
+            fill: #fff;
+            stroke:#fff;
+          }
+        }
+      }
+    }
+  
+    &:hover {
+      background: #00AA97;
+      color: #fff;
+      border-color: #00AA97;
+    }
+  }
+  .bota_job_info_recruit_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 27px;
+  }
+  
+  .bota_job_info_recruit_top {
+    position: relative;
+  
+    .bota_job_info_recruit_it {
+      margin-bottom: 25px;
+  
+      svg,i {
+        margin-right: 10px;
+      }
+  
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      color: #475E69;
+  
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  .bota_job_info_recruit_center {
+    position: relative;
+  
+    h3, h2, h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 15px;
+      margin-top: 45px;
+      line-height: 30px;
+    }
+    p{
+      line-height: 25.6px;
+    }
+  }
+  .bota_job_page_recruit_btn {
+    background: #02897A;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 0 21px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    &:hover{
+      background: #00AA97;
+    }
+}
+.bota_job_info_recruit .bota_details_career_share {
+  border-bottom: unset;
+  padding-bottom: 0;
+  margin-bottom: 45px;
+}
+.bota_job_recruit_relate{
+  margin-bottom: 68px;
+  .bota_job_recruit_relate_title h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #22343D;
+    margin-bottom: 15px;
+  }
+  
+  .bota_job_recruit_relate_cont .slick-track {
+
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: all ease .9s;
+    font-size: 0;
+    border: none;
+    background: no-repeat;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    box-shadow: unset;
+    border: none;
+  }
+
+  .slick-prev {
+    left: -15px;
+    &:before{
+      background-image:url(../imgs/prev_hover.svg);
+      background-repeat: no-repeat;
+      left: -15px;
+    }
+    &:hover:before{
+      background-image:url(../imgs/prev.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slick-next {
+    right: -15px;
+    &:before{
+      background-image:url(../imgs/next_hover.svg);
+      background-repeat: no-repeat;
+      right: -15px;
+    }
+    &:hover:before{
+      background-image:url(../imgs/next.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slick-arrow:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .bota_job_recruit_relate_cont {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+}
+.bota_job_info_employer {
+  border: 1px solid #E0E0E0;
+}
+
+.bota_job_info_employer_title {
+  background: #02897A;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 9px 0;
+}
+
+.bota_job_empoyer_img {
+  padding: 20px 0;
+
+  img {
+    margin: auto;
+    display: block;
+  }
+}
+
+.bota_job_empoyer_company {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #22343D;
+  margin-bottom: 7px;
+}
+
+.bota_job_empoyer_reviews {
+  text-align: center;
+  margin-bottom: 29px;
+
+  .fa-star {
+    color: #FFDF38;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+  .fa-star-o {
+    color: #E0E0E0;
+    font-size: 19px;
+    cursor: pointer;
+  }
+}
+.bota_job_info_employer ul {
+  li {
+    margin-bottom: 20px;
+    position: relative;
+    color: #475E69;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    svg {
+      float: left;
+      width: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+    }
+
+    span {
+      float: left;
+      width: calc(100% - 30px);
+      margin-left: 30px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  p{
+    margin-bottom: 0;
+  }
+  padding: 0 18px;
+}
+.bota_job_empoyer_des {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #475E69;
+  padding: 0 18px;
+  margin-bottom: 15px;
+}
+.bota_job_empoyer_remore {
+  a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #02897A;
+    line-height: 26px;
+    display: block;
+  }
+
+  text-align: center;
+  margin-bottom: 19px;
+
+  &:hover a {
+    opacity: .7;
+  }
+}

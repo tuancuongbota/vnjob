@@ -780,10 +780,14 @@
   font-size: 15px;
   color: #475E69;
   line-height: 26px;
-  display: inline-flex;
+  float: left;
+  width: 40px;
   margin-right: 15px;
 }
-
+.bota_details_career_tags_cont {
+  float: left;
+  width: calc(100% - 55px);
+}
 .bota_details_career_share_col a {
   position: relative;
   font-style: normal;
@@ -809,7 +813,7 @@
   }
 
   + a {
-    margin-left: 31px;
+    margin-left: 15px;
   }
 }
 .bota_details_career_shares {
