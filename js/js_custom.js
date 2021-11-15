@@ -36,6 +36,48 @@ $(document).ready(function() {
     }
     ]
   });
+  $('.slick_themes').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    dotsClass: 'custom_paging',
+    customPaging: function (slider, i) {
+        console.log(slider);
+        return '<div class="count_number">' + (i + 1) + '<span>' + '/'  + slider.slideCount + '</span>' + '</div>' + '<span class="count"></span>';
+    },
+    autoplaySpeed: 2000,
+
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
   $('.slick_career').slick({
     dots: true,
     infinite: true,
@@ -304,5 +346,9 @@ $(document).ready(function(){
       $('.bota_scrolltop,.bota_header_nav').removeClass('fixed');
     }
   });
-});  
+ 
+}); 
+function historys(){
+  history.back();
+}  
 // End Scroll To Top //

@@ -65,3 +65,19 @@ $body-font-family-2:'Roboto', sans-serif;
 		right: 0;
 	}
 }
+.icon-close{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	position: relative;
+	&::before{
+		content: "";
+		background-image: url(../imgs/closes.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		right: 0;
+	}
+}
