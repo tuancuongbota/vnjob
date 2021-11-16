@@ -4117,7 +4117,7 @@ textarea:-ms-input-placeholder, textarea::placeholder { color: #979797; }
 .bota_company_details_right_btn svg { margin-right: 5px; }
 .bota_company_details_right_btn:hover { opacity: .8; }
 
-.clearfix { position: relative; display: inline-block; }
+.clearfix { position: relative; }
 .clearfix:after { content: ""; display: block; clear: both; }
 
 .bota_company_details_right_img { margin-top: 62px; }
