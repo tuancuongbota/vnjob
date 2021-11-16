@@ -44,130 +44,751 @@
       margin-top: 10px;
     }
   }
-  .bota_hiring_it {
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
+}
+.bota_hiring_it {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+
+  .bota_hiring_it_img {
+    height: 185px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #E0E0E0;
+    margin: 0 20px;
+  }
+
+  .bota_hiring_content {
+    padding: 10px 20px 20px;
+    position: relative;
+  }
+
+  .bota_hiring_it_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
-  
-    .bota_hiring_it_img {
-      height: 185px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px 0;
+  }
+
+  .bota_hiring_content {
+    .bota_hiring_name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #22343D;
+      margin-bottom: 10px;
+      line-height: 20px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
       overflow: hidden;
-      position: relative;
-      border-bottom: 1px solid #E0E0E0;
-      margin: 0 20px;
+      a{
+          color: #22343D; 
+      }
+      &:hover > a{
+          color: #02897A;
+      }
     }
-  
-    .bota_hiring_content {
-      padding: 10px 20px 20px;
-      position: relative;
-    }
-  
-    .bota_hiring_it_img img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      max-width: 100%;
-      max-height: 100%;
-      padding: 20px 0;
-    }
-  
-    .bota_hiring_content {
-      .bota_hiring_name {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        color: #22343D;
-        margin-bottom: 10px;
-        line-height: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        display: -webkit-box;
-        overflow: hidden;
-        a{
-            color: #22343D; 
+
+    .bota_hiring_toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 20px;
+      margin-bottom: 10px;
+
+      .bota_hiring_col {
+        .fa-star {
+          color: #FFDF38;
         }
-        &:hover > a{
-            color: #02897A;
+
+        i {
+          font-size: 14px;
+          cursor: pointer;
+        }
+
+        .fa-star-o {
+          color: #E0E0E0;
         }
       }
-  
-      .bota_hiring_toolbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        line-height: 20px;
-        margin-bottom: 10px;
-  
-        .bota_hiring_col {
-          .fa-star {
-            color: #FFDF38;
-          }
-  
-          i {
-            font-size: 14px;
-            cursor: pointer;
-          }
-  
-          .fa-star-o {
-            color: #E0E0E0;
-          }
-        }
-  
-        .bota_hiring_fil {
-          font-style: normal;
-          font-weight: 300;
-          font-size: 15px;
-          color: #999;
-        }
-      }
-  
-      .bota_hiring_des {
+
+      .bota_hiring_fil {
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        color: #475E69;
-        margin-bottom: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        display: -webkit-box;
-        overflow: hidden;
+        font-size: 15px;
+        color: #999;
       }
-  
-      .bota_hiring_tool {
-        display: flex;
+    }
+
+    .bota_hiring_des {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      color: #475E69;
+      margin-bottom: 20px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+
+    .bota_hiring_tool {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .bota_hiring_tool_it {
+        color: #02897A;
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-flex;
         align-items: center;
-        justify-content: space-between;
-  
-        .bota_hiring_tool_it {
+
+        a {
           color: #02897A;
-          font-size: 14px;
-          font-weight: 500;
-          display: inline-flex;
-          align-items: center;
-  
-          a {
-            color: #02897A;
-          }
-  
-          svg {
-            margin-right: 10px;
-          }
-  
-          a:hover {
-            text-decoration: underline !important;
-          }
+        }
+
+        svg {
+          margin-right: 10px;
+        }
+
+        a:hover {
+          text-decoration: underline !important;
         }
       }
+    }
+  }
+}
+.bota_company_fild {
+  position: relative;
+
+  img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .bota_company_fild_cont {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 38px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+    }
+
+    .bota_company_fild_des {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      color: #fff;
+      line-height: 40px;
+      margin-bottom: 35px;
+    }
+
+    .bota_company_fild_inp {
+      position: relative;
+
+      input {
+        background: #FFFFFF;
+        border-radius: 5px;
+        width: 100%;
+        border: none;
+        height: 50px;
+        padding: 0 24px;
+        outline: none;
+        padding-right: 144px;
+      }
+
+      button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #02897A;
+        border-radius: 0px 5px 5px 0px;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 15px 24px;
+
+        &:hover {
+          background: #00AA97;
+          border-color: #00AA97;
+        }
+      }
+    }
+  }
+}
+.bota_company_fild_top {
+  .bota_breadcrumb_main .breadcrumb {
+    border: unset;
+  }
+
+  .row {
+    border-bottom: 1px solid #E0E0E0;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.bota_company_fild_bottom {
+  margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .bota_company_fild_top .row {
+    .col-xl-10 {
+      padding-left: 0;
+    }
+
+    .col-xl-2 {
+      padding-right: 0;
+    }
+  }
+}
+
+.bota_company_fild_sort {
+  float: right;
+
+  svg {
+    cursor: pointer;
+  }
+}
+.bota_company_bg_details {
+  position: relative;
+  text-align: center;
+
+  img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 56px;
+    color: #FFFFFF;
+  }
+
+  .bota_company_bg_details_cont {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+
+    .bota_company_bg_details_des {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      color: #fff;
+      line-height: 27.63px;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+.bota_company_details_top_logo {
+  position: relative;
+  margin-bottom: 38px;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.bota_company_details_logo_img {
+  width: 177px;
+  height: 75px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+}
+
+.bota_company_details_logo_text {
+  margin-left: 40px;
+  float: left;
+  width: calc(100% - 217px);
+
+  .bota_company_details_count {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+    color: #4D8DFF;
+    margin-bottom: 10px;
+  }
+}
+
+.bota_company_details_review {
+  .fa-star {
+    color: #FFDF38;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .fa-star-o {
+    color: #E0E0E0;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .bota_company_details_review_col {
+    display: inline-block;
+
+    + .bota_company_details_review_col {
+      margin-left: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 19px;
+      color: #475E69;
+    }
+  }
+}
+.bota_company_details_center {
+  .bota_company_details_center_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    color: #22343D;
+    margin-bottom: 21px;
+  }
+
+  .bota_company_details_center_des {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #22343D;
+  }
+
+  margin-bottom: 29px;
+}
+.bota_company_details_infomation {
+  position: relative;
+  margin-bottom: 45px;
+
+  ul li {
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 13px;
+    }
+
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #22343D;
+    line-height: 24px;
+  }
+}
+.bota_company_details_right {
+  position: relative;
+}
+
+.bota_company_details_right_btn {
+  background: #4D8DFF;
+  border-radius: 5px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 15px 18px;
+  float: right;
+  cursor: pointer;
+
+  svg {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+.clearfix {
+  position: relative;
+  display: inline-block;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.bota_company_details_right_img {
+  margin-top: 62px;
+  img{
+    margin: auto;
+    display: block;
+  }
+}
+.bota_company_details_bottom {
+  margin-bottom: 87px;
+}
+.bota_company_details_bottom_it {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 27px 0;
+  .row{
+    align-items: center;
+  }
+
+  .bota_company_details_bottom_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #22343D;
+    line-height: 36px;
+    margin-bottom: 7px;
+  }
+  .bota_company_details_bottom_col {
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #475E69;
+  
+    .bota_apply_fulltime {
+      background: #E1EBFB;
+      border-radius: 20px;
+      display: inline-block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      padding: 0 24px;
+      color: #4D8DFF;
+      cursor: pointer;
+    }
+    .bota_apply_parttime {
+      background: #E1FBE4;
+      border-radius: 20px;
+      display: inline-block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      padding: 0 24px;
+      color: #20C08B;
+      cursor: pointer;
+    }
+    .bota_apply_remote {
+      background: #F9E1FB;
+      border-radius: 20px;
+      display: inline-block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      padding: 0 24px;
+      color: #740A76;
+      cursor: pointer;
+    }
+  
+    span svg {
+      margin-right: 5px;
+    }
+  }
+}
+.bota_company_apply_now_btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #02897A;
+  display: inline-block;
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+@media (min-width: 576px) {
+  #popup_review_company .modal-dialog {
+    max-width: 851px;
+  }
+}
+
+#popup_review_company {
+  h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #22343D;
+  }
+
+  .modal-body {
+    padding: 20px 30px;
+  }
+}
+
+.popup_review_company_des {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #22343D;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#popup_review_company {
+   .modal-footer {
+    margin: 0 30px;
+    padding: 20px 0;
+    justify-content: center;
+}
+  .modal-content {
+    border-radius: 20px;
+  }
+
+  .modal-header {
+    margin: 0 30px;
+    padding: 16px 0;
+  }
+    .btn-secondary {
+      background: #D9D9D9;
+      border-radius: 5px;
+      color: #22343D;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      min-width: 194px;
+      height: 48px;
+      border-color: #D9D9D9;
+      margin: 0;
+      padding: 0;
+      &:hover{
+        opacity: .8;
+      }
+    }
+  
+    .btn-primary {
+      background: #4D8DFF;
+      border-radius: 5px;
+      color: #fff;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      min-width: 194px;
+      height: 48px;
+      border-color: #4D8DFF;
+      margin: 0;
+      padding: 0;
+      margin-left: 35px;
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
+
+.popup_review_company_it {
+  position: relative;
+  margin-bottom: 20px;
+
+  label {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #22343D;
+    display: block;
+    margin-bottom: 9px;
+  }
+
+  input[type="text"] {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding: 0 14px;
+
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #22343D;
+    display: block;
+    margin-bottom: 19px;
+  }
+}
+
+.popup_review_company_staff label {
+  display: inline-block;
+
+  + label {
+    margin-left: 73px;
+  }
+}
+
+.bota_staff_dlex {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #333;
+}
+
+.popup_review_company_it textarea {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px;
+  height: 100px;
+
+  &:focus {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+  }
+}
+.bota_staff_dlex {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  input[type="radio"] {
+    display: none;
+    &:checked ~ .checkmark {
+      border-color: #4D8DFF;
+      &:after {
+        content: "";
+        left: 0;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        background: #4D8DFF;
+        position: absolute;
+        border-radius: 100%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+  }
+    
+  }
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #BFBFBF;
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    margin-right: 8px;
+}
+}
+.popup_review_company_it .popup_review_company_col {
+  position: relative;
+  margin-bottom: 20px;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #22343D;
+    min-width: 166px;
+    float: left;
+  }
+
+  .popup_review_company_star {
+    font-size: 20px;
+
+    .fa-star {
+      color: #FFDF38;
+      cursor: pointer;
+    }
+
+    .fa-star-o {
+      color: #E0E0E0;
+      cursor: pointer;
     }
   }
 }

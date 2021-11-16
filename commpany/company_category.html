@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Công ty</title>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/js_custom.js"></script>
+
+<body>
+	<header class="bota_header">
+		<div class="bota_header_top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-3 col-lg-3 col-sm-3">
+						<div class="bota_header_logo">
+							<a href="../index.html" title="logo">
+								<img src="../imgs/logo.svg" alt="logo" class="img-fluid">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-9 col-lg-9 col-sm-9">
+						<nav class="bota_header_nav">
+							<ul class="bota_header_nav_big">
+								<li class="nav-item">				
+									<a href="../job/job.html" title="Việc làm">
+										<span>Việc làm</span>
+									</a>
+								</li>
+								<li class="nav-item">				
+									<a href="../themes/themes.html" title="Mẫu CV">
+										<span>Mẫu CV</span>
+									</a>
+								</li>
+								<li class="nav-item active">				
+									<a href="../commpany/company.html" title="Công ty">
+										<span>Công ty</span>
+									</a>
+								</li>
+								<li class="nav-item">				
+									<a href="../carreer/career.html" title="Góc nghề nghiệp">
+										<span>Góc nghề nghiệp</span>
+									</a>
+								</li>
+								<li class="nav-item">				
+									<a href="../profile/profile.html" title="Tạo Profile">
+										<span>Tạo Profile</span>
+									</a>
+								</li>
+								<li class="bota_header_employer">
+									<a href="../recuit/recuit.html" title="Nhà tuyển dụng">
+										<span>
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.718 16.3539L13.801 12.4369C14.8168 11.1306 15.4288 9.49448 15.4288 7.71439C15.4288 3.46055 11.9682 0 7.71439 0C3.46055 0 0 3.46055 0 7.71439C0 11.9682 3.46055 15.4288 7.71439 15.4288C9.49448 15.4288 11.1306 14.8168 12.4369 13.801L16.3539 17.718C16.7306 18.0947 17.3407 18.0947 17.7174 17.718C18.0941 17.3413 18.0941 16.7306 17.718 16.3539ZM1.28573 7.71439C1.28573 4.16963 4.16963 1.28573 7.71439 1.28573C11.2592 1.28573 14.143 4.16963 14.143 7.71439C14.143 11.2592 11.2592 14.143 7.71439 14.143C4.16963 14.143 1.28573 11.2592 1.28573 7.71439Z" fill="white"/>
+												<path d="M10.9287 10.9287H4.50006V9.9464C4.50006 8.68253 5.321 7.62051 6.45502 7.23544C6.04808 6.88186 5.78579 6.36693 5.78579 5.78577C5.78579 4.72055 6.64916 3.85718 7.71439 3.85718C8.77962 3.85718 9.64299 4.72055 9.64299 5.78577C9.64299 6.36693 9.3807 6.88186 8.97376 7.23544C10.1078 7.62051 10.9287 8.68253 10.9287 9.9464V10.9287Z" fill="white"/>
+											</svg>
+											Nhà tuyển dụng
+										</span>
+									</a>
+								</li>
+								<li class="bota_header_login">
+									<a href="../user/login.html" title="Đăng nhập">
+										<span>
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16 8.00244C16 10.14 15.1662 12.1499 13.6534 13.6587C13.6315 13.6816 13.6079 13.7029 13.583 13.7225C12.0812 15.1901 10.0973 15.9985 7.99694 15.9995H7.9935C5.88879 15.9995 3.90202 15.1888 2.39803 13.7167L2.33952 13.658C1.59908 12.9222 1.01061 12.0427 0.608809 11.0713C0.207005 10.1 0 9.05638 0 8.00212C0 6.94787 0.207005 5.90428 0.608809 4.9329C1.01061 3.96152 1.59908 3.082 2.33952 2.34621C3.84883 0.833647 5.85813 0 7.99569 0C10.1333 0 12.1429 0.833647 13.6534 2.34685C15.164 3.86005 16 5.8652 16 8.00244Z" fill="#22343D"/>
+												<path d="M15.4055 8.00231C15.4055 9.98035 14.6336 11.8403 13.2326 13.238C13.2123 13.2593 13.1905 13.279 13.1675 13.2971C11.7767 14.6555 9.94079 15.4027 7.99627 15.405H7.99314C6.04486 15.405 4.20578 14.6546 2.81348 13.292L2.75935 13.2377C2.07392 12.5566 1.52917 11.7424 1.15721 10.8432C0.785255 9.94398 0.593628 8.97793 0.593628 8.00199C0.593628 7.02606 0.785255 6.06 1.15721 5.16078C1.52917 4.26156 2.07392 3.44738 2.75935 2.76625C4.15728 1.36567 6.01733 0.594238 7.99596 0.594238C9.97458 0.594238 11.8349 1.36567 13.2329 2.76657C14.6308 4.16747 15.4055 6.02363 15.4055 8.00231Z" fill="white"/>
+												<path d="M11.8191 5.87261C11.8191 6.77593 11.512 7.6513 10.95 8.34957C10.388 9.04784 9.60595 9.52581 8.73711 9.70203C7.86826 9.87826 6.96638 9.74183 6.18512 9.31601C5.40386 8.89018 4.79157 8.2013 4.45258 7.36674C4.11359 6.53218 4.06888 5.60359 4.32605 4.73918C4.58323 3.87477 5.12638 3.12803 5.86297 2.6262C6.59955 2.12438 7.48399 1.89851 8.36559 1.98708C9.24718 2.07566 10.0714 2.4732 10.6978 3.11197C11.0544 3.47367 11.3371 3.9039 11.5296 4.37776C11.7221 4.85162 11.8205 5.35971 11.8191 5.87261ZM13.5843 13.0341C12.0966 14.535 10.0883 15.377 7.99544 15.3771H7.99231C5.90149 15.3861 3.89144 14.5544 2.39809 13.0621C2.3567 13.0209 2.33175 12.9655 2.32805 12.9065C2.32436 12.8476 2.34217 12.7894 2.37807 12.7431C3.29322 11.5709 4.53766 10.7117 5.94485 10.2804C5.9334 10.3164 5.93051 10.3547 5.93644 10.392C5.94237 10.4293 5.95695 10.4647 5.97896 10.4952L7.75797 12.9655C7.77939 12.9953 7.80733 13.0197 7.83959 13.0367C7.87185 13.0536 7.90753 13.0627 7.94382 13.0631H7.94726C7.98297 13.0631 8.01822 13.0548 8.05031 13.0388C8.08241 13.0228 8.11051 12.9996 8.13248 12.9709L9.99972 10.5264C10.0233 10.4956 10.0391 10.4593 10.0458 10.4207C10.0524 10.3822 10.0497 10.3426 10.0379 10.3053C10.0341 10.2933 10.0293 10.2817 10.0235 10.2706C11.4335 10.6925 12.6828 11.5451 13.6028 12.7134C13.6393 12.7597 13.6576 12.8181 13.6542 12.8774C13.6508 12.9366 13.6259 12.9925 13.5843 13.0341Z" fill="#22343D"/>
+											</svg>
+
+											Đăng nhập
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="bota_main_body">
+       <div class="bota_company_fild">
+           <img src="../imgs/bg_commays.jpg" alt="Top những công ty FindTech hàng đầu">
+           <div class="bota_company_fild_cont">
+               <div class="container">
+                    <h1>Top những công ty FindTech hàng đầu</h1>
+                    <div class="bota_company_fild_des">Discover your next career move, freelance gig, or internship</div>
+                    <div class="bota_company_fild_inp">
+                        <input placeholder="Tìm kiếm công ty..." />
+                        <button>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.24993 16.4999C3.70122 16.4999 0 12.7986 0 8.24993C0 3.70122 3.70122 0 8.24993 0C12.7986 0 16.4999 3.70122 16.4999 8.24993C16.4999 12.7986 12.7986 16.4999 8.24993 16.4999ZM8.24993 1.49999C4.52846 1.49999 1.49999 4.52771 1.49999 8.24993C1.49999 11.9722 4.52846 14.9999 8.24993 14.9999C11.9714 14.9999 14.9999 11.9722 14.9999 8.24993C14.9999 4.52771 11.9714 1.49999 8.24993 1.49999Z" fill="white"/>
+                            <path d="M17.2499 18C17.0579 18 16.8659 17.9265 16.7196 17.7802L13.1234 14.184C12.8309 13.8907 12.8309 13.416 13.1234 13.1235C13.4167 12.8303 13.8914 12.8303 14.1847 13.1235L17.7801 16.7197C18.0734 17.013 18.0734 17.487 17.7801 17.7802C17.6339 17.9265 17.4419 18 17.2499 18Z" fill="white"/>
+                            </svg>
+                            Tìm kiếm</button>
+                    </div>
+                </div>
+           </div>
+       </div>
+       <div class="bota_company_fild_top">
+        <!-- Breadcrumbs -->
+        <div class="bota_breadcrumb_main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-10 col-sm-10">
+                        <ul class="breadcrumb">
+                            <li><a href="../index.html" title="Trang chủ">Trang chủ</a></li>
+                            <li><a href="company.html" title="Công ty">Công ty</a></li>
+                            <li><a href="company_category.html" title="Top Công Ty FindTech">Top Công Ty FindTech</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-2">
+                        <div class="bota_company_fild_sort">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.87502 1.14492C3.87502 1.14488 3.87502 20.4211 3.87502 20.4211L1.89115 18.8326C0.686812 17.8997 -0.736969 19.6723 0.440665 20.6478C0.516598 20.6751 4.72543 24.1742 4.6976 23.9445C5.06122 24.0729 5.45994 23.9668 5.76136 23.747C5.76136 23.747 9.63153 20.6478 9.63153 20.6478C10.1323 20.2468 10.2136 19.5155 9.81298 19.0142C9.4127 18.5133 8.68136 18.4323 8.181 18.8326L6.19713 20.4212V1.14488C6.17516 -0.370189 3.90176 -0.393035 3.87502 1.14492ZM22.8389 3.08185H10.5511C9.90971 3.08185 9.39002 3.60206 9.39002 4.24406C9.39002 4.8861 9.90971 5.40626 10.5511 5.40626H22.8389C23.4803 5.40626 24 4.8861 24 4.24406C24 3.60206 23.4803 3.08185 22.8389 3.08185ZM22.8389 8.2471H12.5992C11.9578 8.2471 11.4382 8.7673 11.4382 9.4093C11.4382 10.0513 11.9578 10.5715 12.5992 10.5715H22.8389C23.4803 10.5715 24 10.0513 24 9.4093C24 8.7673 23.4803 8.2471 22.8389 8.2471ZM22.8389 13.4127H14.6469C14.0056 13.4127 13.4859 13.9329 13.4859 14.5749C13.4859 15.217 14.0056 15.7371 14.6469 15.7371H22.8389C23.4803 15.7371 24 15.217 24 14.5749C24 13.9329 23.4803 13.4127 22.8389 13.4127ZM22.8389 18.578H16.695C16.0536 18.578 15.534 19.0982 15.534 19.7402C15.534 20.3822 16.0536 20.9024 16.695 20.9024H22.8389C23.4803 20.9024 24 20.3822 24 19.7402C24 19.0982 23.4803 18.578 22.8389 18.578Z" fill="#22343D"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumbs -->
+        </div>
+        <div class="bota_company_fild_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-cskh.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        Starbucks
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-gopro.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        eBay
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-dole.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        General Electric
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-m.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        Gillette
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-nasa.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        IBM
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-huawei.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        MasterCard
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-bmw.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        Pizza Hut
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-ellin.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        L'Oréal
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-dyson.jpeg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        The Walt Disney Company
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-the-north-face.jpeg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        Louis Vuitton
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-louis.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        Louis Vuitton
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-4 margin-bottom-20">
+                        <div class="bota_hiring_it">
+                            <div class="bota_hiring_it_img">
+                                <a href="company_details.html" title="">
+                                    <img src="../imgs/logo-gillette.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="bota_hiring_content">
+                                <div class="bota_hiring_name">
+                                    <a href="company_details.html" title="">
+                                        Gillette
+                                    </a>
+                                </div>
+                                <div class="bota_hiring_toolbar">
+                                    <div class="bota_hiring_col">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="bota_hiring_fil">
+                                        Tài chính - Đầu tư
+                                    </div>
+                                </div>
+                                <div class="bota_hiring_des">
+                                    AIMS - tập đoàn tư vấn định cư &amp; di trú uy tín hàng đầu đến từ Singapore tự hào là nhà cung cấp dịch vụ tư vấn trọn gói...
+                                </div>
+                                <div class="bota_hiring_tool">
+                                    <div class="bota_hiring_tool_it">                       
+                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.6923 3.07692H13.0769V2.30769C13.0763 1.69586 12.8329 1.10928 12.4003 0.67665C11.9676 0.244019 11.3811 0.000671907 10.7692 0H9.23077C8.61894 0.000671907 8.03236 0.244019 7.59973 0.67665C7.1671 1.10928 6.92375 1.69586 6.92308 2.30769V3.07692H2.30769C1.69586 3.07759 1.10928 3.32094 0.67665 3.75357C0.244019 4.1862 0.000671907 4.77278 0 5.38461V9.23077H20V5.38461C19.9993 4.77278 19.756 4.1862 19.3234 3.75357C18.8907 3.32094 18.3041 3.07759 17.6923 3.07692ZM8.46154 2.30769C8.4618 2.10376 8.54293 1.90826 8.68713 1.76406C8.83134 1.61985 9.02684 1.53873 9.23077 1.53846H10.7692C10.9732 1.53864 11.1687 1.61975 11.313 1.76397C11.4572 1.90819 11.5383 2.10374 11.5385 2.30769V3.07692H8.46154V2.30769ZM10.7692 10.7692V11.5385H9.23077V10.7692H10.7692ZM12.3077 10.7692H20V15.3846C19.9993 15.9964 19.756 16.583 19.3234 17.0157C18.8907 17.4483 18.3041 17.6916 17.6923 17.6923H2.30769C1.69586 17.6916 1.10928 17.4483 0.67665 17.0157C0.244019 16.583 0.000671907 15.9964 0 15.3846V10.7692H7.69231V12.3077C7.69231 12.5117 7.77335 12.7074 7.91761 12.8516C8.06187 12.9959 8.25753 13.0769 8.46154 13.0769H11.5385C11.7425 13.0769 11.9381 12.9959 12.0824 12.8516C12.2266 12.7074 12.3077 12.5117 12.3077 12.3077V10.7692Z" fill="#02897A"></path>
+                                        </svg>
+                                        20 việc làm
+                                    </div>
+                                    <div class="bota_hiring_tool_it">
+                                        <a href="company_details.html" title="Tìm hiểu thêm">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bota_pagination">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" title="1" class="active">1</a>
+                        </li>
+                        <li>
+                            <a href="#" title="2">2</a>
+                        </li>
+                        <li>
+                            <a href="#" title="3">3</a>
+                        </li>
+                        <li>
+                            <a href="#" title="trang tiep">
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 17.0001L9 9.00012L1 1.00012" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</div>
+		<footer class="bota_footer">
+			<div class="bota_footer_top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-sm-6">
+							<div class="bota_footer_content">
+								<div class="bota_footer_logo">
+									<img src="../imgs/logo-footer.png" width="147" height="53" class="img-fluid" alt="logo" />
+								</div>
+								<h3>CÔNG TY CỔ PHẦN CÔNG NGHỆ BOTA</h3>
+								<ul>
+									<li>
+										<svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.2764 0.930496C5.30336 -0.212052 7.79483 -0.192078 9.80277 0.982803C11.791 2.18162 12.9994 4.32117 12.9881 6.6227C12.9418 8.90915 11.6461 11.0584 10.0264 12.7199C9.09162 13.6832 8.04586 14.5349 6.91053 15.2578C6.7936 15.3234 6.66552 15.3673 6.53261 15.3874C6.40469 15.3821 6.28011 15.3454 6.17012 15.2807C4.43681 14.1945 2.91617 12.808 1.68136 11.188C0.648103 9.83563 0.0610779 8.20181 1.07778e-06 6.50838C-0.00134027 4.20242 1.24944 2.07304 3.2764 0.930496ZM4.45155 7.46287C4.79251 8.27832 5.59732 8.81023 6.49019 8.81023C7.07512 8.8143 7.6374 8.58701 8.05175 8.179C8.4661 7.77098 8.69808 7.21614 8.696 6.63811C8.69912 5.7558 8.16368 4.95865 7.33967 4.61887C6.51567 4.27908 5.56565 4.46368 4.93319 5.08649C4.30073 5.70927 4.11059 6.64741 4.45155 7.46287Z" fill="white"/>
+											<ellipse opacity="0.4" cx="6.49096" cy="17.1876" rx="4.63866" ry="0.9" fill="white"/>
+										</svg>
+										<span>Tầng 8 TTTM Vân Hồ, Số 51 Lê Đại Hành, Hai Bà Trưng, Hà Nội</span>
+									</li>
+									<li>
+										<svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.4" d="M21.5129 13.028C21.5129 15.818 19.1116 18.078 16.1206 18.088H16.1098H5.48585C2.50557 18.088 0.0720215 15.838 0.0720215 13.048V13.038C0.0720215 13.038 0.0784538 8.61201 0.0870301 6.38601C0.0881022 5.96801 0.602684 5.73401 0.953243 5.99401C3.50042 7.87901 8.05555 11.316 8.11237 11.361C8.87352 11.93 9.83836 12.251 10.8246 12.251C11.8109 12.251 12.7758 11.93 13.5369 11.35C13.5937 11.315 18.047 7.98101 20.6328 6.06501C20.9844 5.80401 21.5012 6.03801 21.5022 6.45501C21.5129 8.66401 21.5129 13.028 21.5129 13.028Z" fill="white"/>
+											<path d="M20.9479 2.7614C20.0195 1.1294 18.1928 0.0874023 16.1816 0.0874023H5.48258C3.47142 0.0874023 1.64465 1.1294 0.716259 2.7614C0.508283 3.1264 0.606911 3.5814 0.953182 3.8394L8.91312 9.7784C9.47059 10.1984 10.146 10.4074 10.8214 10.4074C10.8257 10.4074 10.8289 10.4074 10.8321 10.4074C10.8353 10.4074 10.8396 10.4074 10.8428 10.4074C11.5182 10.4074 12.1936 10.1984 12.751 9.7784L20.711 3.8394C21.0573 3.5814 21.1559 3.1264 20.9479 2.7614Z" fill="white"/>
+										</svg>
+										<span>Email: contact@bota.com.vn</span>
+									</li>
+									<li>
+										<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.4" d="M11.9817 3.22823C11.5223 3.14909 11.1005 3.4225 11.0131 3.84071C10.9256 4.25893 11.2197 4.66725 11.6665 4.74909C13.0117 4.99372 14.0504 5.96506 14.3137 7.22419V7.22509C14.3887 7.58754 14.7307 7.85106 15.1247 7.85106C15.1776 7.85106 15.2304 7.84656 15.2842 7.83757C15.731 7.75393 16.0251 7.34651 15.9376 6.92739C15.5446 5.04679 13.9928 3.59428 11.9817 3.22823Z" fill="white"/>
+											<path opacity="0.4" d="M11.9252 0.0945391C11.71 0.0657589 11.4938 0.125118 11.3218 0.25283C11.145 0.382341 11.0345 0.569413 11.0105 0.778969C10.9595 1.20258 11.2872 1.58572 11.7407 1.63338C14.8684 1.95896 17.2995 4.2317 17.6512 7.15829C17.6982 7.55042 18.0509 7.84632 18.4718 7.84632C18.5035 7.84632 18.5342 7.84452 18.5659 7.84092C18.786 7.81843 18.982 7.7168 19.1204 7.55492C19.2578 7.39303 19.3202 7.19157 19.2952 6.98561C18.8571 3.33411 15.8274 0.500161 11.9252 0.0945391Z" fill="white"/>
+											<path d="M15.056 11.4937C14.4305 11.3696 13.9356 11.6394 13.4975 11.875C13.0487 12.1178 12.1945 12.7609 11.7064 12.5954C9.20231 11.6385 6.84718 9.60137 5.82768 7.26657C5.64799 6.80159 6.33695 6.00384 6.59543 5.58293C6.84814 5.17461 7.13256 4.70963 7.00284 4.12503C6.88562 3.59889 5.36934 1.80642 4.83316 1.31626C4.47859 0.992479 4.1173 0.814401 3.74544 0.784721C2.34735 0.729859 0.785904 2.46297 0.512051 2.87758C-0.174983 3.76168 -0.170179 4.93807 0.523582 6.36449C2.19553 10.1959 8.51912 15.978 12.6586 17.5897C13.4216 17.9216 14.1211 18.0879 14.7486 18.0879C15.3626 18.0879 15.9093 17.9287 16.3792 17.6131C16.7328 17.4233 18.6757 15.9006 18.6238 14.5669C18.594 14.2269 18.4028 13.8869 18.0588 13.5577C17.5342 13.055 15.6182 11.6043 15.056 11.4937Z" fill="white"/>
+										</svg>
+										<span>
+											<p>
+												Hỗ trợ: 1900 2008
+											</p>
+											<p>
+												Hotline: 0988 512 772
+											</p>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-8 col-lg-8 col-sm-12">
+							<div class="row">
+								<div class="col-xl-4 col-lg-4 col-sm-6">
+									<h4 class="bota_footer_title">
+										Nhà tuyển dụng
+									</h4>
+									<div class="bota_footer_link">
+										<ul>
+											<li>
+												<a href="#" title="Đăng tin tuyển dụng">Đăng tin tuyển dụng</a>
+											</li>
+											<li>
+												<a href="#" title="Tìm kiếm ứng viên">Tìm kiếm ứng viên</a>
+											</li>
+											<li>
+												<a href="#" title="Quản lý tuyển dụng">Quản lý tuyển dụng</a>
+											</li>
+											<li>
+												<a href="#" title="Quản lý ứng viên">Quản lý ứng viên</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-sm-6">
+									<h4 class="bota_footer_title">
+										Ứng viên
+									</h4>
+									<div class="bota_footer_link">
+										<ul>
+											<li>
+												<a href="#" title="Mẫu CV">Mẫu CV</a>
+											</li>
+											<li>
+												<a href="#" title="Việc làm hấp dẫn">Việc làm hấp dẫn</a>
+											</li>
+											<li>
+												<a href="#" title="Việc làm theo ngành nghề">Việc làm theo ngành nghề</a>
+											</li>
+											<li>
+												<a href="#" title="Review công ty">Review công ty</a>
+											</li>
+											<li>
+												<a href="#" title="Góc nghề nghiệp">Góc nghề nghiệp</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-sm-6">
+									<h4 class="bota_footer_title">
+										Liên hệ
+									</h4>
+									<div class="bota_footer_link">
+										<ul>
+											<li>
+												<a href="#" title="Về chúng tôi">Về chúng tôi</a>
+											</li>
+											<li>
+												<a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a>
+											</li>
+											<li>
+												<a href="#" title="Kết nối với chúng tôi">Kết nối với chúng tôi</a>
+											</li>
+										</ul>
+									</div>
+									<div class="bota_corner_socails">
+										<ul>
+											<li>
+												<a href="https://www.facebook.com/" title="facebook">
+													<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M12.5 0.0874023C5.60753 0.0874023 0 5.69493 0 12.5874C0 19.4794 5.60753 25.0874 12.5 25.0874C19.392 25.0874 25 19.4794 25 12.5874C25 5.69493 19.393 0.0874023 12.5 0.0874023ZM15.6086 13.0275H13.575V20.2759H10.5615C10.5615 20.2759 10.5615 16.3153 10.5615 13.0275H9.12904V10.4656H10.5615V8.8086C10.5615 7.62184 11.1254 5.76743 13.6027 5.76743L15.8357 5.77599V8.2628C15.8357 8.2628 14.4788 8.2628 14.2149 8.2628C13.9511 8.2628 13.576 8.39472 13.576 8.96066V10.4661H15.872L15.6086 13.0275Z" fill="white"/>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="#" title="skype">
+													<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M13.8885 11.6969L12.1696 11.3154C11.5158 11.1664 10.7631 10.9696 10.7631 10.3531C10.7631 9.73534 11.2911 9.3037 12.2442 9.3037C14.1651 9.3037 13.9896 10.6238 14.9433 10.6238C15.4451 10.6238 15.8844 10.3287 15.8844 9.82136C15.8844 8.63747 13.9896 7.74902 12.3823 7.74902C10.6375 7.74902 8.77931 8.49003 8.77931 10.4636C8.77931 11.414 9.11882 12.4251 10.9892 12.8941L13.3116 13.4739C14.0144 13.6471 14.1903 14.0425 14.1903 14.3992C14.1903 14.9924 13.6011 15.5718 12.5337 15.5718C10.4488 15.5718 10.7382 13.9674 9.62083 13.9674C9.11882 13.9674 8.75452 14.3132 8.75452 14.8066C8.75452 15.7687 9.92258 17.0525 12.5337 17.0525C15.0181 17.0525 16.2491 15.8551 16.2491 14.2514C16.2491 13.2159 15.7717 12.1165 13.8885 11.6969Z" fill="white"/>
+														<path d="M12.5 0.0874023C5.5975 0.0874023 0 5.6849 0 12.5874C0 19.4899 5.5975 25.0874 12.5 25.0874C19.4025 25.0874 25 19.4899 25 12.5874C25 5.6849 19.4025 0.0874023 12.5 0.0874023ZM19.0081 19.077C18.1862 19.8992 17.094 20.3511 15.9321 20.3511C15.1794 20.3511 14.4424 20.1554 13.7915 19.7871C13.369 19.862 12.9362 19.9015 12.5044 19.9015C11.5122 19.9015 10.5494 19.707 9.64355 19.323C8.7677 18.9538 7.98206 18.4233 7.30667 17.7483C6.63204 17.0735 6.10218 16.2878 5.73235 15.4124C5.34859 14.506 5.15442 13.5437 5.15442 12.5514C5.15442 12.1264 5.19257 11.7009 5.26505 11.2845C4.9078 10.6419 4.71764 9.91483 4.71764 9.17496C4.71764 8.01282 5.17044 6.9201 5.99194 6.09841C6.81381 5.27634 7.90653 4.82373 9.06868 4.82373C9.7805 4.82373 10.4839 5.0013 11.1092 5.33376C11.1103 5.33356 11.1116 5.33356 11.1126 5.33318C11.5685 5.24583 12.0367 5.20177 12.5044 5.20177C13.4964 5.20177 14.459 5.39613 15.3648 5.77931C16.2397 6.14953 17.0263 6.67939 17.7008 7.35421C18.3762 8.02922 18.9058 8.81524 19.276 9.69052C19.6598 10.5967 19.854 11.5592 19.854 12.5514C19.854 12.9986 19.8118 13.4463 19.7315 13.8836C20.0912 14.5287 20.2826 15.2583 20.2826 16.0006C20.2824 17.1628 19.8301 18.2557 19.0081 19.077Z" fill="white"/>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="https://twitter.com/" title="twitter">
+													<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M12.5 0.0874023C5.60753 0.0874023 0 5.69493 0 12.5874C0 19.4794 5.60753 25.0874 12.5 25.0874C19.392 25.0874 25 19.4794 25 12.5874C25 5.69493 19.393 0.0874023 12.5 0.0874023ZM18.0763 9.72649C18.0818 9.85035 18.0849 9.97522 18.0849 10.1001C18.0849 13.9021 15.1917 18.2846 9.89839 18.2846C8.27358 18.2846 6.76106 17.8097 5.4882 16.9931C5.71326 17.0198 5.94236 17.0333 6.17447 17.0333C7.52286 17.0333 8.76299 16.5731 9.74784 15.8018C8.48908 15.7786 7.42619 14.9468 7.06014 13.8034C7.23536 13.8366 7.41612 13.8552 7.6009 13.8552C7.86323 13.8552 8.118 13.821 8.35918 13.755C7.04302 13.4912 6.05162 12.3286 6.05162 10.9339C6.05162 10.9218 6.05162 10.9092 6.05212 10.8976C6.43982 11.1126 6.88341 11.2425 7.35469 11.2571C6.58332 10.7421 6.07528 9.86093 6.07528 8.86298C6.07528 8.33531 6.21677 7.84087 6.46449 7.41591C7.88286 9.15703 10.0036 10.302 12.3943 10.4228C12.3449 10.2119 12.3202 9.99284 12.3202 9.76677C12.3202 8.17821 13.6082 6.88975 15.1968 6.88975C16.0245 6.88975 16.7712 7.23918 17.2969 7.79807C17.953 7.66917 18.5672 7.43051 19.1246 7.09971C18.9081 7.77189 18.4534 8.33531 17.8578 8.69179C18.4403 8.6223 18.9962 8.46823 19.5103 8.23914C19.1266 8.81515 18.6387 9.32218 18.0763 9.72649Z" fill="white"/>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="https://www.youtube.com/" title="youtube">
+													<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.9414 14.9293L15.0075 12.5874L10.9414 10.2456V14.9293Z" fill="white"/>
+														<path d="M12.5 0.0874023C5.5975 0.0874023 0 5.6849 0 12.5874C0 19.4899 5.5975 25.0874 12.5 25.0874C19.4025 25.0874 25 19.4899 25 12.5874C25 5.6849 19.4025 0.0874023 12.5 0.0874023ZM20.3106 12.6002C20.3106 12.6002 20.3106 15.1352 19.989 16.3577C19.8088 17.0268 19.2812 17.5543 18.6121 17.7344C17.3897 18.0562 12.5 18.0562 12.5 18.0562C12.5 18.0562 7.6231 18.0562 6.3879 17.7216C5.7188 17.5415 5.19123 17.0138 5.01099 16.3447C4.68922 15.1352 4.68922 12.5874 4.68922 12.5874C4.68922 12.5874 4.68922 10.0525 5.01099 8.83012C5.19104 8.16102 5.73158 7.62048 6.3879 7.44042C7.61032 7.11865 12.5 7.11865 12.5 7.11865C12.5 7.11865 17.3897 7.11865 18.6121 7.4532C19.2812 7.63326 19.8088 8.16102 19.989 8.83012C20.3236 10.0525 20.3106 12.6002 20.3106 12.6002Z" fill="white"/>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center">Thiết kế bởi <a rel="nofollow" href="https://bota.vn" target="_blank" title="Bota">Bota</a></div>
+		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+		<script>
+		$(document).ready(function() {AOS.init();});</script> 
+</body>
+</html>
