@@ -4146,6 +4146,7 @@ textarea:-ms-input-placeholder, textarea::placeholder { color: #979797; }
 #popup_review_company .modal-footer { margin: 0 30px; padding: 20px 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 #popup_review_company .modal-content { border-radius: 20px; }
 #popup_review_company .modal-header { margin: 0 30px; padding: 16px 0; }
+#popup_review_company .modal-header .close { outline: none; }
 #popup_review_company .btn-secondary { background: #D9D9D9; border-radius: 5px; color: #22343D; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; min-width: 194px; height: 48px; border-color: #D9D9D9; margin: 0; padding: 0; }
 #popup_review_company .btn-secondary:hover { opacity: .8; }
 #popup_review_company .btn-primary { background: #4D8DFF; border-radius: 5px; color: #fff; font-style: normal; font-weight: 500; font-size: 18px; line-height: 24px; min-width: 194px; height: 48px; border-color: #4D8DFF; margin: 0; padding: 0; margin-left: 35px; }
