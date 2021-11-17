@@ -1,0 +1,252 @@
+.bota_recuit_bg_top {
+    background: #F5FDFB;
+    padding: 210px 0 261px;
+  
+    .bota_recuit_bg_top_content h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 38px;
+      line-height: 55px;
+      color: #22343D;
+      margin-bottom: 20px;
+    }
+  
+    .bota_recuit_bg_top_des {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 30px;
+      color: #22343D;
+      margin-bottom: 50px;
+    }
+  
+    .bota_recuit_bg_top_btn {
+      a {
+        background: #02897A;
+        border-radius: 5px;
+        color: #fff;
+        position: relative;
+        width: 197px;
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        border: 1px solid #02897A;
+        &:hover{
+            background-color: #00AA97;
+            border-color: #00AA97;
+        }
+      }
+  
+      button {
+        background: #fff;
+        border-radius: 5px;
+        color: #02897A;
+        position: relative;
+        width: 197px;
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        border: 1px solid #02897A;
+        margin-left: 30px;
+        outline: none;
+        &:hover{
+            background-color: #00AA97;
+            border-color: #00AA97;
+            color: #fff;
+        }
+      }
+    }
+    .bota_recuit_bg_top_content {
+        max-width: 490px;
+    }
+  }
+  .bota_recuit_center_it {
+    padding: 80px 0;
+    &:nth-child(2) {
+        background: #F5FDFB;
+        .bota_recuit_centerd_des{
+            margin-bottom: 30px;
+        }
+    }
+    
+  }
+  .bota_recuit_contents img {
+    margin: auto;
+    display: block;
+    padding: 0 30px;
+}
+.bota_recuit_center_main_title {
+    text-align: center;
+    margin-bottom: 80px;
+  
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 60px;
+      color: #22343D;
+      margin: 0;
+    }
+  
+    .bota_recuit_center_main_des {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      color: #475E69;
+    }
+  }
+.bota_recuit_centerd_info_sub {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #22343D;
+    margin-bottom: 8px;
+}
+
+.bota_recuit_centerd_name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 48px;
+    color: #22343D;
+    margin-bottom: 23px;
+}
+
+.bota_recuit_centerd_des {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+}
+.bota_recuit_centerd_list {
+    margin-top: 56px;
+  
+    ul li {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 26px;
+      color: #22343D;
+      margin-bottom: 30px;
+  
+      svg {
+        margin-right: 20px;
+      }
+    }
+  }
+  .bota_recuit_centerd_des_it {
+    margin-bottom: 25px;
+  
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 26px;
+      color: #22343D;
+    }
+  }
+  
+  .bota_recuit_centerd_des_it_ds {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #22343D;
+  }
+  .bota_recuit_center_value_it {
+    position: relative;
+    border: 1px solid #E0E0E0;
+    height: 100%;
+  
+    .bota_recuit_center_value_img {
+      height: 291px;
+      overflow: hidden;
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  .bota_recuit_center_value_cont {
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 60px;
+      text-align: center;
+    }
+  
+    ul li {
+      position: relative;
+      padding-left: 30px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 28px;
+      color: #22343D;
+      margin-bottom: 20px;
+      &::before{
+        content: "";
+        background-image: url(../imgs/group-checkorg.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 17.64px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+    }
+  
+    padding: 0 25px;
+  }
+  .bota_recuit_bg_center .bota_top_employers {
+    padding: 80px 0;
+    margin: 0;
+}
+@media (min-width: 576px){
+  #popupcontact .modal-dialog {
+       max-width: 1140px;
+  }
+}
+#popupcontact {
+  .close {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  opacity: 1;
+  z-index: 999;
+  outline: none;
+  line-height: 25px;
+  text-align: center;
+  }
+  .popupcontact_title{
+     h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 57px;
+     }
+  }
+
+  .modal-body {
+      padding: 0;
+  }
+}

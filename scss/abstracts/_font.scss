@@ -98,3 +98,37 @@ $body-font-family-2:'Roboto', sans-serif;
 		right: 0;
 	}
 }
+.icon-checks{
+	width: 17.64px;
+		height: 16px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	&::before{
+		content: "";
+		background-image: url(../imgs/group-checkorg.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 17.64px;
+		height: 16px;
+		position: absolute;
+		right: 0;
+	}
+}
+.icon-email-popup{
+	width: 58px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	&::before{
+		content: "";
+		background-image: url(../imgs/email_popip.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 58px;
+		height: 24px;
+		position: absolute;
+		right: 0;
+	}
+}
