@@ -3570,7 +3570,7 @@ ul { padding: 0; margin: 0; }
 
 .bota_job_info_employer ul { padding: 0 18px; }
 .bota_job_info_employer ul li { margin-bottom: 20px; position: relative; color: #475E69; font-style: normal; font-weight: normal; font-size: 15px; line-height: 24px; }
-.bota_job_info_employer ul li svg { float: left; width: 20px; display: inline-block; position: absolute; top: 4px; }
+.bota_job_info_employer ul li svg { float: left; width: 20px; display: inline-block; position: absolute; top: 4px; left: 0; }
 .bota_job_info_employer ul li span { float: left; width: calc(100% - 30px); margin-left: 30px; }
 .bota_job_info_employer ul li:after { content: ""; display: block; clear: both; }
 .bota_job_info_employer ul p { margin-bottom: 0; }
@@ -4231,6 +4231,7 @@ textarea:-ms-input-placeholder, textarea::placeholder { color: #979797; }
 #popupcontact .close { position: absolute; right: -5px; top: -10px; background: #fff; width: 25px; height: 25px; border-radius: 100%; opacity: 1; z-index: 999; outline: none; line-height: 25px; text-align: center; }
 #popupcontact .popupcontact_title h2 { font-style: normal; font-weight: 500; font-size: 24px; line-height: 57px; }
 #popupcontact .modal-body { padding: 0; }
+#popupcontact .popupcontact_title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 /*== Edit By DTM Reponsive ===*/
 
