@@ -238,11 +238,13 @@
   text-align: center;
   }
   .popupcontact_title{
+    margin-bottom: 30px;
      h2 {
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
-      line-height: 57px;
+      line-height: 57px;color: #02897A;
+      margin-bottom: 0;
      }
   }
 
@@ -254,4 +256,136 @@
     align-items: center;
     justify-content: space-between;
 }
+.popupcontact_cont {
+  padding: 19px 50px 35px;
+}
+.popupcontact_group {
+  position: relative;
+  margin-bottom: 20px;
+
+  input {
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 54px;
+    width: 100%;
+    padding: 0 20px;
+    outline: none;
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 193px;
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+  }
+}
+
+.popupcontact_group_btn {
+  background: #02897A;
+  border-radius: 5px;
+  height: 52px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  line-height: 52px;
+  min-width: 145px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: #00AA97;
+  }
+}
+.popupcontact_infomation {
+  background: #02897A;
+  height: 100%;
+  padding: 19px 25px;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin-bottom: 41px;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 37px;
+    margin-bottom: 25px;
+  }
+  .popupcontact_infomation_text{
+    > ul > li {
+        margin-bottom: 25px;
+        position: relative;
+
+        svg {
+          float: left;
+          width: 20px;
+          display: inline-block;
+          position: absolute;
+          top: 4px;
+          left: 0;
+        }
+
+        span {
+          float: left;
+          width: calc(100% - 30px);
+          margin-left: 30px;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+      }
+    }
+  }
+  .popupcontact_socails {
+    margin-top: 10px;
+  
+    ul {
+      display: flex;
+  
+      li + li {
+        margin-left: 15px;
+      }
+      li{
+          svg{
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+          }
+          &:hover svg{
+            transform: translateY(-10px);
+          }
+      }
+    }
+  }
 }

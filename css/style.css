@@ -3250,7 +3250,7 @@ form { margin: 0; }
 .bota_footer .bota_footer_content ul li { color: #fff; margin-bottom: 20px; position: relative; }
 .bota_footer .bota_footer_content ul li::after { content: ""; display: block; clear: both; }
 .bota_footer .bota_footer_content ul li span { float: left; width: calc(100% - 30px); margin-left: 30px; }
-.bota_footer .bota_footer_content ul li svg { float: left; width: 20px; display: inline-block; position: absolute; top: 4px; }
+.bota_footer .bota_footer_content ul li svg { float: left; width: 20px; display: inline-block; position: absolute; top: 4px; left: 0; }
 .bota_footer .bota_footer_content ul li span p { margin: 0; }
 .bota_footer .bota_footer_title { font-style: normal; font-weight: bold; font-size: 17px; line-height: 30px; color: #fff; position: relative; padding-bottom: 4px; margin-bottom: 13px; }
 .bota_footer .bota_footer_title:after { content: ""; background: #fff; width: 67px; height: 1px; position: absolute; bottom: 0; left: 0; }
@@ -4229,9 +4229,31 @@ textarea:-ms-input-placeholder, textarea::placeholder { color: #979797; }
 
 @media (min-width: 576px) { #popupcontact .modal-dialog { max-width: 1140px; } }
 #popupcontact .close { position: absolute; right: -5px; top: -10px; background: #fff; width: 25px; height: 25px; border-radius: 100%; opacity: 1; z-index: 999; outline: none; line-height: 25px; text-align: center; }
-#popupcontact .popupcontact_title h2 { font-style: normal; font-weight: 500; font-size: 24px; line-height: 57px; }
+#popupcontact .popupcontact_title { margin-bottom: 30px; }
+#popupcontact .popupcontact_title h2 { font-style: normal; font-weight: 500; font-size: 24px; line-height: 57px; color: #02897A; margin-bottom: 0; }
 #popupcontact .modal-body { padding: 0; }
 #popupcontact .popupcontact_title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#popupcontact .popupcontact_cont { padding: 19px 50px 35px; }
+#popupcontact .popupcontact_group { position: relative; margin-bottom: 20px; }
+#popupcontact .popupcontact_group input { border: 1px solid #E0E0E0; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; height: 54px; width: 100%; padding: 0 20px; outline: none; }
+#popupcontact .popupcontact_group input:focus { background: white; border: 1px solid transparent; -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15); box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15); }
+#popupcontact .popupcontact_group textarea { width: 100%; border: 1px solid #E0E0E0; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; height: 193px; width: 100%; padding: 20px; outline: none; }
+#popupcontact .popupcontact_group textarea:focus { background: white; border: 1px solid transparent; -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15); box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15); }
+#popupcontact .popupcontact_group_btn { background: #02897A; border-radius: 5px; height: 52px; text-align: center; color: #fff; display: inline-block; line-height: 52px; min-width: 145px; cursor: pointer; border: none; }
+#popupcontact .popupcontact_group_btn:hover { background: #00AA97; }
+#popupcontact .popupcontact_infomation { background: #02897A; height: 100%; padding: 19px 25px; color: #fff; }
+#popupcontact .popupcontact_infomation a { color: #fff; }
+#popupcontact .popupcontact_infomation h4 { font-style: normal; font-weight: 500; font-size: 22px; line-height: 57px; letter-spacing: 0.2px; margin-bottom: 41px; }
+#popupcontact .popupcontact_infomation h3 { font-style: normal; font-weight: 500; font-size: 15px; line-height: 37px; margin-bottom: 25px; }
+#popupcontact .popupcontact_infomation .popupcontact_infomation_text > ul > li { margin-bottom: 25px; position: relative; }
+#popupcontact .popupcontact_infomation .popupcontact_infomation_text > ul > li svg { float: left; width: 20px; display: inline-block; position: absolute; top: 4px; left: 0; }
+#popupcontact .popupcontact_infomation .popupcontact_infomation_text > ul > li span { float: left; width: calc(100% - 30px); margin-left: 30px; }
+#popupcontact .popupcontact_infomation .popupcontact_infomation_text > ul > li:after { content: ""; display: block; clear: both; }
+#popupcontact .popupcontact_socails { margin-top: 10px; }
+#popupcontact .popupcontact_socails ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+#popupcontact .popupcontact_socails ul li + li { margin-left: 15px; }
+#popupcontact .popupcontact_socails ul li svg { -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; }
+#popupcontact .popupcontact_socails ul li:hover svg { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
 
 /*== Edit By DTM Reponsive ===*/
 
