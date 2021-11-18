@@ -13,7 +13,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="../js/js_custom.js"></script>
+<script type="text/javascript" src="../js/js_recuit.js"></script>
 
 <body>
     <header class="bota_header_manager">
@@ -69,7 +71,7 @@
     <div class="bota_body_main">
         <div class="container-fluid no-padding">
             <div class="row no-margin">
-            <div class="col-xl-3 col-lg-3 col-sm-3 no-padding">
+            <div class="col-xl-3 col-lg-3 col-sm-3 no-padding bota_sidebar_toggler_left">
                 <div class="bota_page_sidebar">
                     <ul class="bota_page_sidebar_menu">
                         <li class="bota_page_sidebar_menu_it">
@@ -104,11 +106,11 @@
                         <li class="bota_page_sidebar_menu_it">
                             <a href="cv_manager.html" title="Quản lý CV"> 
                                 <div class="bota_page_sidebar_menu_icon">
-                                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.437439 9.51562C0.437439 9.95075 0.61029 10.368 0.917967 10.6757C1.22564 10.9834 1.64294 11.1562 2.07806 11.1562H11.9218C12.3569 11.1562 12.7742 10.9834 13.0819 10.6757C13.3896 10.368 13.5624 9.95075 13.5624 9.51562V5.00391H0.437439V9.51562ZM2.37103 7.28906C2.37103 7.05596 2.46363 6.83241 2.62846 6.66758C2.79328 6.50276 3.01684 6.41016 3.24994 6.41016H4.65619C4.88929 6.41016 5.11284 6.50276 5.27767 6.66758C5.4425 6.83241 5.53509 7.05596 5.53509 7.28906V7.875C5.53509 8.1081 5.4425 8.33165 5.27767 8.49648C5.11284 8.66131 4.88929 8.75391 4.65619 8.75391H3.24994C3.01684 8.75391 2.79328 8.66131 2.62846 8.49648C2.46363 8.33165 2.37103 8.1081 2.37103 7.875V7.28906Z" fill="#475E69"/>
-                                        <path d="M11.9218 0.842773H2.07806C1.64294 0.842773 1.22564 1.01562 0.917967 1.3233C0.61029 1.63098 0.437439 2.04828 0.437439 2.4834V3.24512H13.5624V2.4834C13.5624 2.04828 13.3896 1.63098 13.0819 1.3233C12.7742 1.01562 12.3569 0.842773 11.9218 0.842773V0.842773Z" fill="#475E69"/>
-                                    </svg>          
-                                </div>              
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.24525 1.39199C8.67513 0.776465 7.87884 0.4375 6.99994 0.4375C6.11634 0.4375 5.31742 0.774414 4.74994 1.38613C4.1763 2.00459 3.89681 2.84512 3.96244 3.75273C4.09251 5.54336 5.45511 7 6.99994 7C8.54476 7 9.90501 5.54365 10.0371 3.75332C10.1036 2.85391 9.8224 2.01514 9.24525 1.39199Z" fill="#475E69"/>
+                                        <path d="M12.1562 13.5615H1.8437C1.70872 13.5633 1.57505 13.5349 1.4524 13.4785C1.32976 13.4221 1.22123 13.3391 1.13472 13.2354C0.94429 13.0078 0.867532 12.697 0.924368 12.3826C1.17163 11.0109 1.94331 9.85869 3.1562 9.0498C4.23374 8.33174 5.59868 7.93652 6.99995 7.93652C8.40122 7.93652 9.76616 8.33203 10.8437 9.0498C12.0566 9.8584 12.8283 11.0106 13.0755 12.3823C13.1324 12.6967 13.0556 13.0075 12.8652 13.2352C12.7787 13.3388 12.6702 13.4219 12.5475 13.4784C12.4249 13.5348 12.2912 13.5632 12.1562 13.5615Z" fill="#475E69"/>
+                                    </svg>                                                
+                                </div>                 
                                 <div class="bota_page_sidebar_menu_title">Quản lý CV</div>
                             </a>
                         </li>
@@ -149,7 +151,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-sm-9 no-padding">
+            <div class="col-xl-9 col-lg-9 col-sm-9 no-padding bota_sidebar_toggler_right">
                 <div class="bota_body_main_manager"></div>
             </div>
         </div>

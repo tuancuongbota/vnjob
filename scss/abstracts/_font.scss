@@ -149,3 +149,37 @@ $body-font-family-2:'Roboto', sans-serif;
 		right: 0;
 	}
 }
+.icon-write{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	&::before{
+		content: "";
+		background-image: url(../imgs/write.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		right: 0;
+	}
+}
+.icon-rash{
+	width: 16px;
+	height: 18px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	&::before{
+		content: "";
+		background-image: url(../imgs/rash.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 18px;
+		position: absolute;
+		right: 0;
+	}
+}

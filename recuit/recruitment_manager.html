@@ -13,7 +13,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="../js/js_custom.js"></script>
+<script type="text/javascript" src="../js/js_recuit.js"></script>
 
 <body>
     <header class="bota_header_manager">
@@ -69,7 +71,7 @@
     <div class="bota_body_main">
         <div class="container-fluid no-padding">
             <div class="row no-margin">
-            <div class="col-xl-3 col-lg-3 col-sm-3 no-padding">
+            <div class="col-xl-3 col-lg-3 col-sm-3 no-padding bota_sidebar_toggler_left">
                 <div class="bota_page_sidebar">
                     <ul class="bota_page_sidebar_menu">
                         <li class="bota_page_sidebar_menu_it">
@@ -108,7 +110,7 @@
                                         <path d="M9.24525 1.39199C8.67513 0.776465 7.87884 0.4375 6.99994 0.4375C6.11634 0.4375 5.31742 0.774414 4.74994 1.38613C4.1763 2.00459 3.89681 2.84512 3.96244 3.75273C4.09251 5.54336 5.45511 7 6.99994 7C8.54476 7 9.90501 5.54365 10.0371 3.75332C10.1036 2.85391 9.8224 2.01514 9.24525 1.39199Z" fill="#475E69"/>
                                         <path d="M12.1562 13.5615H1.8437C1.70872 13.5633 1.57505 13.5349 1.4524 13.4785C1.32976 13.4221 1.22123 13.3391 1.13472 13.2354C0.94429 13.0078 0.867532 12.697 0.924368 12.3826C1.17163 11.0109 1.94331 9.85869 3.1562 9.0498C4.23374 8.33174 5.59868 7.93652 6.99995 7.93652C8.40122 7.93652 9.76616 8.33203 10.8437 9.0498C12.0566 9.8584 12.8283 11.0106 13.0755 12.3823C13.1324 12.6967 13.0556 13.0075 12.8652 13.2352C12.7787 13.3388 12.6702 13.4219 12.5475 13.4784C12.4249 13.5348 12.2912 13.5632 12.1562 13.5615Z" fill="#475E69"/>
                                     </svg>                                                
-                                </div>              
+                                </div>                
                                 <div class="bota_page_sidebar_menu_title">Quản lý CV</div>
                             </a>
                         </li>
@@ -149,8 +151,236 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-sm-9 no-padding">
-                <div class="bota_body_main_manager"></div>
+            <div class="col-xl-9 col-lg-9 col-sm-9 no-padding bota_sidebar_toggler_right">
+                <div class="bota_body_main_manager">
+                    <div class="bota_manager_right_box">
+                        <div class="bota_body_main_manager_bg">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                    <div class="bota_body_main_manager_title">
+                                        <h1>Quản lý tin tuyển dụng</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                    <div class="bota_body_main_manager_tabs">
+                                        <ul class="nav nav-tabs" id="manager_myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#all">Tất cả</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#draft">Nháp (5)</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#hiding">Đang ẩn</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#expired">Hết hạn (20)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="manager_myTabContent">
+                            <div class="tab-pane fade show active" id="all">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Mã số</th>
+                                            <th scope="col">Tin tuyển dụng</th>
+                                            <th scope="col">Trạng thái</th>
+                                            <th scope="col">Hồ sơ ứng tuyển</th>
+                                            <th scope="col">Lượt xem</th>
+                                            <th scope="col">Ngày đăng</th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="showing">Đang hiển thị</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_1">
+                                                            <input type="checkbox" id="recruitment_status_1" checked>
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="showing">Đang hiển thị</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_2">
+                                                            <input type="checkbox" id="recruitment_status_2" checked>
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="hiding">Đang ẩn</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_3">
+                                                            <input type="checkbox" id="recruitment_status_3">
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="hiding">Đang ẩn</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_4">
+                                                            <input type="checkbox" id="recruitment_status_4">
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="waiting_approval">Chờ xét duyệt</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_5">
+                                                            <input type="checkbox" id="recruitment_status_5" checked>
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="waiting_approval">Chờ xét duyệt</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_6">
+                                                            <input type="checkbox" id="recruitment_status_6" checked>
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="bota_tab_expired">
+                                            <th scope="row">#1002</th>
+                                            <td>Tuyển dụng UX/UI designer</td>
+                                            <td class="expired">Hết hạn</td>
+                                            <td>20</td>
+                                            <td>800</td>
+                                            <td>2/9/2021</td>
+                                            <td>
+                                                <div class="bota_manager_col_recruitment">
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <label for="recruitment_status_7">
+                                                            <input type="checkbox" id="recruitment_status_7">
+                                                            <i class="icon_status"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-write"></i>
+                                                    </div>
+                                                    <div class="bota_manager_recruitment_it">
+                                                        <i class="icon-rash"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="draft">
+                                <div class="table-responsive"></div>
+                            </div>
+                            <div class="tab-pane fade" id="hiding">
+                                <div class="table-responsive"></div>
+                            </div>
+                            <div class="tab-pane fade" id="expired">
+                                <div class="table-responsive"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
