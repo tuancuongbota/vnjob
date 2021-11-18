@@ -1,14 +1,15 @@
 $(document).ready(function() {
-    var body_class = $.cookie('body_class');
-    if(body_class) {
-        $('body').addClass(body_class);
-    }else {
-        // We already know this cookie doesn't exists at this point, so instead of trying to remove it,
-        // this is where you want to SET it.
-        $.cookie('body_class', "sidebar_closed");
-    }
-    $(".bota_sidebar_toggler").click(function() {
-        $("body").toggleClass("sidebar_closed");
-        $.cookie('body_class', "sidebar_closed");
+    $(".bota_sidebar_toggler").addClass($.cookie("body_class")); //do this on load. if class exusts, will add value.
+    $(".bota_sidebar_toggler").click(function(e) {
+        e.preventDefault();
+        $("body").toggleClass(function(){
+        //add class and cookie
+        $(this).addClass("sidebar_closed");
+        $.cookie("body_class", "sidebar_closed");
+        },function(){
+        $(this).removeClass("sidebar_closed");
+        $.cookie("body_class", "");
+        });
     });
  });
+ 
