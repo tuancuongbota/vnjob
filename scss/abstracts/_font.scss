@@ -132,3 +132,20 @@ $body-font-family-2:'Roboto', sans-serif;
 		right: 0;
 	}
 }
+.icon-notifications{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	&::before{
+		content: "";
+		background-image: url(../imgs/notifications.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 0;
+	}
+}
