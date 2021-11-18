@@ -824,3 +824,223 @@
     }
   }
 }
+.bota_body_main_manager_des {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: right;
+  color: #22343D;
+}
+.bota_body_main_manager_add {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 26px;
+}
+
+.bota_manager_group_it {
+  position: relative;
+  margin-bottom: 30px;
+
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+    color: #22343D;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],input[type=number] {
+    border: 1px solid #BFBFBF;
+    border-radius: 3px;
+    height: 40px;
+    padding: 0 14px;
+    width: 100%;
+    outline: none;
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+}
+
+  &.bota_manager_group_it_dev{
+    label{
+      margin: 0;
+    }
+    input {
+      height: 32px;
+      border: unset;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      margin: 0;
+      outline: none;
+      padding: 0;
+      border-radius: 0;
+      &:focus{
+        border: none;
+        border-bottom: 1px solid #E0E0E0;
+        box-shadow: unset;
+      }
+    }
+  }
+  
+
+  select {
+    outline: none;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid #BFBFBF;
+    border-radius: 3px;
+    height: 40px;
+    padding: 0 14px;
+    color: #979797;
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: #979797;
+  }
+
+  > .row {
+    align-items: center;
+  }
+
+  textarea {
+    outline: none;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid #BFBFBF;
+    border-radius: 3px;
+    height: 160px;
+    padding: 14px;
+    color: #979797;
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+  }
+
+  label.custom-checkbox {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 30px;
+    color: #979797;
+    margin-bottom: 0;
+
+    input {
+      display: none;
+    }
+
+    .icon-agree {
+      cursor: pointer;
+      display: inline;
+
+      &:after, &:before {
+        content: '';
+        box-shadow: none;
+        position: absolute;
+        top: 0.125rem;
+        left: 0rem;
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      &:after {
+        border: 1px solid #BFBFBF;
+        transition: all .3s ease;
+        border-radius: 2px;
+        background: #fff;
+      }
+    }
+
+    input:checked ~ .icon-agree {
+      &:before {
+        z-index: 2;
+        background: no-repeat 50%/50% 50%;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E");
+      }
+
+      &:after {
+        background: #02897A;
+        border-color: #02897A;
+      }
+    }
+  }
+  .bota_manager_group_border {
+    background: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 40px;
+    padding: 7px 14px;
+}
+
+.bota_manager_group_border_it {
+    display: inline-block;
+    background: #475E69;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 5px;
+    .icon-close {
+      cursor: pointer;
+      margin-left: 5px;
+  }
+}
+.bota_manager_group_border_it + .bota_manager_group_border_it {
+    margin-left: 15px;
+}
+
+}
+.bota_manager_group_btn {
+  padding-bottom: 43px;
+  text-align: right;
+
+  button {
+    background: #F2F2F2;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #979797;
+    padding: 15px 21px;
+    min-width: 180px;
+
+    + button {
+      margin-left: 30px;
+      background: #02897A;
+      color: #fff;
+    }
+
+    &:hover {
+      background: #00AA97;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng tin tuyển dụng</title>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../js/js_custom.js"></script>
+<script type="text/javascript" src="../js/js_recuit.js"></script>
+
+<body>
+    <header class="bota_header_manager">
+        <div class="bota_header_manager_top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3 col-sm-3">
+                        <div class="bota_header_manager_left">
+                            <button class="bota_sidebar_toggler">
+                                <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11.6667H17M1 6.33333H17H1ZM1 1H17H1Z" stroke="#02897A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </button>
+                            <div class="bota_header_manager_logo">
+                                <a href="../index.html" title="logo">
+                                    <img src="../imgs/logo.svg" alt="logo" class="img-fluid" width="91" height="42">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-sm-9">
+                        <div class="bota_header_manager_right">
+                            <div class="bota_header_manager_add_recruit">
+                                <a href="add_recuit.html" title="Đăng tin tuyển dụng">Đăng tin tuyển dụng</a>
+                            </div>
+                            <div class="bota_header_manager_search">
+                                <input type="search" name="search" placeholder="Tìm ứng viên" />
+                                <button>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.4568 12.4451L10.5097 9.49807C11.2192 8.55353 11.6023 7.40382 11.601 6.22248C11.601 3.20497 9.14599 0.75 6.12849 0.75C3.11098 0.75 0.656006 3.20497 0.656006 6.22248C0.656006 9.23999 3.11098 11.695 6.12849 11.695C7.30983 11.6963 8.45954 11.3132 9.40408 10.6037L12.3511 13.5508C12.5003 13.6841 12.6949 13.7553 12.8949 13.7497C13.0949 13.7441 13.2852 13.6621 13.4267 13.5207C13.5681 13.3792 13.6501 13.1889 13.6557 12.9889C13.6613 12.7889 13.5901 12.5943 13.4568 12.4451ZM2.21957 6.22248C2.21957 5.44937 2.44883 4.69362 2.87834 4.0508C3.30786 3.40799 3.91835 2.90697 4.63261 2.61111C5.34687 2.31526 6.13282 2.23785 6.89108 2.38867C7.64933 2.5395 8.34583 2.91179 8.89251 3.45846C9.43918 4.00513 9.81147 4.70163 9.96229 5.45989C10.1131 6.21814 10.0357 7.0041 9.73985 7.71836C9.444 8.43262 8.94298 9.04311 8.30016 9.47262C7.65734 9.90214 6.9016 10.1314 6.12849 10.1314C5.09216 10.1302 4.09863 9.71792 3.36584 8.98513C2.63305 8.25233 2.22081 7.25881 2.21957 6.22248Z" fill="#979797"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="bota_header_notifications dropdown">
+                                <a class="dropdown-notification dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-notifications"></i>
+                                    <span class="notifications_count">
+                                        0 
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="bota_header_username">
+                                <span>
+                                    <img src="../imgs/avatar.jpg" alt="" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bota_body_main">
+        <div class="container-fluid no-padding">
+            <div class="row no-margin">
+            <div class="col-xl-3 col-lg-3 col-sm-3 no-padding bota_sidebar_toggler_left">
+                <div class="bota_page_sidebar">
+                    <ul class="bota_page_sidebar_menu">
+                        <li class="bota_page_sidebar_menu_it">
+                            <a href="recruit_manager.html" title="Bảng tin"> 
+                                <div class="bota_page_sidebar_menu_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_368_795)">
+                                        <path d="M8.16289 3.46736C8.11927 3.42563 8.06124 3.40234 8.00088 3.40234C7.94052 3.40234 7.88248 3.42563 7.83887 3.46736L2.44531 8.61979C2.42241 8.64171 2.40418 8.66804 2.39175 8.69719C2.37931 8.72635 2.37291 8.75773 2.37295 8.78942L2.37207 13.6252C2.37207 13.8738 2.47084 14.1123 2.64666 14.2881C2.82247 14.4639 3.06093 14.5627 3.30957 14.5627H6.125C6.24932 14.5627 6.36855 14.5133 6.45645 14.4254C6.54436 14.3375 6.59375 14.2182 6.59375 14.0939V10.1095C6.59375 10.0474 6.61844 9.98777 6.6624 9.94381C6.70635 9.89986 6.76596 9.87517 6.82812 9.87517H9.17187C9.23403 9.87517 9.29365 9.89986 9.3376 9.94381C9.38156 9.98777 9.40625 10.0474 9.40625 10.1095V14.0939C9.40625 14.2182 9.45563 14.3375 9.54354 14.4254C9.63145 14.5133 9.75068 14.5627 9.875 14.5627H12.6893C12.9379 14.5627 13.1764 14.4639 13.3522 14.2881C13.528 14.1123 13.6268 13.8738 13.6268 13.6252V8.78942C13.6268 8.75773 13.6204 8.72635 13.608 8.69719C13.5955 8.66804 13.5773 8.64171 13.5544 8.61979L8.16289 3.46736Z" fill="#475E69"/>
+                                        <path d="M14.8825 7.65381L12.6911 5.55732V2.37598C12.6911 2.25166 12.6417 2.13243 12.5538 2.04452C12.4659 1.95661 12.3467 1.90723 12.2223 1.90723H10.8161C10.6918 1.90723 10.5725 1.95661 10.4846 2.04452C10.3967 2.13243 10.3473 2.25166 10.3473 2.37598V3.31348L8.65047 1.69102C8.49168 1.53047 8.25555 1.43848 8.00037 1.43848C7.74608 1.43848 7.51053 1.53047 7.35174 1.69131L1.1203 7.65322C0.938073 7.829 0.915221 8.11816 1.08104 8.30859C1.12268 8.35666 1.17367 8.39575 1.23089 8.42349C1.28812 8.45122 1.3504 8.46703 1.41392 8.46993C1.47745 8.47284 1.54091 8.46278 1.60043 8.44039C1.65995 8.41799 1.71429 8.38371 1.76014 8.33965L7.83924 2.53066C7.88286 2.48894 7.94089 2.46565 8.00125 2.46565C8.06161 2.46565 8.11965 2.48894 8.16327 2.53066L14.2429 8.33965C14.3325 8.42553 14.4525 8.4724 14.5765 8.46998C14.7006 8.46757 14.8186 8.41606 14.9048 8.32676C15.0846 8.14043 15.0697 7.83281 14.8825 7.65381Z" fill="#475E69"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_368_795">
+                                        <rect width="15" height="15" fill="#475E69" transform="translate(0.5 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                         
+                                </div>
+                                <div class="bota_page_sidebar_menu_title">Bảng tin</div>
+                            </a>
+                        </li>
+                        <li class="bota_page_sidebar_menu_it active">
+                            <a href="recruitment_manager.html" title="Tin tuyển dụng"> 
+                                <div class="bota_page_sidebar_menu_icon">
+                                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.437439 9.51562C0.437439 9.95075 0.61029 10.368 0.917967 10.6757C1.22564 10.9834 1.64294 11.1562 2.07806 11.1562H11.9218C12.3569 11.1562 12.7742 10.9834 13.0819 10.6757C13.3896 10.368 13.5624 9.95075 13.5624 9.51562V5.00391H0.437439V9.51562ZM2.37103 7.28906C2.37103 7.05596 2.46363 6.83241 2.62846 6.66758C2.79328 6.50276 3.01684 6.41016 3.24994 6.41016H4.65619C4.88929 6.41016 5.11284 6.50276 5.27767 6.66758C5.4425 6.83241 5.53509 7.05596 5.53509 7.28906V7.875C5.53509 8.1081 5.4425 8.33165 5.27767 8.49648C5.11284 8.66131 4.88929 8.75391 4.65619 8.75391H3.24994C3.01684 8.75391 2.79328 8.66131 2.62846 8.49648C2.46363 8.33165 2.37103 8.1081 2.37103 7.875V7.28906Z" fill="#475E69"/>
+                                        <path d="M11.9218 0.842773H2.07806C1.64294 0.842773 1.22564 1.01562 0.917967 1.3233C0.61029 1.63098 0.437439 2.04828 0.437439 2.4834V3.24512H13.5624V2.4834C13.5624 2.04828 13.3896 1.63098 13.0819 1.3233C12.7742 1.01562 12.3569 0.842773 11.9218 0.842773V0.842773Z" fill="#475E69"/>
+                                    </svg>          
+                                </div>              
+                                <div class="bota_page_sidebar_menu_title">Tin tuyển dụng</div>
+                            </a>
+                        </li>
+                        <li class="bota_page_sidebar_menu_it">
+                            <a href="cv_manager.html" title="Quản lý CV"> 
+                                <div class="bota_page_sidebar_menu_icon">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.24525 1.39199C8.67513 0.776465 7.87884 0.4375 6.99994 0.4375C6.11634 0.4375 5.31742 0.774414 4.74994 1.38613C4.1763 2.00459 3.89681 2.84512 3.96244 3.75273C4.09251 5.54336 5.45511 7 6.99994 7C8.54476 7 9.90501 5.54365 10.0371 3.75332C10.1036 2.85391 9.8224 2.01514 9.24525 1.39199Z" fill="#475E69"/>
+                                        <path d="M12.1562 13.5615H1.8437C1.70872 13.5633 1.57505 13.5349 1.4524 13.4785C1.32976 13.4221 1.22123 13.3391 1.13472 13.2354C0.94429 13.0078 0.867532 12.697 0.924368 12.3826C1.17163 11.0109 1.94331 9.85869 3.1562 9.0498C4.23374 8.33174 5.59868 7.93652 6.99995 7.93652C8.40122 7.93652 9.76616 8.33203 10.8437 9.0498C12.0566 9.8584 12.8283 11.0106 13.0755 12.3823C13.1324 12.6967 13.0556 13.0075 12.8652 13.2352C12.7787 13.3388 12.6702 13.4219 12.5475 13.4784C12.4249 13.5348 12.2912 13.5632 12.1562 13.5615Z" fill="#475E69"/>
+                                    </svg>                                                
+                                </div>                
+                                <div class="bota_page_sidebar_menu_title">Quản lý CV</div>
+                            </a>
+                        </li>
+            
+                        <li class="bota_page_sidebar_menu_it">
+                            <a href="statistical_manager.html" title="Thống kê"> 
+                                <div class="bota_page_sidebar_menu_icon">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.54684 15.0312H1.60934C1.42286 15.0312 1.24402 14.9572 1.11216 14.8253C0.980299 14.6934 0.906219 14.5146 0.906219 14.3281V10.1094C0.906219 9.92289 0.980299 9.74405 1.11216 9.61219C1.24402 9.48033 1.42286 9.40625 1.60934 9.40625H2.54684C2.73332 9.40625 2.91217 9.48033 3.04403 9.61219C3.17589 9.74405 3.24997 9.92289 3.24997 10.1094V14.3281C3.24997 14.5146 3.17589 14.6934 3.04403 14.8253C2.91217 14.9572 2.73332 15.0312 2.54684 15.0312Z" fill="#475E69"/>
+                                        <path d="M9.10937 15.0312H8.17187C7.98539 15.0312 7.80655 14.9572 7.67469 14.8253C7.54283 14.6934 7.46875 14.5146 7.46875 14.3281V7.29687C7.46875 7.11039 7.54283 6.93155 7.67469 6.79969C7.80655 6.66783 7.98539 6.59375 8.17187 6.59375H9.10937C9.29585 6.59375 9.4747 6.66783 9.60656 6.79969C9.73842 6.93155 9.8125 7.11039 9.8125 7.29687V14.3281C9.8125 14.5146 9.73842 14.6934 9.60656 14.8253C9.4747 14.9572 9.29585 15.0312 9.10937 15.0312Z" fill="#475E69"/>
+                                        <path d="M12.3906 15.0312H11.4531C11.2666 15.0312 11.0878 14.9572 10.9559 14.8253C10.824 14.6934 10.75 14.5146 10.75 14.3281V4.01562C10.75 3.82914 10.824 3.6503 10.9559 3.51844C11.0878 3.38658 11.2666 3.3125 11.4531 3.3125H12.3906C12.5771 3.3125 12.7559 3.38658 12.8878 3.51844C13.0196 3.6503 13.0937 3.82914 13.0937 4.01562V14.3281C13.0937 14.5146 13.0196 14.6934 12.8878 14.8253C12.7559 14.9572 12.5771 15.0312 12.3906 15.0312Z" fill="black"/>
+                                        <path d="M5.82812 15.0312H4.89062C4.70414 15.0312 4.5253 14.9572 4.39344 14.8253C4.26158 14.6934 4.1875 14.5146 4.1875 14.3281V1.67187C4.1875 1.48539 4.26158 1.30655 4.39344 1.17469C4.5253 1.04283 4.70414 0.96875 4.89062 0.96875H5.82812C6.01461 0.96875 6.19345 1.04283 6.32531 1.17469C6.45717 1.30655 6.53125 1.48539 6.53125 1.67187V14.3281C6.53125 14.5146 6.45717 14.6934 6.32531 14.8253C6.19345 14.9572 6.01461 15.0312 5.82812 15.0312Z" fill="black"/>
+                                    </svg>                          
+                                </div>                        
+                                <div class="bota_page_sidebar_menu_title">Thống kê</div>
+                            </a>
+                        </li>
+                        <li class="bota_page_sidebar_menu_it">
+                            <a href="operation_history.html" title="Lịch sử hoạt động"> 
+                                <div class="bota_page_sidebar_menu_icon">
+                                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.93939 0.576923C3.93939 0.258297 4.20395 0 4.5303 0H8.4697C8.79605 0 9.06061 0.258297 9.06061 0.576923C9.06061 0.895549 8.79605 1.15385 8.4697 1.15385H4.5303C4.20395 1.15385 3.93939 0.895549 3.93939 0.576923ZM0 8.51538C0 4.947 2.89702 2.03077 6.5 2.03077C10.103 2.03077 13 4.947 13 8.51538C13 12.0838 10.103 15 6.5 15C2.89702 15 0 12.0838 0 8.51538ZM6.5 4.34083C6.82635 4.34083 7.09091 4.59913 7.09091 4.91775V8.07856C7.09091 8.18464 7.13928 8.2809 7.21565 8.34198L9.14719 9.88684C9.39965 10.0888 9.43665 10.4523 9.22984 10.6987C9.02303 10.9452 8.65072 10.9813 8.39826 10.7794L6.46672 9.23456C6.11179 8.95068 5.90909 8.52467 5.90909 8.07856V4.91775C5.90909 4.59913 6.17365 4.34083 6.5 4.34083Z" fill="#475E69"/>
+                                    </svg>  
+                                </div>
+                                <div class="bota_page_sidebar_menu_title">Lịch sử hoạt động</div>
+                            </a>
+                        </li>
+                        <li class="bota_page_sidebar_menu_it">
+                            <a href="setting_manager.html" title="Cài đặt"> 
+                                <div class="bota_page_sidebar_menu_icon">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.57334 4.40217C6.10899 4.40217 5.65506 4.53987 5.26896 4.79785C4.88286 5.05584 4.58194 5.42252 4.40423 5.85153C4.22653 6.28054 4.18004 6.7526 4.27063 7.20804C4.36122 7.66347 4.58483 8.08181 4.91318 8.41016C5.24153 8.73851 5.65987 8.96212 6.11531 9.05271C6.57074 9.1433 7.04281 9.09681 7.47182 8.91911C7.90083 8.74141 8.26751 8.44048 8.52549 8.05438C8.78347 7.66828 8.92117 7.21436 8.92117 6.75C8.91931 6.12789 8.67136 5.53179 8.23145 5.09189C7.79155 4.65199 7.19545 4.40403 6.57334 4.40217ZM11.6423 6.75C11.6411 6.96938 11.625 7.18842 11.5942 7.40563L13.0231 8.52437C13.0854 8.57576 13.1273 8.6476 13.1414 8.72706C13.1556 8.80653 13.141 8.88843 13.1003 8.95813L11.7485 11.2919C11.7074 11.361 11.6433 11.4133 11.5674 11.4398C11.4915 11.4663 11.4087 11.4651 11.3336 11.4366L9.6534 10.7616C9.30354 11.031 8.92067 11.2545 8.51412 11.4269L8.2629 13.2106C8.24884 13.2905 8.20747 13.3631 8.14585 13.4158C8.08424 13.4686 8.00622 13.4984 7.9251 13.5H5.22158C5.14195 13.4985 5.06519 13.47 5.00384 13.4192C4.94249 13.3684 4.90017 13.2983 4.88379 13.2203L4.63257 11.4366C4.22489 11.2662 3.84175 11.0423 3.49329 10.7707L1.81313 11.4457C1.73802 11.4742 1.65524 11.4754 1.57934 11.449C1.50344 11.4226 1.43929 11.3703 1.39815 11.3013L0.0463868 8.96782C0.00569836 8.89811 -0.00887848 8.81621 0.0052612 8.73675C0.0194009 8.65729 0.0613357 8.58544 0.123572 8.53405L1.55252 7.41532C1.52204 7.19482 1.50596 6.97258 1.50439 6.75C1.50561 6.53062 1.52169 6.31158 1.55252 6.09437L0.123572 4.97563C0.0613357 4.92424 0.0194009 4.8524 0.0052612 4.77293C-0.00887848 4.69347 0.00569836 4.61157 0.0463868 4.54187L1.39815 2.20813C1.43924 2.13904 1.50338 2.08666 1.57928 2.0602C1.65518 2.03373 1.73799 2.03488 1.81313 2.06345L3.49329 2.73845C3.84315 2.46904 4.22601 2.24545 4.63257 2.07313L4.88379 0.28937C4.89785 0.20947 4.93922 0.136933 5.00083 0.0841532C5.06244 0.0313739 5.14047 0.00162843 5.22158 0H7.9251C8.00474 0.00155001 8.0815 0.0300496 8.14285 0.0808463C8.2042 0.131643 8.24652 0.201737 8.2629 0.279685L8.51412 2.06345C8.92231 2.23365 9.30595 2.4576 9.65487 2.72935L11.3336 2.05435C11.4087 2.02576 11.4914 2.02457 11.5673 2.05097C11.6432 2.07738 11.7074 2.1297 11.7485 2.19874L13.1003 4.53248C13.141 4.60218 13.1556 4.68408 13.1414 4.76354C13.1273 4.84301 13.0854 4.91485 13.0231 4.96624L11.5942 6.08498C11.6246 6.30537 11.6407 6.52752 11.6423 6.75Z" fill="#475E69"/>
+                                    </svg>                
+                                </div>        
+                                <div class="bota_page_sidebar_menu_title">Cài đặt</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-sm-9 no-padding bota_sidebar_toggler_right">
+                <div class="bota_body_main_manager">
+                    <div class="bota_manager_right_box">
+                        <div class="bota_body_main_manager_bg">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                    <div class="bota_body_main_manager_title">
+                                        <h1>Đăng tin tuyển dụng</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                    <div class="bota_body_main_manager_des">Tin tuyển dụng của bạn sẽ được kiểm duyệt trước khi hiển thị</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bota_body_main_manager_add">
+                            <form>
+                                <div class="bota_manager_group_it bota_manager_group_it_dev">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-3 col-sm-3">
+                                            <label>Tiêu đề tin tuyển dụng</label>
+                                        </div>
+                                        <div class="col-xl-9 col-lg-9 col-sm-9">
+                                            <input type="text" placeholder="Lập trình viên PHP" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Tiêu đề tin tuyển dụng</label>
+                                            <div class="bota_manager_group_border">
+                                                <div class="bota_manager_group_border_it">
+                                                    Ngân hàng / Tài chính <i class="icon-close"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Vị trí / Chức danh</label>
+                                            <input type="text" placeholder="Lập trình viên PHP" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Trình độ chuyên môn</label>
+                                            <select>
+                                                <option>Nhân viên</option>
+                                                <option>Giám đốc</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Hình thức làm việc</label>
+                                            <select>
+                                                <option>Toàn thời gian</option>
+                                                <option>Bán thời gian</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Số lượng tuyển</label>
+                                            <input type="number" placeholder="3">
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Kinh nghiệm</label>
+                                            <select>
+                                                <option>2 năm</option>
+                                                <option>3 năm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Mức lương</label>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                                    <input type="text" placeholder="Từ">
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                                    <input type="text" placeholder="Đến">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label class="custom-checkbox" for="agree">
+                                                <input type="checkbox" id="agree" />
+                                                <i class="icon-agree"></i>
+                                                Thỏa thuận
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it bota_manager_group_it_dev">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-3 col-sm-3">
+                                            <label>Địa điểm làm việc</label>
+                                        </div>
+                                        <div class="col-xl-9 col-lg-9 col-sm-9">
+                                            <input type="text" placeholder="Số 51, Lê Đại Hành, Hai Bà Trưng, Hà Nội" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Mô tả công việc chi tiết</label>
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Yêu cầu dành cho ứng viên</label>
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Quyền lợi của ứng viên</label>
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="bota_manager_group_btn">
+                                    <button>Huỷ</button>
+                                    <button>Đăng tin</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+    
