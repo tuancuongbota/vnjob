@@ -1,15 +1,24 @@
 $(document).ready(function() {
-    $(".bota_sidebar_toggler").addClass($.cookie("body_class")); //do this on load. if class exusts, will add value.
-    $(".bota_sidebar_toggler").click(function(e) {
-        e.preventDefault();
-        $("body").toggleClass(function(){
-        //add class and cookie
-        $(this).addClass("sidebar_closed");
-        $.cookie("body_class", "sidebar_closed");
-        },function(){
-        $(this).removeClass("sidebar_closed");
-        $.cookie("body_class", "");
+    if($.cookie("sidebar_toggler") == 1)
+        {
+            $("body").addClass("sidebar_closed");
+        }
+
+        $(".bota_sidebar_toggler").click(function() { 
+           //your previous code here
+           if($("body").hasClass("sidebar_closed") == true)
+           {
+               //button was active, de-activate it and update cookie
+               $("body").removeClass("sidebar_closed");
+               $.cookie("sidebar_toggler", "0");
+           }
+           else
+           {
+               //button is not active. add active class and update cookie.
+               $("body").addClass("sidebar_closed");
+               $.cookie("sidebar_toggler", "1");
+
+           }
         });
-    });
  });
  
