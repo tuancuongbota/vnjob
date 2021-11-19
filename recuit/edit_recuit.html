@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tuyển dụng</title>
+	<title>Sửa tin tuyển dụng</title>
 </head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -92,7 +92,7 @@
                                 <div class="bota_page_sidebar_menu_title">Bảng tin</div>
                             </a>
                         </li>
-                        <li class="bota_page_sidebar_menu_it">
+                        <li class="bota_page_sidebar_menu_it active">
                             <a href="recruitment_manager.html" title="Tin tuyển dụng"> 
                                 <div class="bota_page_sidebar_menu_icon">
                                     <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
                                         <path d="M9.24525 1.39199C8.67513 0.776465 7.87884 0.4375 6.99994 0.4375C6.11634 0.4375 5.31742 0.774414 4.74994 1.38613C4.1763 2.00459 3.89681 2.84512 3.96244 3.75273C4.09251 5.54336 5.45511 7 6.99994 7C8.54476 7 9.90501 5.54365 10.0371 3.75332C10.1036 2.85391 9.8224 2.01514 9.24525 1.39199Z" fill="#475E69"/>
                                         <path d="M12.1562 13.5615H1.8437C1.70872 13.5633 1.57505 13.5349 1.4524 13.4785C1.32976 13.4221 1.22123 13.3391 1.13472 13.2354C0.94429 13.0078 0.867532 12.697 0.924368 12.3826C1.17163 11.0109 1.94331 9.85869 3.1562 9.0498C4.23374 8.33174 5.59868 7.93652 6.99995 7.93652C8.40122 7.93652 9.76616 8.33203 10.8437 9.0498C12.0566 9.8584 12.8283 11.0106 13.0755 12.3823C13.1324 12.6967 13.0556 13.0075 12.8652 13.2352C12.7787 13.3388 12.6702 13.4219 12.5475 13.4784C12.4249 13.5348 12.2912 13.5632 12.1562 13.5615Z" fill="#475E69"/>
                                     </svg>                                                
-                                </div>              
+                                </div>                
                                 <div class="bota_page_sidebar_menu_title">Quản lý CV</div>
                             </a>
                         </li>
@@ -128,7 +128,7 @@
                                 <div class="bota_page_sidebar_menu_title">Thống kê</div>
                             </a>
                         </li>
-                        <li class="bota_page_sidebar_menu_it active">
+                        <li class="bota_page_sidebar_menu_it">
                             <a href="operation_history.html" title="Lịch sử hoạt động"> 
                                 <div class="bota_page_sidebar_menu_icon">
                                     <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +152,133 @@
                 </div>
             </div>
             <div class="col-xl-10 col-lg-10 col-sm-10 no-padding bota_sidebar_toggler_right">
-                <div class="bota_body_main_manager"></div>
+                <div class="bota_body_main_manager">
+                    <div class="bota_manager_right_box">
+                        <div class="bota_body_main_manager_bg">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                    <div class="bota_body_main_manager_title">
+                                        <h1>Sửa tin tuyển dụng</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                    <div class="bota_body_main_manager_des">Tin tuyển dụng của bạn sẽ được kiểm duyệt trước khi hiển thị</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bota_body_main_manager_add">
+                            <form action="add_recuit.html">
+                                <div class="bota_manager_group_it bota_manager_group_it_dev">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-3 col-sm-3">
+                                            <label>Tiêu đề tin tuyển dụng</label>
+                                        </div>
+                                        <div class="col-xl-9 col-lg-9 col-sm-9">
+                                            <input type="text" placeholder="Lập trình viên PHP" value="Lập trình viên PHP" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Tiêu đề tin tuyển dụng</label>
+                                            <div class="bota_manager_group_border">
+                                                <div class="bota_manager_group_border_it">
+                                                    Ngân hàng / Tài chính <i class="icon-close"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Vị trí / Chức danh</label>
+                                            <input type="text" placeholder="Lập trình viên PHP" value="Lập trình viên PHP" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Trình độ chuyên môn</label>
+                                            <select>
+                                                <option selected>Nhân viên</option>
+                                                <option>Giám đốc</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Hình thức làm việc</label>
+                                            <select>
+                                                <option>Toàn thời gian</option>
+                                                <option>Bán thời gian</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Số lượng tuyển</label>
+                                            <input type="number" placeholder="3" value="3">
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label>Kinh nghiệm</label>
+                                            <select>
+                                                <option selected>2 năm</option>
+                                                <option>3 năm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Mức lương</label>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                                    <input type="text" placeholder="Từ" value="10 triệu">
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-sm-6">
+                                                    <input type="text" placeholder="Đến" value="20 triệu">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                                            <label class="custom-checkbox" for="agree">
+                                                <input type="checkbox" id="agree" checked />
+                                                <i class="icon-agree"></i>
+                                                Thỏa thuận
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it bota_manager_group_it_dev">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-3 col-sm-3">
+                                            <label>Địa điểm làm việc</label>
+                                        </div>
+                                        <div class="col-xl-9 col-lg-9 col-sm-9">
+                                            <input type="text" placeholder="Số 51, Lê Đại Hành, Hai Bà Trưng, Hà Nội" value="Số 51, Lê Đại Hành, Hai Bà Trưng, Hà Nội" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Mô tả công việc chi tiết</label>
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Yêu cầu dành cho ứng viên</label>
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="bota_manager_group_it">
+                                    <label>Quyền lợi của ứng viên</label>
+                                    <textarea rows="5"></textarea>
+                                </div>
+                                <div class="bota_manager_group_btn">
+                                    <button>Huỷ</button>
+                                    <button>Cập nhật</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

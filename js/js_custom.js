@@ -1,8 +1,46 @@
 $(document).ready(function() {
+
   $('.slick_banner').slick({
     dots: true,
     infinite: true,
     arrows: false,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
+  $('.slick_themes_details').slick({
+    dots: false,
+    infinite: true,
+    arrows: true,
     speed: 300,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -381,7 +419,12 @@ $(document).ready(function(){
       $('.bota_scrolltop,.bota_header_nav').removeClass('fixed');
     }
   });
- 
+  $('.bota_cv_fild_sort').on('click', function(){
+		$('.bota_cv_manager_search_sort').addClass('current');
+	});
+  $('.bota_cv_manager_search_close').on('click', function(){
+		$('.bota_cv_manager_search_sort').removeClass('current');
+	});
 }); 
 
 function historys(){

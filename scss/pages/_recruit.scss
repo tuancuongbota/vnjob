@@ -420,6 +420,10 @@
       border-radius: 4px;
       display: inline-block;
       padding: 10px 26px;
+      &:hover{
+        background: #00AA97;
+        border-color: #00AA97;
+      }
     }
   
     .bota_header_manager_search {
@@ -882,6 +886,7 @@
       outline: none;
       padding: 0;
       border-radius: 0;
+      color: #000;
       &:focus{
         border: none;
         border-bottom: 1px solid #E0E0E0;
@@ -901,7 +906,7 @@
     border-radius: 3px;
     height: 40px;
     padding: 0 14px;
-    color: #979797;
+    color: #000;
     &:focus {
       background: rgba(255, 255, 255, 1);
       border: 1px solid transparent;
@@ -928,7 +933,7 @@
     border-radius: 3px;
     height: 160px;
     padding: 14px;
-    color: #979797;
+    color: #000;
     &:focus {
       background: rgba(255, 255, 255, 1);
       border: 1px solid transparent;
@@ -1031,6 +1036,7 @@
     color: #979797;
     padding: 15px 21px;
     min-width: 180px;
+    outline: none;
 
     + button {
       margin-left: 30px;
@@ -1041,6 +1047,648 @@
     &:hover {
       background: #00AA97;
       color: #fff;
+    }
+  }
+}
+.bota_cv_manager_tabs {
+  border-bottom: 1px solid #E0E0E0;
+
+  .row {
+    align-items: center;
+  }
+
+  #myTab_cv {
+    border: unset;
+  }
+}
+
+.bota_cv_fild_sort {
+  float: right;
+}
+
+.bota_cv_manager_tabs #myTab_cv li {
+  a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #979797;
+    border: none;
+    outline: none;
+    box-shadow: unset;
+    padding: 10px 20px;
+    position: relative;
+
+    &.active {
+      background: transparent;
+      color: #02897A;
+    }
+
+    &:hover {
+      color: #02897A;
+    }
+
+    &:after {
+      content: "";
+      background: #02897A;
+      border-radius: 5px 5px 0px 0px;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+    }
+
+    &.active:after, &:hover:after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  margin: 0;
+  position: relative;
+}
+.bota_cv_fild_sort{
+  cursor: pointer;
+}
+.bota_cv_searchcandidate_list {
+  padding: 30px 0 0;
+}
+
+.bota_cv_searchcandidate_it {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 13px;
+  margin-bottom: 20px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  &:hover{
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.bota_cv_searchcandidate_left {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .bota_cv_searchcandidate_img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+  }
+
+  .bota_cv_searchcandidate_title {
+    width: calc(100% - 120px);
+    float: left;
+    margin-left: 20px;
+
+    .bota_cv_searchcandidate_name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px;
+
+      a {
+        color: #02897A;
+      }
+    }
+
+    .bota_cv_searchcandidate_col {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 10px;
+
+      a {
+        color: #000;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.bota_cv_searchcandidate_center {
+  .bota_cv_searchcandidate_center_tile {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #22343D;
+    line-height: 30px;
+    margin-bottom: 11px;
+    a{
+      color: #22343D;
+    }
+  }
+
+  .bota_cv_searchcandidate_col {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #22343D;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+.bota_cv_searchcandidate_right{
+  .bota_cv_searchcandidate_time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #979797;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .bota_cv_searchcandidate_link a {
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #475E69;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 13px 0;
+    &:hover{
+      background: #02897A;
+      color: #fff;
+      border-color: #02897A;
+    }
+  }
+}
+
+.bota_cv_manager_search_sort {
+  background-color: #fff;
+  height: calc(100vh - 65px);
+  position: fixed;
+  top: 65px;
+  right: 0;
+  z-index: 99999;
+  width: 373px;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: none;
+  touch-action: manipulation;
+  box-shadow: -4px 10px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+
+  &.current {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.bota_body_main {
+  position: relative;
+}
+.bota_cv_manager_search_head {
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #22343D;
+    margin: 0;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 14px;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 12px 0;
+}
+
+.bota_cv_manager_search_close {
+  cursor: pointer;
+}
+
+.bota_cv_manager_search_sort_list {
+  padding: 20px 27px;
+
+  label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    color: #22343D;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  input, select {
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 0 13px;
+    outline: none;
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid transparent;
+      -webkit-box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.15);
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: #979797;
+  }
+
+  select {
+    color: #979797;
+
+    option:not(:first-of-type) {
+      color: black;
+    }
+  }
+}
+
+.bota_cv_manager_search_sort_it {
+  margin-bottom: 30px;
+
+  .bota_cv_manager_groups_gender {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #22343D;
+    float: left;
+    margin-right: 54px;
+  }
+
+  .bota_profile_gender label {
+    margin-bottom: 0;
+  }
+}
+
+.bota_cv_manager_search_btn {
+  button {
+    background: #D9D9D9;
+    border-radius: 5px;
+    height: 50px;
+    color: #22343D;
+    border: none;
+    min-width: 47%;
+    font-weight: 500;
+    outline: none;
+
+    + button {
+      margin-left: 15px;
+      background: #02897A;
+      color: #fff;
+    }
+
+    &:hover {
+      background: #00AA97;
+      border-color: #00AA97;
+      color: #fff;
+    }
+  }
+
+  text-align: center;
+}
+.bota_cv_apply_list {
+  padding: 20px 0;
+}
+
+.bota_cv_apply_list_it {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.02);
+  border-radius: 5px;
+  padding: 13px 14px;
+
+  .bota_cv_apply_list_it_left {
+    margin-bottom: 20px;
+
+    .bota_cv_apply_list_img {
+      width: 50px;
+      height: 50px;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      border-radius: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bota_cv_apply_list_it_cont {
+      width: calc(100% - 62px);
+      float: left;
+      margin-left: 12px;
+
+      .bota_cv_apply_list_it_name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      .bota_cv_apply_list_it_time {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #979797;
+        line-height: 18px;
+      }
+
+      .bota_cv_apply_list_it_name a {
+        color: #02897A;
+      }
+    }
+
+    &:after {
+      clear: both;
+      display: block;
+      content: "";
+    }
+  }
+
+  .bota_cv_apply_list_it_center {
+    .bota_cv_apply_list_center_col {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .bota_cv_apply_list_center_title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 20px;
+
+      a, .bota_cv_apply_list_center_col {}
+
+      a {
+        color: #000;
+      }
+    }
+
+    .bota_cv_apply_list_center_col {
+      a {
+        color: #000;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+
+      + .bota_cv_apply_list_center_col {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.bota_recruit_cv_details_bg {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: calc(100vh - 65px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 36px 41px;
+  .bota_recruit_cv_details_title {
+    border-bottom: 1px solid #bcbdbd;
+    margin-bottom: 40px;
+  
+    h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      position: relative;
+      margin: 0;
+      display: inline-block;
+      padding: 12px;
+      color: #02897A;
+  
+      &:after {
+        content: "";
+        background: #02897A;
+        border-radius: 5px 5px 0px 0px;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+      }
+    }
+  }
+  .bota_recruit_cv_details_cont{
+    img {
+      margin: auto;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: all ease .9s;
+    font-size: 0;
+    border: none;
+    background: no-repeat;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    box-shadow: unset;
+    border: none;
+  }
+
+  .slick-prev {
+    left: 0;
+    &:before{
+      background-image:url(../imgs/prev_hover.svg);
+      background-repeat: no-repeat;
+      left: -15px;
+    }
+    &:hover:before{
+      background-image:url(../imgs/prev.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+    &:before{
+      background-image:url(../imgs/next_hover.svg);
+      background-repeat: no-repeat;
+      right: -15px;
+    }
+    &:hover:before{
+      background-image:url(../imgs/next.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  .slick-arrow:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  } 
+}
+.bota_recruit_cv_details_info {
+  background: #FFFFFF;
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 65px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 38px 33px;
+}
+.bota_recruit_cv_details_info {
+  .bota_recruit_cv_details_imgs {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 100%;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .bota_recruit_cv_details_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  .bota_recruit_cv_details_infomation {
+    h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 19px;
+      color: #22343D;
+
+      i {
+        width: 37px;
+        height: 37px;
+        margin-right: 15px;
+
+        &:before {
+          width: 37px;
+          height: 37px;
+        }
+      }
+
+      a {
+        color: #22343D;
+      }
+    }
+  }
+}
+
+.bota_recruit_cv_details_btn {
+  border-top: 1px solid #E0E0E0;
+  padding: 26px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    background: #FFFFFF;
+    border-radius: 5px;
+    min-width: 140px;
+    text-align: center;
+    height: 38px;
+    line-height: 35px;
+    cursor: pointer;
+    border: 1px solid #BCD0E5;
+  }
+
+  .bota_themes_cv_create_save:hover {
+    background: #00AA97;
+    color: #fff;
+    border-color: #00AA97;
+
+    svg path {
+      fill: #fff;
+      stroke: #fff;
+    }
+  }
+
+  .bota_themes_cv_create_download {
+    background: #02897A;
+    color: #fff;
+    border-color: #02897A;
+
+    &:hover {
+      background: #00AA97;
+      border-color: #00AA97;
+    }
+  }
+
+  > div {
+    > svg {
+      margin-right: 10px;
+    }
+
+    + div {
+      margin-left: 20px;
     }
   }
 }
