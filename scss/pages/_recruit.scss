@@ -1692,3 +1692,47 @@
     }
   }
 }
+.bota_operation_history_right {
+  display: flex;
+  align-items: center;
+
+  .bota_operation_history_sort {
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
+
+    input {
+      background: #FFFFFF;
+      border: 1px solid #E0E0E0;
+      box-sizing: border-box;
+      border-radius: 5px;
+      height: 30px;
+      padding: 0 10px;
+      outline: none;
+      width: 111px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: #979797;
+      padding-right: 0;
+      &[type="text"]{
+        background-image: url(../imgs/date.svg);
+        background-repeat: no-repeat;
+        background-position: 96%!important;
+        background-size: 15px;
+      }
+
+      &[type=date] {
+        &::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator {
+          background-image: url(../imgs/date.svg);
+          margin-left: -5px;
+        }
+      }
+    }
+
+    .bota_operation_history_sort_it {
+      margin-left: 15px;
+    }
+  }
+}
